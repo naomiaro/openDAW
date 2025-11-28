@@ -1,0 +1,1 @@
+{"version":3,"file":"terminable.d.ts","sourceRoot":"","sources":["../src/terminable.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,IAAI,EAAE,UAAU,EAAC,MAAM,kBAAkB,CAAA;AAEjD,yBAAiB,eAAe,CAAC;IAE7B;;;;;;;OAOG;IACI,MAAM,SAAS,GAAI,CAAC,SAAS,OAAO,EAAE,KAAK,CAAC,EAAE,WAAW,IAAI,CAAC,OAAO,CAAC,CAAC,CAAC,EAAE,UAAU,CAAC,KAAG,CAQ9F,CAAA;CAkBJ"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"weak.d.ts","sourceRoot":"","sources":["../src/weak.ts"],"names":[],"mappings":"AAAA,qBAAa,UAAU,CAAC,CAAC,SAAS,OAAO;;IAGrC,GAAG,CAAC,KAAK,EAAE,CAAC,GAAG,IAAI;IAEnB,OAAO,CAAC,QAAQ,EAAE,CAAC,KAAK,EAAE,CAAC,KAAK,IAAI,GAAG,IAAI;IAW3C,KAAK,IAAI,IAAI;CAChB"}

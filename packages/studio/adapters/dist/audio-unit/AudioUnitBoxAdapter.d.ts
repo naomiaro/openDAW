@@ -1,0 +1,57 @@
+import { AudioUnitBox, CaptureAudioBox, CaptureMidiBox } from "@opendaw/studio-boxes";
+import { int, Option, UUID, ValueMapping } from "@opendaw/lib-std";
+import { Address, BooleanField, Field, Int32Field } from "@opendaw/lib-box";
+import { AudioUnitType, Pointers } from "@opendaw/studio-enums";
+import { AudioEffectDeviceAdapter, DeviceHost, MidiEffectDeviceAdapter } from "../DeviceAdapter";
+import { AudioUnitTracks } from "./AudioUnitTracks";
+import { AudioUnitInput } from "./AudioUnitInput";
+import { IndexedBoxAdapterCollection } from "../IndexedBoxAdapterCollection";
+import { BoxAdaptersContext } from "../BoxAdaptersContext";
+import { AuxSendBoxAdapter } from "./AuxSendBoxAdapter";
+import { AudioUnitOutput } from "./AudioUnitOutput";
+import { BoxAdapter } from "../BoxAdapter";
+import { AudioUnitInputAdapter } from "./AudioUnitInputAdapter";
+import { TrackBoxAdapter } from "../timeline/TrackBoxAdapter";
+export declare class AudioUnitBoxAdapter implements DeviceHost, BoxAdapter {
+    #private;
+    static VolumeMapper: ValueMapping<number>;
+    readonly "class" = "device-host";
+    readonly namedParameter: {
+        readonly volume: import("..").AutomatableParameterFieldAdapter<number>;
+        readonly panning: import("..").AutomatableParameterFieldAdapter<number>;
+        readonly mute: import("..").AutomatableParameterFieldAdapter<boolean>;
+        readonly solo: import("..").AutomatableParameterFieldAdapter<boolean>;
+    };
+    constructor(context: BoxAdaptersContext, box: AudioUnitBox);
+    get box(): AudioUnitBox;
+    get uuid(): UUID.Bytes;
+    get address(): Address;
+    get indexField(): Int32Field;
+    get type(): AudioUnitType;
+    get captureBox(): Option<CaptureAudioBox | CaptureMidiBox>;
+    get tracks(): AudioUnitTracks;
+    get input(): AudioUnitInput;
+    get midiEffects(): IndexedBoxAdapterCollection<MidiEffectDeviceAdapter, Pointers.MidiEffectHost>;
+    get audioEffects(): IndexedBoxAdapterCollection<AudioEffectDeviceAdapter, Pointers.AudioEffectHost>;
+    get inputAdapter(): Option<AudioUnitInputAdapter>;
+    get auxSends(): IndexedBoxAdapterCollection<AuxSendBoxAdapter, Pointers.AuxSend>;
+    get output(): AudioUnitOutput;
+    get isBus(): boolean;
+    get isInstrument(): boolean;
+    get isOutput(): boolean;
+    get midiEffectsField(): Field<Pointers.MidiEffectHost>;
+    get inputField(): Field<Pointers.InstrumentHost | Pointers.AudioOutput>;
+    get audioEffectsField(): Field<Pointers.AudioEffectHost>;
+    get tracksField(): Field<Pointers.TrackCollection>;
+    get minimizedField(): BooleanField;
+    get isAudioUnit(): boolean;
+    get label(): string;
+    audioUnitBoxAdapter(): AudioUnitBoxAdapter;
+    indicesLimit(): [int, int];
+    move(delta: int): void;
+    moveTrack(adapter: TrackBoxAdapter, delta: int): void;
+    deleteTrack(adapter: TrackBoxAdapter): void;
+    toString(): string;
+    terminate(): void;
+}
+//# sourceMappingURL=AudioUnitBoxAdapter.d.ts.map

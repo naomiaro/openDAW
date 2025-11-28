@@ -1,0 +1,52 @@
+import { Maybe, UUID, Procedure } from "@opendaw/lib-std";
+import { Box, BoxGraph, PointerField, Field, Int32Field, StringField, BooleanField, Float32Field } from "@opendaw/lib-box";
+import { BoxVisitor } from ".";
+import { Pointers } from "@opendaw/studio-enums";
+export type PlayfieldSampleBoxFields = {
+    10: PointerField<Pointers.Sample>;
+    11: PointerField<Pointers.AudioFile>;
+    12: Field<Pointers.MidiEffectHost>;
+    13: Field<Pointers.AudioEffectHost>;
+    15: Int32Field;
+    20: StringField;
+    21: StringField;
+    22: BooleanField;
+    23: BooleanField;
+    40: BooleanField;
+    41: BooleanField;
+    42: BooleanField;
+    43: BooleanField;
+    44: Int32Field;
+    45: Float32Field<Pointers.Modulation | Pointers.Automation | Pointers.MidiControl>;
+    46: Float32Field<Pointers.Modulation | Pointers.Automation | Pointers.MidiControl>;
+    47: Float32Field<Pointers.Modulation | Pointers.Automation | Pointers.MidiControl>;
+    48: Float32Field<Pointers.Modulation | Pointers.Automation | Pointers.MidiControl>;
+    49: Float32Field<Pointers.Modulation | Pointers.Automation | Pointers.MidiControl>;
+};
+export declare class PlayfieldSampleBox extends Box<Pointers.Editing, PlayfieldSampleBoxFields> {
+    static create(graph: BoxGraph, uuid: UUID.Bytes, constructor?: Procedure<PlayfieldSampleBox>): PlayfieldSampleBox;
+    static readonly ClassName: string;
+    private constructor();
+    accept<R>(visitor: BoxVisitor<R>): Maybe<R>;
+    get device(): PointerField<Pointers.Sample>;
+    get file(): PointerField<Pointers.AudioFile>;
+    get midiEffects(): Field<Pointers.MidiEffectHost>;
+    get audioEffects(): Field<Pointers.AudioEffectHost>;
+    get index(): Int32Field;
+    get label(): StringField;
+    get icon(): StringField;
+    get enabled(): BooleanField;
+    get minimized(): BooleanField;
+    get mute(): BooleanField;
+    get solo(): BooleanField;
+    get exclude(): BooleanField;
+    get polyphone(): BooleanField;
+    get gate(): Int32Field;
+    get pitch(): Float32Field<Pointers.Modulation | Pointers.Automation | Pointers.MidiControl>;
+    get sampleStart(): Float32Field<Pointers.Modulation | Pointers.Automation | Pointers.MidiControl>;
+    get sampleEnd(): Float32Field<Pointers.Modulation | Pointers.Automation | Pointers.MidiControl>;
+    get attack(): Float32Field<Pointers.Modulation | Pointers.Automation | Pointers.MidiControl>;
+    get release(): Float32Field<Pointers.Modulation | Pointers.Automation | Pointers.MidiControl>;
+    initializeFields(): PlayfieldSampleBoxFields;
+}
+//# sourceMappingURL=PlayfieldSampleBox.d.ts.map

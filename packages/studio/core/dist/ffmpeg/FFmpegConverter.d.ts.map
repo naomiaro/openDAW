@@ -1,0 +1,1 @@
+{"version":3,"file":"FFmpegConverter.d.ts","sourceRoot":"","sources":["../../src/ffmpeg/FFmpegConverter.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,QAAQ,EAAC,MAAM,kBAAkB,CAAA;AACzC,OAAO,KAAK,EAAC,cAAc,EAAC,MAAM,gBAAgB,CAAA;AAElD,MAAM,WAAW,eAAe,CAAC,OAAO;IACpC,OAAO,CAAC,MAAM,EAAE,cAAc,EACtB,QAAQ,EAAE,QAAQ,CAAC,OAAO,EAC1B,OAAO,CAAC,EAAE,OAAO,GAAG,OAAO,CAAC,WAAW,CAAC,CAAA;CACnD"}

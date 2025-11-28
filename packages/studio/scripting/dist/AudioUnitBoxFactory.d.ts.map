@@ -1,0 +1,1 @@
+{"version":3,"file":"AudioUnitBoxFactory.d.ts","sourceRoot":"","sources":["../src/AudioUnitBoxFactory.ts"],"names":[],"mappings":"AAIA,OAAO,EAAoD,eAAe,EAAC,MAAM,0BAA0B,CAAA;AAC3G,OAAO,EAAgE,WAAW,EAAW,MAAM,QAAQ,CAAA;AAS3G,yBAAiB,mBAAmB,CAAC;IAC1B,MAAM,MAAM,GAAI,UAAU,eAAe,EAAE,SAAS,WAAW,KAAG,IAqHxE,CAAA;CACJ"}

@@ -1,0 +1,40 @@
+import { int, MutableObservableValue, Nullable, ObservableValue, Observer, Subscription, UUID } from "@opendaw/lib-std";
+import { ppqn } from "@opendaw/lib-dsp";
+import { ClipNotification, ExportStemsConfiguration, NoteSignal, ProcessorOptions } from "@opendaw/studio-adapters";
+import { Engine } from "./Engine";
+import { Project } from "./project";
+export declare class EngineWorklet extends AudioWorkletNode implements Engine {
+    #private;
+    static ID: int;
+    readonly id: number;
+    constructor(context: BaseAudioContext, project: Project, exportConfiguration?: ExportStemsConfiguration, options?: ProcessorOptions);
+    play(): void;
+    stop(reset?: boolean): void;
+    setPosition(position: ppqn): void;
+    prepareRecordingState(countIn: boolean): void;
+    stopRecording(): void;
+    panic(): void;
+    sleep(): void;
+    wake(): void;
+    get isPlaying(): ObservableValue<boolean>;
+    get isRecording(): ObservableValue<boolean>;
+    get isCountingIn(): ObservableValue<boolean>;
+    get countInBarsTotal(): MutableObservableValue<int>;
+    get countInBeatsRemaining(): ObservableValue<number>;
+    get position(): ObservableValue<ppqn>;
+    get playbackTimestamp(): MutableObservableValue<number>;
+    get playbackTimestampEnabled(): MutableObservableValue<boolean>;
+    get metronomeEnabled(): MutableObservableValue<boolean>;
+    get markerState(): ObservableValue<Nullable<[UUID.Bytes, int]>>;
+    get project(): Project;
+    isReady(): Promise<void>;
+    queryLoadingComplete(): Promise<boolean>;
+    noteSignal(signal: NoteSignal): void;
+    subscribeNotes(observer: Observer<NoteSignal>): Subscription;
+    ignoreNoteRegion(uuid: UUID.Bytes): void;
+    scheduleClipPlay(clipIds: ReadonlyArray<UUID.Bytes>): void;
+    scheduleClipStop(trackIds: ReadonlyArray<UUID.Bytes>): void;
+    subscribeClipNotification(observer: Observer<ClipNotification>): Subscription;
+    terminate(): void;
+}
+//# sourceMappingURL=EngineWorklet.d.ts.map

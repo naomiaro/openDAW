@@ -1,0 +1,1 @@
+{"version":3,"file":"Protocol.d.ts","sourceRoot":"","sources":["../../src/live-stream/Protocol.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,QAAQ;IACrB,aAAa,CAAC,IAAI,EAAE,iBAAiB,GAAG,IAAI,CAAA;IAC5C,cAAc,CAAC,IAAI,EAAE,eAAe,GAAG,IAAI,CAAA;IAC3C,mBAAmB,CAAC,SAAS,EAAE,eAAe,GAAG,IAAI,CAAA;CACxD"}

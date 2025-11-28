@@ -1,0 +1,58 @@
+import { NoteEvent, ppqn } from "@opendaw/lib-dsp";
+import { int, Maybe, Observer, Option, Subscription, UUID } from "@opendaw/lib-std";
+import { Address, Field } from "@opendaw/lib-box";
+import { Pointers } from "@opendaw/studio-enums";
+import { NoteRegionBox } from "@opendaw/studio-boxes";
+import { TrackBoxAdapter } from "../TrackBoxAdapter";
+import { LoopableRegionBoxAdapter, RegionBoxAdapter, RegionBoxAdapterVisitor } from "../RegionBoxAdapter";
+import { NoteEventCollectionBoxAdapter } from "../collection/NoteEventCollectionBoxAdapter";
+import { BoxAdaptersContext } from "../../BoxAdaptersContext";
+import { MutableRegion } from "./MutableRegion";
+type CopyToParams = {
+    track?: Field<Pointers.RegionCollection>;
+    position?: ppqn;
+    duration?: ppqn;
+    loopOffset?: ppqn;
+    loopDuration?: ppqn;
+    consolidate?: boolean;
+};
+export declare class NoteRegionBoxAdapter implements LoopableRegionBoxAdapter<NoteEventCollectionBoxAdapter>, MutableRegion {
+    #private;
+    readonly type = "note-region";
+    constructor(context: BoxAdaptersContext, box: NoteRegionBox);
+    set position(value: ppqn);
+    set duration(value: ppqn);
+    set loopOffset(value: ppqn);
+    set loopDuration(value: ppqn);
+    subscribeChange(observer: Observer<void>): Subscription;
+    accept<R>(visitor: RegionBoxAdapterVisitor<R>): Maybe<R>;
+    onSelected(): void;
+    onDeselected(): void;
+    get isSelected(): boolean;
+    iterateActiveNotesAt(position: ppqn): Generator<NoteEvent>;
+    terminate(): void;
+    get box(): NoteRegionBox;
+    get uuid(): UUID.Bytes;
+    get address(): Address;
+    get position(): ppqn;
+    get duration(): ppqn;
+    get loopOffset(): ppqn;
+    get loopDuration(): ppqn;
+    get offset(): ppqn;
+    get complete(): ppqn;
+    get mute(): boolean;
+    get hue(): int;
+    get hasCollection(): boolean;
+    get optCollection(): Option<NoteEventCollectionBoxAdapter>;
+    get label(): string;
+    get trackBoxAdapter(): Option<TrackBoxAdapter>;
+    get isMirrowed(): boolean;
+    get canMirror(): boolean;
+    copyTo(params?: CopyToParams): NoteRegionBoxAdapter;
+    consolidate(): void;
+    canFlatten(regions: ReadonlyArray<RegionBoxAdapter<unknown>>): boolean;
+    flatten(regions: ReadonlyArray<RegionBoxAdapter<unknown>>): Option<NoteRegionBox>;
+    toString(): string;
+}
+export {};
+//# sourceMappingURL=NoteRegionBoxAdapter.d.ts.map

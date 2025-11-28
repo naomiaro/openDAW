@@ -1,0 +1,1 @@
+{"version":3,"file":"ScriptExecutionProtocol.d.ts","sourceRoot":"","sources":["../src/ScriptExecutionProtocol.ts"],"names":[],"mappings":"AAAA,MAAM,MAAM,sBAAsB,GAAG;IAAE,UAAU,EAAE,MAAM,CAAA;CAAE,CAAA;AAE3D,MAAM,WAAW,uBAAuB;IACpC,aAAa,CAAC,MAAM,EAAE,MAAM,EAAE,OAAO,EAAE,sBAAsB,GAAG,OAAO,CAAC,IAAI,CAAC,CAAA;CAChF"}

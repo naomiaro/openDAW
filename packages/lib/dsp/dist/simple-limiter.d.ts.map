@@ -1,0 +1,1 @@
+{"version":3,"file":"simple-limiter.d.ts","sourceRoot":"","sources":["../src/simple-limiter.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,WAAW,EAAC,MAAM,eAAe,CAAA;AAEzC,qBAAa,aAAa;;gBAQV,UAAU,EAAE,MAAM;IAK9B,KAAK,IAAI,IAAI;IAEb,OAAO,CAAC,MAAM,EAAE,WAAW,EAAE,SAAS,EAAE,MAAM,EAAE,OAAO,EAAE,MAAM,GAAG,IAAI;CAkBzE"}

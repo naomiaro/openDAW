@@ -1,0 +1,33 @@
+import { int, Nullable, Terminable, UUID } from "@opendaw/lib-std";
+import { ppqn } from "@opendaw/lib-dsp";
+import { AudioData } from "./audio/AudioData";
+import { ClipSequencingUpdates } from "./ClipNotifications";
+import { NoteSignal } from "./NoteSignal";
+import type { SoundFont2 } from "soundfont2";
+export interface EngineCommands extends Terminable {
+    play(): void;
+    stop(reset: boolean): void;
+    setPosition(position: ppqn): void;
+    prepareRecordingState(countIn: boolean): void;
+    stopRecording(): void;
+    setMetronomeEnabled(enabled: boolean): void;
+    setPlaybackTimestampEnabled(enabled: boolean): void;
+    setCountInBarsTotal(value: int): void;
+    queryLoadingComplete(): Promise<boolean>;
+    panic(): void;
+    noteSignal(signal: NoteSignal): void;
+    ignoreNoteRegion(uuid: UUID.Bytes): void;
+    scheduleClipPlay(clipIds: ReadonlyArray<UUID.Bytes>): void;
+    scheduleClipStop(trackIds: ReadonlyArray<UUID.Bytes>): void;
+    setupMIDI(port: MessagePort, buffer: SharedArrayBuffer): void;
+}
+export interface EngineToClient {
+    log(message: string): void;
+    error(reason: unknown): void;
+    fetchAudio(uuid: UUID.Bytes): Promise<AudioData>;
+    fetchSoundfont(uuid: UUID.Bytes): Promise<SoundFont2>;
+    notifyClipSequenceChanges(changes: ClipSequencingUpdates): void;
+    switchMarkerState(state: Nullable<[UUID.Bytes, int]>): void;
+    ready(): void;
+}
+//# sourceMappingURL=protocols.d.ts.map

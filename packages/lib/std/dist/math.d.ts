@@ -1,0 +1,21 @@
+import { int, unitValue } from "./lang";
+export declare const TAU: number;
+export declare const PI_HALF: number;
+export declare const PI_QUART: number;
+export declare const INVERSE_SQRT_2: number;
+export declare const clamp: (value: number, min: number, max: number) => number;
+export declare const clampUnit: (value: number) => unitValue;
+export declare const squashUnit: (value: unitValue, margin: unitValue) => unitValue;
+export declare const quantizeFloor: (value: number, interval: number) => number;
+export declare const quantizeCeil: (value: number, interval: number) => number;
+export declare const quantizeRound: (value: number, interval: number) => number;
+export declare const linear: (y1: number, y2: number, mu: number) => number;
+export declare const exponential: (y1: number, y2: number, mu: number) => number;
+export declare const cosine: (y1: number, y2: number, mu: number) => number;
+export declare const mod: (value: number, range: number) => number;
+export declare const fract: (value: number) => number;
+export declare const nextPowOf2: (n: int) => int;
+export declare const radToDeg: (rad: number) => number;
+export declare const degToRad: (deg: number) => number;
+export declare const moebiusEase: (x: unitValue, h: unitValue) => unitValue;
+//# sourceMappingURL=math.d.ts.map

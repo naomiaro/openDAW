@@ -1,0 +1,56 @@
+import { Address } from "./address";
+import { Class, DataInput, DataOutput, Func, int, JSONValue, Maybe, Option, Optional, Procedure, Subscription, UUID } from "@opendaw/lib-std";
+import { PointerRules, Vertex, VertexVisitor } from "./vertex";
+import { Field, FieldKey, FieldKeys, Fields } from "./field";
+import { PointerField, PointerTypes } from "./pointer";
+import { PointerHub } from "./pointer-hub";
+import { BoxGraph } from "./graph";
+import { Update } from "./updates";
+import { Propagation } from "./dispatchers";
+export type BoxConstruct<T extends PointerTypes> = {
+    uuid: UUID.Bytes;
+    graph: BoxGraph;
+    name: string;
+    pointerRules: PointerRules<T>;
+};
+export declare abstract class Box<P extends PointerTypes = PointerTypes, F extends Fields = any> implements Vertex<P, F> {
+    #private;
+    static readonly DEBUG_DELETION = false;
+    static Index: int;
+    protected constructor({ uuid, graph, name, pointerRules }: BoxConstruct<P>);
+    protected abstract initializeFields(): F;
+    abstract accept<VISITOR extends VertexVisitor<any>>(visitor: VISITOR): VISITOR extends VertexVisitor<infer R> ? Maybe<R> : void;
+    fields(): ReadonlyArray<Field>;
+    record(): Readonly<Record<string, Field>>;
+    getField<K extends keyof F>(key: K): F[K];
+    optField<K extends keyof F>(key: K): Option<F[K]>;
+    subscribe(propagation: Propagation, procedure: Procedure<Update>): Subscription;
+    get box(): Box;
+    get name(): string;
+    get graph(): BoxGraph;
+    get parent(): Vertex;
+    get address(): Address;
+    get pointerRules(): PointerRules<P>;
+    get creationIndex(): number;
+    get pointerHub(): PointerHub;
+    estimateMemory(): int;
+    isBox(): this is Box;
+    asBox<T extends Box>(type: Class<T>): T;
+    isField(): this is Field;
+    isAttached(): boolean;
+    read(input: DataInput): void;
+    write(output: DataOutput): void;
+    serialize(): ArrayBufferLike;
+    toArrayBuffer(): ArrayBufferLike;
+    toJSON(): Optional<JSONValue>;
+    fromJSON(record: JSONValue): void;
+    incomingEdges(): ReadonlyArray<PointerField>;
+    outgoingEdges(): ReadonlyArray<[PointerField, Address]>;
+    mapFields<T>(map: Func<Field, T>, ...keys: ReadonlyArray<FieldKey>): ReadonlyArray<T>;
+    searchVertex(keys: FieldKeys): Option<Vertex>;
+    delete(): void;
+    unstage(): void;
+    isValid(): boolean;
+    toString(): string;
+}
+//# sourceMappingURL=box.d.ts.map

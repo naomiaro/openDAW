@@ -1,0 +1,1 @@
+{"version":3,"file":"LookAhead.d.ts","sourceRoot":"","sources":["../../src/ctagdrc/LookAhead.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,GAAG,EAAC,MAAM,kBAAkB,CAAA;AAEpC,qBAAa,SAAS;;gBAQN,UAAU,EAAE,MAAM,EAAE,KAAK,EAAE,MAAM,EAAE,SAAS,EAAE,GAAG;IAO7D,OAAO,CAAC,GAAG,EAAE,YAAY,EAAE,SAAS,EAAE,GAAG,EAAE,OAAO,EAAE,GAAG,GAAG,IAAI;CAyDjE"}

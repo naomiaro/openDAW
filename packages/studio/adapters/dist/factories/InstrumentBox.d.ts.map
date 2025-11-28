@@ -1,0 +1,1 @@
+{"version":3,"file":"InstrumentBox.d.ts","sourceRoot":"","sources":["../../src/factories/InstrumentBox.ts"],"names":[],"mappings":"AAAA,OAAO,EACH,mBAAmB,EACnB,aAAa,EACb,kBAAkB,EAClB,kBAAkB,EAClB,aAAa,EACb,qBAAqB,EACxB,MAAM,uBAAuB,CAAA;AAE9B,MAAM,MAAM,aAAa,GACrB,aAAa,GACX,qBAAqB,GACrB,aAAa,GACb,kBAAkB,GAClB,kBAAkB,GAClB,mBAAmB,CAAA"}

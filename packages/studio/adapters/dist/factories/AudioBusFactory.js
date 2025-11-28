@@ -1,0 +1,29 @@
+import { IconSymbol } from "@opendaw/studio-enums";
+import { AudioBusBox, TrackBox } from "@opendaw/studio-boxes";
+import { assert, Option, UUID } from "@opendaw/lib-std";
+import { AudioUnitFactory } from "./AudioUnitFactory";
+import { TrackType } from "../timeline/TrackType";
+export var AudioBusFactory;
+(function (AudioBusFactory) {
+    AudioBusFactory.create = (skeleton, name, icon, type, color) => {
+        console.debug(`createAudioBus '${name}', type: ${type}, color: ${color}`);
+        const { boxGraph, mandatoryBoxes: { rootBox } } = skeleton;
+        assert(rootBox.isAttached(), "rootBox not attached");
+        const uuid = UUID.generate();
+        const audioBusBox = AudioBusBox.create(boxGraph, uuid, box => {
+            box.collection.refer(rootBox.audioBusses);
+            box.label.setValue(name);
+            box.icon.setValue(IconSymbol.toName(icon));
+            box.color.setValue(color.toString());
+        });
+        const audioUnitBox = AudioUnitFactory.create(skeleton, type, Option.None);
+        TrackBox.create(boxGraph, UUID.generate(), box => {
+            box.tracks.refer(audioUnitBox.tracks);
+            box.target.refer(audioUnitBox);
+            box.index.setValue(0);
+            box.type.setValue(TrackType.Undefined);
+        });
+        audioBusBox.output.refer(audioUnitBox.input);
+        return audioBusBox;
+    };
+})(AudioBusFactory || (AudioBusFactory = {}));

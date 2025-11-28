@@ -1,0 +1,94 @@
+import { DefaultObservableValue, Errors, isInstanceOf, isNotUndefined, panic, Progress, RuntimeNotifier, UUID } from "@opendaw/lib-std";
+import { Files } from "@opendaw/lib-dom";
+import { Promises } from "@opendaw/lib-runtime";
+export class AssetService {
+    onUpdate;
+    constructor(onUpdate) {
+        this.onUpdate = onUpdate;
+    }
+    async browse(multiple) {
+        return this.browseFiles(multiple, this.filePickerOptions);
+    }
+    async replaceMissingFiles(boxGraph, manager) {
+        const available = await this.collectAllFiles();
+        const boxes = boxGraph.boxes().filter(box => isInstanceOf(box, this.boxType));
+        if (boxes.length === 0) {
+            return;
+        }
+        for (const box of boxes) {
+            const uuid = box.address.uuid;
+            const uuidAsString = UUID.toString(uuid);
+            if (isNotUndefined(available.find(({ uuid }) => uuid === uuidAsString))) {
+                continue;
+            }
+            const approved = await RuntimeNotifier.approve({
+                headline: "Missing Asset",
+                message: `Could not find ${this.nameSingular} '${box.fileName.getValue()}'`,
+                cancelText: "Ignore",
+                approveText: "Browse"
+            });
+            if (!approved) {
+                continue;
+            }
+            const { error, status, value: files } = await Promises.tryCatch(Files.open({ ...this.filePickerOptions, multiple: false }));
+            if (status === "rejected") {
+                if (Errors.isAbort(error)) {
+                    return;
+                }
+                else {
+                    return panic(String(error));
+                }
+            }
+            if (files.length === 0) {
+                return;
+            }
+            const arrayBuffer = await files[0].arrayBuffer();
+            const asset = await this.importFile({ uuid, arrayBuffer, progressHandler: Progress.Empty });
+            await RuntimeNotifier.info({
+                headline: "Replaced Asset",
+                message: `${asset.name} has been replaced`
+            });
+            manager.invalidate(uuid);
+        }
+    }
+    async browseFiles(multiple, filePickerSettings) {
+        const { error, status, value: files } = await Promises.tryCatch(Files.open({ ...filePickerSettings, multiple }));
+        if (status === "rejected") {
+            if (Errors.isAbort(error)) {
+                return [];
+            }
+            else {
+                return panic(String(error));
+            }
+        }
+        const progress = new DefaultObservableValue(0.0);
+        const dialog = RuntimeNotifier.progress({
+            headline: `Importing ${files.length === 1 ? this.nameSingular : this.namePlural}...`, progress
+        });
+        const progressHandler = Progress.split(value => progress.setValue(value), files.length);
+        const rejected = [];
+        const imported = [];
+        for (const [index, file] of files.entries()) {
+            const arrayBuffer = await file.arrayBuffer();
+            const { status, value, error } = await Promises.tryCatch(this.importFile({
+                name: file.name,
+                arrayBuffer: arrayBuffer,
+                progressHandler: progressHandler[index]
+            }));
+            if (status === "rejected") {
+                rejected.push(String(error));
+            }
+            else {
+                imported.push(value);
+            }
+        }
+        dialog.terminate();
+        if (rejected.length > 0) {
+            await RuntimeNotifier.info({
+                headline: `${this.nameSingular} Import Issues`,
+                message: `${rejected.join(", ")} could not be imported.`
+            });
+        }
+        return imported;
+    }
+}

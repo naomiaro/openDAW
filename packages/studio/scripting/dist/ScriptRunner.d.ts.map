@@ -1,0 +1,1 @@
+{"version":3,"file":"ScriptRunner.d.ts","sourceRoot":"","sources":["../src/ScriptRunner.ts"],"names":[],"mappings":"AAEA,OAAO,EAAC,kBAAkB,EAAC,MAAM,sBAAsB,CAAA;AACvD,OAAO,EAAC,sBAAsB,EAAC,MAAM,2BAA2B,CAAA;AAIhE,qBAAa,YAAY;;gBAGT,QAAQ,EAAE,kBAAkB;IAElC,GAAG,CAAC,MAAM,EAAE,MAAM,EAAE,OAAO,EAAE,sBAAsB;CAgB5D"}

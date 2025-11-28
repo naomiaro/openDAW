@@ -1,0 +1,1 @@
+{"version":3,"file":"ColorCodes.d.ts","sourceRoot":"","sources":["../../src/factories/ColorCodes.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,aAAa,EAAS,MAAM,uBAAuB,CAAA;AAC3D,OAAO,EAAC,SAAS,EAAC,MAAM,uBAAuB,CAAA;AAC/C,OAAO,EAAC,KAAK,EAAC,MAAM,kBAAkB,CAAA;AAEtC,yBAAiB,UAAU,CAAC;IACjB,MAAM,YAAY,GAAI,OAAO,aAAa,KAAG,KAanD,CAAA;IAEM,MAAM,YAAY,GAAI,OAAO,SAAS,KAAG,MAW/C,CAAA;CACJ"}
