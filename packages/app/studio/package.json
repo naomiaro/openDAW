@@ -1,7 +1,7 @@
 {
     "name": "@naomiarotest/app-studio",
     "private": true,
-    "version": "0.0.59",
+    "version": "0.0.60",
     "type": "module",
     "license": "LGPL-3.0-or-later",
     "scripts": {
