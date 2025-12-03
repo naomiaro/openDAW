@@ -25,6 +25,7 @@ export declare class EngineWorklet extends AudioWorkletNode implements Engine {
     get playbackTimestamp(): MutableObservableValue<number>;
     get playbackTimestampEnabled(): MutableObservableValue<boolean>;
     get metronomeEnabled(): MutableObservableValue<boolean>;
+    get metronomeVolume(): MutableObservableValue<number>;
     get markerState(): ObservableValue<Nullable<[UUID.Bytes, int]>>;
     get project(): Project;
     isReady(): Promise<void>;

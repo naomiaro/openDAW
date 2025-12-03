@@ -11,13 +11,14 @@ export class EngineFacade {
     #isRecording = new DefaultObservableValue(false);
     #isCountingIn = new DefaultObservableValue(false);
     #metronomeEnabled = new DefaultObservableValue(false);
+    #metronomeVolume = new DefaultObservableValue(0.5);
     #markerState = new DefaultObservableValue(null);
     #worklet = Option.None;
     constructor() { }
     setWorklet(worklet) {
         this.#worklet = Option.wrap(worklet);
         this.#lifecycle.terminate();
-        this.#lifecycle.ownAll(worklet.playbackTimestamp.catchupAndSubscribe(owner => this.#playbackTimestamp.setValue(owner.getValue())), worklet.playbackTimestampEnabled.catchupAndSubscribe(owner => this.#playbackTimestampEnabled.setValue(owner.getValue())), worklet.countInBarsTotal.catchupAndSubscribe(owner => this.#countInBarsTotal.setValue(owner.getValue())), worklet.countInBeatsRemaining.catchupAndSubscribe(owner => this.#countInBeatsRemaining.setValue(owner.getValue())), worklet.position.catchupAndSubscribe(owner => this.#position.setValue(owner.getValue())), worklet.isPlaying.catchupAndSubscribe(owner => this.#isPlaying.setValue(owner.getValue())), worklet.isRecording.catchupAndSubscribe(owner => this.#isRecording.setValue(owner.getValue())), worklet.isCountingIn.catchupAndSubscribe(owner => this.#isCountingIn.setValue(owner.getValue())), worklet.metronomeEnabled.catchupAndSubscribe(owner => this.#metronomeEnabled.setValue(owner.getValue())), worklet.markerState.catchupAndSubscribe(owner => this.#markerState.setValue(owner.getValue())), this.#metronomeEnabled.catchupAndSubscribe(owner => worklet.metronomeEnabled.setValue(owner.getValue())), this.#playbackTimestampEnabled.catchupAndSubscribe(owner => worklet.playbackTimestampEnabled.setValue(owner.getValue())), this.#countInBarsTotal.catchupAndSubscribe(owner => worklet.countInBarsTotal.setValue(owner.getValue())));
+        this.#lifecycle.ownAll(worklet.playbackTimestamp.catchupAndSubscribe(owner => this.#playbackTimestamp.setValue(owner.getValue())), worklet.playbackTimestampEnabled.catchupAndSubscribe(owner => this.#playbackTimestampEnabled.setValue(owner.getValue())), worklet.countInBarsTotal.catchupAndSubscribe(owner => this.#countInBarsTotal.setValue(owner.getValue())), worklet.countInBeatsRemaining.catchupAndSubscribe(owner => this.#countInBeatsRemaining.setValue(owner.getValue())), worklet.position.catchupAndSubscribe(owner => this.#position.setValue(owner.getValue())), worklet.isPlaying.catchupAndSubscribe(owner => this.#isPlaying.setValue(owner.getValue())), worklet.isRecording.catchupAndSubscribe(owner => this.#isRecording.setValue(owner.getValue())), worklet.isCountingIn.catchupAndSubscribe(owner => this.#isCountingIn.setValue(owner.getValue())), worklet.metronomeEnabled.catchupAndSubscribe(owner => this.#metronomeEnabled.setValue(owner.getValue())), worklet.metronomeVolume.catchupAndSubscribe(owner => this.#metronomeVolume.setValue(owner.getValue())), worklet.markerState.catchupAndSubscribe(owner => this.#markerState.setValue(owner.getValue())), this.#metronomeEnabled.catchupAndSubscribe(owner => worklet.metronomeEnabled.setValue(owner.getValue())), this.#metronomeVolume.catchupAndSubscribe(owner => worklet.metronomeVolume.setValue(owner.getValue())), this.#playbackTimestampEnabled.catchupAndSubscribe(owner => worklet.playbackTimestampEnabled.setValue(owner.getValue())), this.#countInBarsTotal.catchupAndSubscribe(owner => worklet.countInBarsTotal.setValue(owner.getValue())));
     }
     assertWorklet() { this.#worklet.unwrap("No worklet available"); }
     releaseWorklet() {
@@ -35,6 +36,7 @@ export class EngineFacade {
     get isRecording() { return this.#isRecording; }
     get isCountingIn() { return this.#isCountingIn; }
     get metronomeEnabled() { return this.#metronomeEnabled; }
+    get metronomeVolume() { return this.#metronomeVolume; }
     get playbackTimestamp() { return this.#playbackTimestamp; }
     get playbackTimestampEnabled() { return this.#playbackTimestampEnabled; }
     get countInBarsTotal() { return this.#countInBarsTotal; }

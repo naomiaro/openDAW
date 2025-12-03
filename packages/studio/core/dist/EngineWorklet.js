@@ -18,6 +18,7 @@ export class EngineWorklet extends AudioWorkletNode {
     #countInBarsTotal = new DefaultObservableValue(1);
     #countInBeatsRemaining = new DefaultObservableValue(0);
     #metronomeEnabled = new DefaultObservableValue(false);
+    #metronomeVolume = new DefaultObservableValue(0.5);
     #markerState = new DefaultObservableValue(null);
     #controlFlags;
     #notifyClipNotification;
@@ -66,6 +67,9 @@ export class EngineWorklet extends AudioWorkletNode {
             stopRecording() { dispatcher.dispatchAndForget(this.stopRecording); }
             setMetronomeEnabled(enabled) {
                 dispatcher.dispatchAndForget(this.setMetronomeEnabled, enabled);
+            }
+            setMetronomeVolume(volume) {
+                dispatcher.dispatchAndForget(this.setMetronomeVolume, volume);
             }
             setPlaybackTimestampEnabled(enabled) {
                 dispatcher.dispatchAndForget(this.setPlaybackTimestampEnabled, enabled);
@@ -144,7 +148,7 @@ export class EngineWorklet extends AudioWorkletNode {
             },
             switchMarkerState: (state) => this.#markerState.setValue(state)
         });
-        this.#terminator.ownAll(AnimationFrame.add(() => reader.tryRead()), project.liveStreamReceiver.connect(messenger.channel("engine-live-data")), new SyncSource(project.boxGraph, messenger.channel("engine-sync"), false), this.#metronomeEnabled.catchupAndSubscribe(owner => this.#commands.setMetronomeEnabled(owner.getValue())), this.#playbackTimestampEnabled.catchupAndSubscribe(owner => this.#commands.setPlaybackTimestampEnabled(owner.getValue())), this.#countInBarsTotal.catchupAndSubscribe(owner => this.#commands.setCountInBarsTotal(owner.getValue())));
+        this.#terminator.ownAll(AnimationFrame.add(() => reader.tryRead()), project.liveStreamReceiver.connect(messenger.channel("engine-live-data")), new SyncSource(project.boxGraph, messenger.channel("engine-sync"), false), this.#metronomeEnabled.catchupAndSubscribe(owner => this.#commands.setMetronomeEnabled(owner.getValue())), this.#metronomeVolume.catchupAndSubscribe(owner => this.#commands.setMetronomeVolume(owner.getValue())), this.#playbackTimestampEnabled.catchupAndSubscribe(owner => this.#commands.setPlaybackTimestampEnabled(owner.getValue())), this.#countInBarsTotal.catchupAndSubscribe(owner => this.#commands.setCountInBarsTotal(owner.getValue())));
     }
     play() { this.#commands.play(); }
     stop(reset = false) { this.#commands.stop(reset); }
@@ -166,6 +170,7 @@ export class EngineWorklet extends AudioWorkletNode {
     get playbackTimestamp() { return this.#playbackTimestamp; }
     get playbackTimestampEnabled() { return this.#playbackTimestampEnabled; }
     get metronomeEnabled() { return this.#metronomeEnabled; }
+    get metronomeVolume() { return this.#metronomeVolume; }
     get markerState() { return this.#markerState; }
     get project() { return this.#project; }
     isReady() { return this.#isReady; }

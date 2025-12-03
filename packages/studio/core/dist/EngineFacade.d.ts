@@ -20,6 +20,7 @@ export declare class EngineFacade implements Engine {
     get isRecording(): ObservableValue<boolean>;
     get isCountingIn(): ObservableValue<boolean>;
     get metronomeEnabled(): MutableObservableValue<boolean>;
+    get metronomeVolume(): MutableObservableValue<number>;
     get playbackTimestamp(): ObservableValue<ppqn>;
     get playbackTimestampEnabled(): MutableObservableValue<boolean>;
     get countInBarsTotal(): MutableObservableValue<int>;

@@ -11,6 +11,7 @@ export interface EngineCommands extends Terminable {
     prepareRecordingState(countIn: boolean): void;
     stopRecording(): void;
     setMetronomeEnabled(enabled: boolean): void;
+    setMetronomeVolume(volume: number): void;
     setPlaybackTimestampEnabled(enabled: boolean): void;
     setCountInBarsTotal(value: int): void;
     queryLoadingComplete(): Promise<boolean>;
