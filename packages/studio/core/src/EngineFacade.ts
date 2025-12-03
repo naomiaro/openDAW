@@ -28,6 +28,7 @@ export class EngineFacade implements Engine {
     readonly #isRecording: DefaultObservableValue<boolean> = new DefaultObservableValue(false)
     readonly #isCountingIn: DefaultObservableValue<boolean> = new DefaultObservableValue(false)
     readonly #metronomeEnabled: DefaultObservableValue<boolean> = new DefaultObservableValue(false)
+    readonly #metronomeVolume: DefaultObservableValue<number> = new DefaultObservableValue(0.5)
     readonly #markerState: DefaultObservableValue<Nullable<[UUID.Bytes, int]>> =
         new DefaultObservableValue<Nullable<[UUID.Bytes, int]>>(null)
 
@@ -48,8 +49,10 @@ export class EngineFacade implements Engine {
             worklet.isRecording.catchupAndSubscribe(owner => this.#isRecording.setValue(owner.getValue())),
             worklet.isCountingIn.catchupAndSubscribe(owner => this.#isCountingIn.setValue(owner.getValue())),
             worklet.metronomeEnabled.catchupAndSubscribe(owner => this.#metronomeEnabled.setValue(owner.getValue())),
+            worklet.metronomeVolume.catchupAndSubscribe(owner => this.#metronomeVolume.setValue(owner.getValue())),
             worklet.markerState.catchupAndSubscribe(owner => this.#markerState.setValue(owner.getValue())),
             this.#metronomeEnabled.catchupAndSubscribe(owner => worklet.metronomeEnabled.setValue(owner.getValue())),
+            this.#metronomeVolume.catchupAndSubscribe(owner => worklet.metronomeVolume.setValue(owner.getValue())),
             this.#playbackTimestampEnabled.catchupAndSubscribe(owner => worklet.playbackTimestampEnabled.setValue(owner.getValue())),
             this.#countInBarsTotal.catchupAndSubscribe(owner => worklet.countInBarsTotal.setValue(owner.getValue()))
         )
@@ -74,6 +77,7 @@ export class EngineFacade implements Engine {
     get isRecording(): ObservableValue<boolean> {return this.#isRecording}
     get isCountingIn(): ObservableValue<boolean> {return this.#isCountingIn}
     get metronomeEnabled(): MutableObservableValue<boolean> {return this.#metronomeEnabled}
+    get metronomeVolume(): MutableObservableValue<number> {return this.#metronomeVolume}
     get playbackTimestamp(): ObservableValue<ppqn> {return this.#playbackTimestamp}
     get playbackTimestampEnabled(): MutableObservableValue<boolean> {return this.#playbackTimestampEnabled}
     get countInBarsTotal(): MutableObservableValue<int> {return this.#countInBarsTotal}

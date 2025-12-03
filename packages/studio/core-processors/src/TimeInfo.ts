@@ -8,6 +8,7 @@ export class TimeInfo {
     isRecording: boolean = false
     isCountingIn: boolean = false
     metronomeEnabled: boolean = false
+    metronomeVolume: number = 0.5
 
     getLeapStateAndReset(): boolean {
         const leap = this.#leap

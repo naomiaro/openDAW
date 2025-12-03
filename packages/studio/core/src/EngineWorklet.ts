@@ -53,6 +53,7 @@ export class EngineWorklet extends AudioWorkletNode implements Engine {
     readonly #countInBarsTotal: DefaultObservableValue<int> = new DefaultObservableValue(1)
     readonly #countInBeatsRemaining: DefaultObservableValue<int> = new DefaultObservableValue(0)
     readonly #metronomeEnabled: DefaultObservableValue<boolean> = new DefaultObservableValue(false)
+    readonly #metronomeVolume: DefaultObservableValue<number> = new DefaultObservableValue(0.5)
     readonly #markerState: DefaultObservableValue<Nullable<[UUID.Bytes, int]>> =
         new DefaultObservableValue<Nullable<[UUID.Bytes, int]>>(null)
     readonly #controlFlags: Int32Array<SharedArrayBuffer>
@@ -112,6 +113,9 @@ export class EngineWorklet extends AudioWorkletNode implements Engine {
                     stopRecording() {dispatcher.dispatchAndForget(this.stopRecording)}
                     setMetronomeEnabled(enabled: boolean): void {
                         dispatcher.dispatchAndForget(this.setMetronomeEnabled, enabled)
+                    }
+                    setMetronomeVolume(volume: number): void {
+                        dispatcher.dispatchAndForget(this.setMetronomeVolume, volume)
                     }
                     setPlaybackTimestampEnabled(enabled: boolean): void {
                         dispatcher.dispatchAndForget(this.setPlaybackTimestampEnabled, enabled)
@@ -197,6 +201,7 @@ export class EngineWorklet extends AudioWorkletNode implements Engine {
             project.liveStreamReceiver.connect(messenger.channel("engine-live-data")),
             new SyncSource<BoxIO.TypeMap>(project.boxGraph, messenger.channel("engine-sync"), false),
             this.#metronomeEnabled.catchupAndSubscribe(owner => this.#commands.setMetronomeEnabled(owner.getValue())),
+            this.#metronomeVolume.catchupAndSubscribe(owner => this.#commands.setMetronomeVolume(owner.getValue())),
             this.#playbackTimestampEnabled.catchupAndSubscribe(owner =>
                 this.#commands.setPlaybackTimestampEnabled(owner.getValue())),
             this.#countInBarsTotal.catchupAndSubscribe(owner =>
@@ -225,6 +230,7 @@ export class EngineWorklet extends AudioWorkletNode implements Engine {
     get playbackTimestamp(): MutableObservableValue<number> {return this.#playbackTimestamp}
     get playbackTimestampEnabled(): MutableObservableValue<boolean> {return this.#playbackTimestampEnabled}
     get metronomeEnabled(): MutableObservableValue<boolean> {return this.#metronomeEnabled}
+    get metronomeVolume(): MutableObservableValue<number> {return this.#metronomeVolume}
     get markerState(): ObservableValue<Nullable<[UUID.Bytes, int]>> {return this.#markerState}
     get project(): Project {return this.#project}
 

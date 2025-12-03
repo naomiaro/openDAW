@@ -113,16 +113,37 @@ export const Header = ({lifecycle, service}: Construct) => {
             <hr/>
             <Checkbox lifecycle={lifecycle}
                       onInit={element => lifecycle.own(ContextMenu.subscribe(element, collector =>
-                          collector.addItems(MenuItem.default({label: "Set Count-In (Bars)"})
-                              .setRuntimeChildrenProcedure(parent => parent.addMenuItem(...[1, 2, 3, 4, 5, 6, 7, 8]
-                                  .map(count => MenuItem.default({
-                                      label: String(count),
-                                      checked: count === service.engine.countInBarsTotal.getValue()
-                                  }).setTriggerProcedure(() => service.engine.countInBarsTotal.setValue(count))))))))}
+                          collector.addItems(
+                              MenuItem.default({label: "Set Count-In (Bars)"})
+                                  .setRuntimeChildrenProcedure(parent => parent.addMenuItem(...[1, 2, 3, 4, 5, 6, 7, 8]
+                                      .map(count => MenuItem.default({
+                                          label: String(count),
+                                          checked: count === service.engine.countInBarsTotal.getValue()
+                                      }).setTriggerProcedure(() => service.engine.countInBarsTotal.setValue(count))))),
+                          )
+                      ))}
                       model={service.engine.metronomeEnabled}
                       appearance={{activeColor: Colors.orange, tooltip: "Metronome"}}>
                 <Icon symbol={IconSymbol.Metronome}/>
             </Checkbox>
+            <button onclick={() => {
+                console.log('Setting metronome volume to 0.1');
+                service.engine.metronomeVolume.setValue(0.1);
+                // @ts-ignore
+                console.log('Current volume:', service.engine.metronomeVolume.getValue());
+            }}>vol 10%!</button>
+            <button onclick={() => {
+                console.log('Setting metronome volume to 0.5');
+                service.engine.metronomeVolume.setValue(0.5);
+                // @ts-ignore
+                console.log('Current volume:', service.engine.metronomeVolume.getValue());
+            }}>vol 50%</button>
+            <button onclick={() => {
+                console.log('Setting metronome volume to 1.0');  
+                service.engine.metronomeVolume.setValue(1.0);
+                // @ts-ignore
+                console.log('Current volume:', service.engine.metronomeVolume.getValue());
+            }}>vol 100%</button>
             <hr/>
             <div style={{flex: "1 0 0"}}/>
             <a className="support"
@@ -138,32 +159,30 @@ export const Header = ({lifecycle, service}: Construct) => {
                 <HorizontalPeakMeter lifecycle={lifecycle} peaksInDb={peaksInDb} width="4em"/>
             </div>
             <hr/>
-            <div className="panel-selector">
-                <RadioGroup lifecycle={lifecycle}
-                            model={new class implements ObservableValue<Nullable<Workspace.ScreenKeys>> {
-                                setValue(value: Nullable<Workspace.ScreenKeys>): void {
-                                    if (service.hasProfile) {service.switchScreen(value)}
-                                }
-                                getValue(): Nullable<Workspace.ScreenKeys> {
-                                    return service.layout.screen.getValue()
-                                }
-                                subscribe(observer: Observer<ObservableValue<Nullable<Workspace.ScreenKeys>>>): Subscription {
-                                    return service.layout.screen.subscribe(observer)
-                                }
-                                catchupAndSubscribe(observer: Observer<ObservableValue<Nullable<Workspace.ScreenKeys>>>): Subscription {
-                                    observer(this)
-                                    return this.subscribe(observer)
-                                }
-                            }}
-                            elements={Object.entries(Workspace.Default)
-                                .filter(([_, {hidden}]: [string, Workspace.Screen]) => hidden !== true)
-                                .map(([key, {icon: iconSymbol, name}]) => ({
-                                    value: key,
-                                    element: <Icon symbol={iconSymbol}/>,
-                                    tooltip: name
-                                }))}
-                            appearance={{framed: true, landscape: true}}/>
-            </div>
+            <RadioGroup lifecycle={lifecycle}
+                        model={new class implements ObservableValue<Nullable<Workspace.ScreenKeys>> {
+                            setValue(value: Nullable<Workspace.ScreenKeys>): void {
+                                if (service.hasProfile) {service.switchScreen(value)}
+                            }
+                            getValue(): Nullable<Workspace.ScreenKeys> {
+                                return service.layout.screen.getValue()
+                            }
+                            subscribe(observer: Observer<ObservableValue<Nullable<Workspace.ScreenKeys>>>): Subscription {
+                                return service.layout.screen.subscribe(observer)
+                            }
+                            catchupAndSubscribe(observer: Observer<ObservableValue<Nullable<Workspace.ScreenKeys>>>): Subscription {
+                                observer(this)
+                                return this.subscribe(observer)
+                            }
+                        }}
+                        elements={Object.entries(Workspace.Default)
+                            .filter(([_, {hidden}]: [string, Workspace.Screen]) => hidden !== true)
+                            .map(([key, {icon: iconSymbol, name}]) => ({
+                                value: key,
+                                element: <Icon symbol={iconSymbol}/>,
+                                tooltip: name
+                            }))}
+                        appearance={{framed: true, landscape: true}}/>
         </header>
     )
 }

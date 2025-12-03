@@ -36,6 +36,7 @@ export interface Engine extends Terminable {
     get isRecording(): ObservableValue<boolean>
     get isCountingIn(): ObservableValue<boolean>
     get metronomeEnabled(): ObservableValue<boolean>
+    get metronomeVolume(): ObservableValue<number>
     get playbackTimestamp(): ObservableValue<ppqn>
     get playbackTimestampEnabled(): MutableObservableValue<boolean>
     get countInBarsTotal(): ObservableValue<int>
