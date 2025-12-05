@@ -1,7 +1,7 @@
 {
     "name": "@naomiarotest/app-studio",
     "private": true,
-    "version": "0.0.60",
+    "version": "0.0.61",
     "type": "module",
     "license": "LGPL-3.0-or-later",
     "scripts": {
@@ -11,18 +11,18 @@
         "lint": "eslint \"src/**/*.ts\""
     },
     "dependencies": {
-        "@naomiarotest/lib-box": "^0.0.50",
-        "@naomiarotest/lib-dom": "^0.0.50",
-        "@naomiarotest/lib-dsp": "^0.0.50",
-        "@naomiarotest/lib-jsx": "^0.0.50",
-        "@naomiarotest/lib-midi": "^0.0.32",
-        "@naomiarotest/lib-runtime": "^0.0.50",
-        "@naomiarotest/lib-std": "^0.0.50",
+        "@naomiarotest/lib-box": "^0.0.51",
+        "@naomiarotest/lib-dom": "^0.0.51",
+        "@naomiarotest/lib-dsp": "^0.0.51",
+        "@naomiarotest/lib-jsx": "^0.0.51",
+        "@naomiarotest/lib-midi": "^0.0.33",
+        "@naomiarotest/lib-runtime": "^0.0.51",
+        "@naomiarotest/lib-std": "^0.0.51",
         "@naomiarotest/studio-adapters": "^0.0.51",
-        "@naomiarotest/studio-boxes": "^0.0.50",
+        "@naomiarotest/studio-boxes": "^0.0.51",
         "@naomiarotest/studio-core": "^0.0.59",
-        "@naomiarotest/studio-enums": "^0.0.41",
-        "@naomiarotest/studio-scripting": "^0.0.4",
+        "@naomiarotest/studio-enums": "^0.0.42",
+        "@naomiarotest/studio-scripting": "^0.0.5",
         "@types/d3-force": "^3.0.10",
         "d3-force": "^3.0.0",
         "dropbox": "^10.34.0",
@@ -33,8 +33,8 @@
         "monaco-editor": "^0.54.0"
     },
     "devDependencies": {
-        "@naomiarotest/eslint-config": "^0.0.20",
-        "@naomiarotest/typescript-config": "^0.0.20",
+        "@naomiarotest/eslint-config": "^0.0.21",
+        "@naomiarotest/typescript-config": "^0.0.21",
         "@types/markdown-it": "^14.1.2",
         "@types/node": "^22.15.18",
         "eslint": "^8.57.0",

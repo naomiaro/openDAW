@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.42 (2025-12-05)
+
+**Note:** Version bump only for package @naomiarotest/studio-enums
+
+
+
+
+
 ## [0.0.41](https://github.com/andremichelle/openDAW/compare/@opendaw/studio-enums@0.0.40...@opendaw/studio-enums@0.0.41) (2025-11-17)
 
 **Note:** Version bump only for package @opendaw/studio-enums

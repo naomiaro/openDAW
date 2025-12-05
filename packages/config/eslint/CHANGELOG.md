@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.21 (2025-12-05)
+
+**Note:** Version bump only for package @naomiarotest/eslint-config
+
+
+
+
+
 ## [0.0.20](https://github.com/andremichelle/openDAW/compare/@opendaw/eslint-config@0.0.19...@opendaw/eslint-config@0.0.20) (2025-10-21)
 
 **Note:** Version bump only for package @opendaw/eslint-config

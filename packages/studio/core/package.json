@@ -1,6 +1,6 @@
 {
     "name": "@naomiarotest/studio-core",
-    "version": "0.0.60",
+    "version": "0.0.61",
     "license": "LGPL-3.0-or-later",
     "publishConfig": {
         "access": "public"
@@ -31,16 +31,16 @@
         "test": "vitest run --config vitest.config.ts"
     },
     "dependencies": {
-        "@naomiarotest/lib-box": "^0.0.50",
-        "@naomiarotest/lib-dawproject": "^0.0.36",
-        "@naomiarotest/lib-dom": "^0.0.50",
-        "@naomiarotest/lib-dsp": "^0.0.50",
-        "@naomiarotest/lib-fusion": "^0.0.50",
-        "@naomiarotest/lib-runtime": "^0.0.50",
-        "@naomiarotest/lib-std": "^0.0.50",
+        "@naomiarotest/lib-box": "^0.0.51",
+        "@naomiarotest/lib-dawproject": "^0.0.37",
+        "@naomiarotest/lib-dom": "^0.0.51",
+        "@naomiarotest/lib-dsp": "^0.0.51",
+        "@naomiarotest/lib-fusion": "^0.0.51",
+        "@naomiarotest/lib-runtime": "^0.0.51",
+        "@naomiarotest/lib-std": "^0.0.51",
         "@naomiarotest/studio-adapters": "^0.0.51",
-        "@naomiarotest/studio-boxes": "^0.0.50",
-        "@naomiarotest/studio-enums": "^0.0.41",
+        "@naomiarotest/studio-boxes": "^0.0.51",
+        "@naomiarotest/studio-enums": "^0.0.42",
         "dropbox": "^10.34.0",
         "y-websocket": "^1.4.5",
         "yjs": "^13.6.27",
@@ -53,11 +53,11 @@
     "devDependencies": {
         "@ffmpeg/ffmpeg": "^0.12.15",
         "@ffmpeg/util": "^0.12.2",
-        "@naomiarotest/eslint-config": "^0.0.20",
+        "@naomiarotest/eslint-config": "^0.0.21",
         "@naomiarotest/studio-core-processors": "^0.0.51",
-        "@naomiarotest/studio-core-workers": "^0.0.46",
-        "@naomiarotest/studio-forge-boxes": "^0.0.50",
-        "@naomiarotest/typescript-config": "^0.0.20"
+        "@naomiarotest/studio-core-workers": "^0.0.47",
+        "@naomiarotest/studio-forge-boxes": "^0.0.51",
+        "@naomiarotest/typescript-config": "^0.0.21"
     },
     "gitHead": "b000505c56dbc68bce90bac93f722198deab0ecf"
 }

@@ -1,6 +1,6 @@
 {
     "name": "@naomiarotest/studio-core-workers",
-    "version": "0.0.46",
+    "version": "0.0.47",
     "license": "LGPL-3.0-or-later",
     "private": true,
     "exports": {
@@ -12,16 +12,16 @@
         "test": "echo \"No tests to run\""
     },
     "dependencies": {
-        "@naomiarotest/lib-box": "^0.0.50",
-        "@naomiarotest/lib-dsp": "^0.0.50",
-        "@naomiarotest/lib-runtime": "^0.0.50",
-        "@naomiarotest/lib-std": "^0.0.50",
+        "@naomiarotest/lib-box": "^0.0.51",
+        "@naomiarotest/lib-dsp": "^0.0.51",
+        "@naomiarotest/lib-runtime": "^0.0.51",
+        "@naomiarotest/lib-std": "^0.0.51",
         "@naomiarotest/studio-adapters": "^0.0.51",
-        "@naomiarotest/studio-boxes": "^0.0.50",
-        "@naomiarotest/studio-enums": "^0.0.41"
+        "@naomiarotest/studio-boxes": "^0.0.51",
+        "@naomiarotest/studio-enums": "^0.0.42"
     },
     "devDependencies": {
-        "@naomiarotest/eslint-config": "^0.0.20",
-        "@naomiarotest/typescript-config": "^0.0.20"
+        "@naomiarotest/eslint-config": "^0.0.21",
+        "@naomiarotest/typescript-config": "^0.0.21"
     }
 }

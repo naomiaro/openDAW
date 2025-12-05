@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.37 (2025-12-05)
+
+**Note:** Version bump only for package @naomiarotest/lib-dawproject
+
+
+
+
+
 ## [0.0.36](https://github.com/andremichelle/openDAW/compare/@opendaw/lib-dawproject@0.0.35...@opendaw/lib-dawproject@0.0.36) (2025-11-17)
 
 **Note:** Version bump only for package @opendaw/lib-dawproject
