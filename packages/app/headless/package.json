@@ -1,7 +1,7 @@
 {
     "name": "@naomiarotest/app-headless",
     "private": true,
-    "version": "0.0.60",
+    "version": "0.0.61",
     "type": "module",
     "license": "LGPL-3.0-or-later",
     "scripts": {
@@ -14,8 +14,8 @@
         "@naomiarotest/studio-sdk": "^0.0.59"
     },
     "devDependencies": {
-        "@naomiarotest/eslint-config": "^0.0.21",
-        "@naomiarotest/typescript-config": "^0.0.21",
+        "@naomiarotest/eslint-config": "^0.0.22",
+        "@naomiarotest/typescript-config": "^0.0.22",
         "@types/node": "^22.15.18",
         "eslint": "^8.57.0",
         "sass": "^1.88.0",

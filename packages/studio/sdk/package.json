@@ -1,6 +1,6 @@
 {
     "name": "@naomiarotest/studio-sdk",
-    "version": "0.0.61",
+    "version": "0.0.62",
     "license": "LGPL-3.0-or-later",
     "publishConfig": {
         "access": "public"
@@ -24,20 +24,20 @@
         "README.md"
     ],
     "dependencies": {
-        "@naomiarotest/lib-box": "^0.0.51",
-        "@naomiarotest/lib-dawproject": "^0.0.37",
-        "@naomiarotest/lib-dom": "^0.0.51",
-        "@naomiarotest/lib-dsp": "^0.0.51",
-        "@naomiarotest/lib-fusion": "^0.0.51",
-        "@naomiarotest/lib-jsx": "^0.0.51",
-        "@naomiarotest/lib-midi": "^0.0.33",
-        "@naomiarotest/lib-runtime": "^0.0.51",
-        "@naomiarotest/lib-std": "^0.0.51",
-        "@naomiarotest/lib-xml": "^0.0.37",
+        "@naomiarotest/lib-box": "^0.0.52",
+        "@naomiarotest/lib-dawproject": "^0.0.38",
+        "@naomiarotest/lib-dom": "^0.0.52",
+        "@naomiarotest/lib-dsp": "^0.0.52",
+        "@naomiarotest/lib-fusion": "^0.0.52",
+        "@naomiarotest/lib-jsx": "^0.0.52",
+        "@naomiarotest/lib-midi": "^0.0.34",
+        "@naomiarotest/lib-runtime": "^0.0.52",
+        "@naomiarotest/lib-std": "^0.0.52",
+        "@naomiarotest/lib-xml": "^0.0.38",
         "@naomiarotest/studio-adapters": "^0.0.51",
-        "@naomiarotest/studio-boxes": "^0.0.51",
+        "@naomiarotest/studio-boxes": "^0.0.52",
         "@naomiarotest/studio-core": "^0.0.59",
-        "@naomiarotest/studio-enums": "^0.0.42"
+        "@naomiarotest/studio-enums": "^0.0.43"
     },
     "gitHead": "898f42398e2090a088dc66a960b37772980837a1"
 }

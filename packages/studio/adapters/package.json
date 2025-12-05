@@ -1,6 +1,6 @@
 {
     "name": "@naomiarotest/studio-adapters",
-    "version": "0.0.53",
+    "version": "0.0.54",
     "license": "LGPL-3.0-or-later",
     "publishConfig": {
         "access": "public"
@@ -23,17 +23,17 @@
         "test": "echo \"No tests to run\""
     },
     "dependencies": {
-        "@naomiarotest/lib-box": "^0.0.51",
-        "@naomiarotest/lib-dsp": "^0.0.51",
-        "@naomiarotest/lib-runtime": "^0.0.51",
-        "@naomiarotest/lib-std": "^0.0.51",
-        "@naomiarotest/studio-boxes": "^0.0.51",
-        "@naomiarotest/studio-enums": "^0.0.42",
+        "@naomiarotest/lib-box": "^0.0.52",
+        "@naomiarotest/lib-dsp": "^0.0.52",
+        "@naomiarotest/lib-runtime": "^0.0.52",
+        "@naomiarotest/lib-std": "^0.0.52",
+        "@naomiarotest/studio-boxes": "^0.0.52",
+        "@naomiarotest/studio-enums": "^0.0.43",
         "soundfont2": "^0.5.0"
     },
     "devDependencies": {
-        "@naomiarotest/eslint-config": "^0.0.21",
-        "@naomiarotest/typescript-config": "^0.0.21"
+        "@naomiarotest/eslint-config": "^0.0.22",
+        "@naomiarotest/typescript-config": "^0.0.22"
     },
     "gitHead": "898f42398e2090a088dc66a960b37772980837a1"
 }

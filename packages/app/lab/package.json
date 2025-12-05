@@ -1,7 +1,7 @@
 {
     "name": "@naomiarotest/lab",
     "private": true,
-    "version": "0.0.60",
+    "version": "0.0.61",
     "type": "module",
     "license": "LGPL-3.0-or-later",
     "scripts": {
@@ -11,20 +11,20 @@
         "lint": "eslint \"src/**/*.ts\""
     },
     "dependencies": {
-        "@naomiarotest/lib-box": "^0.0.51",
-        "@naomiarotest/lib-dom": "^0.0.51",
-        "@naomiarotest/lib-dsp": "^0.0.51",
-        "@naomiarotest/lib-jsx": "^0.0.51",
-        "@naomiarotest/lib-runtime": "^0.0.51",
-        "@naomiarotest/lib-std": "^0.0.51",
+        "@naomiarotest/lib-box": "^0.0.52",
+        "@naomiarotest/lib-dom": "^0.0.52",
+        "@naomiarotest/lib-dsp": "^0.0.52",
+        "@naomiarotest/lib-jsx": "^0.0.52",
+        "@naomiarotest/lib-runtime": "^0.0.52",
+        "@naomiarotest/lib-std": "^0.0.52",
         "@naomiarotest/studio-adapters": "^0.0.51",
-        "@naomiarotest/studio-boxes": "^0.0.51",
+        "@naomiarotest/studio-boxes": "^0.0.52",
         "@naomiarotest/studio-core": "^0.0.59",
-        "@naomiarotest/studio-enums": "^0.0.42"
+        "@naomiarotest/studio-enums": "^0.0.43"
     },
     "devDependencies": {
-        "@naomiarotest/eslint-config": "^0.0.21",
-        "@naomiarotest/typescript-config": "^0.0.21",
+        "@naomiarotest/eslint-config": "^0.0.22",
+        "@naomiarotest/typescript-config": "^0.0.22",
         "@types/node": "^22.15.18",
         "eslint": "^8.57.0",
         "sass": "^1.88.0",

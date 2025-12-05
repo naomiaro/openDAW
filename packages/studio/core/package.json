@@ -1,6 +1,6 @@
 {
     "name": "@naomiarotest/studio-core",
-    "version": "0.0.61",
+    "version": "0.0.62",
     "license": "LGPL-3.0-or-later",
     "publishConfig": {
         "access": "public"
@@ -31,16 +31,16 @@
         "test": "vitest run --config vitest.config.ts"
     },
     "dependencies": {
-        "@naomiarotest/lib-box": "^0.0.51",
-        "@naomiarotest/lib-dawproject": "^0.0.37",
-        "@naomiarotest/lib-dom": "^0.0.51",
-        "@naomiarotest/lib-dsp": "^0.0.51",
-        "@naomiarotest/lib-fusion": "^0.0.51",
-        "@naomiarotest/lib-runtime": "^0.0.51",
-        "@naomiarotest/lib-std": "^0.0.51",
+        "@naomiarotest/lib-box": "^0.0.52",
+        "@naomiarotest/lib-dawproject": "^0.0.38",
+        "@naomiarotest/lib-dom": "^0.0.52",
+        "@naomiarotest/lib-dsp": "^0.0.52",
+        "@naomiarotest/lib-fusion": "^0.0.52",
+        "@naomiarotest/lib-runtime": "^0.0.52",
+        "@naomiarotest/lib-std": "^0.0.52",
         "@naomiarotest/studio-adapters": "^0.0.51",
-        "@naomiarotest/studio-boxes": "^0.0.51",
-        "@naomiarotest/studio-enums": "^0.0.42",
+        "@naomiarotest/studio-boxes": "^0.0.52",
+        "@naomiarotest/studio-enums": "^0.0.43",
         "dropbox": "^10.34.0",
         "y-websocket": "^1.4.5",
         "yjs": "^13.6.27",
@@ -53,11 +53,11 @@
     "devDependencies": {
         "@ffmpeg/ffmpeg": "^0.12.15",
         "@ffmpeg/util": "^0.12.2",
-        "@naomiarotest/eslint-config": "^0.0.21",
-        "@naomiarotest/studio-core-processors": "^0.0.53",
-        "@naomiarotest/studio-core-workers": "^0.0.47",
-        "@naomiarotest/studio-forge-boxes": "^0.0.51",
-        "@naomiarotest/typescript-config": "^0.0.21"
+        "@naomiarotest/eslint-config": "^0.0.22",
+        "@naomiarotest/studio-core-processors": "^0.0.54",
+        "@naomiarotest/studio-core-workers": "^0.0.48",
+        "@naomiarotest/studio-forge-boxes": "^0.0.52",
+        "@naomiarotest/typescript-config": "^0.0.22"
     },
     "gitHead": "898f42398e2090a088dc66a960b37772980837a1"
 }

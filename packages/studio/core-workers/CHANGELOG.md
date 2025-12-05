@@ -3,13 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## 0.0.47 (2025-12-05)
+## 0.0.48 (2025-12-05)
 
 **Note:** Version bump only for package @naomiarotest/studio-core-workers
 
+## 0.0.47 (2025-12-05)
 
-
-
+**Note:** Version bump only for package @naomiarotest/studio-core-workers
 
 ## [0.0.46](https://github.com/andremichelle/openDAW/compare/@opendaw/studio-core-workers@0.0.45...@opendaw/studio-core-workers@0.0.46) (2025-11-17)
 

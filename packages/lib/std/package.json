@@ -1,6 +1,6 @@
 {
     "name": "@naomiarotest/lib-std",
-    "version": "0.0.51",
+    "version": "0.0.52",
     "license": "LGPL-3.0-or-later",
     "publishConfig": {
         "access": "public"
@@ -22,8 +22,8 @@
         "test": "vitest run"
     },
     "devDependencies": {
-        "@naomiarotest/eslint-config": "^0.0.21",
-        "@naomiarotest/typescript-config": "^0.0.21",
+        "@naomiarotest/eslint-config": "^0.0.22",
+        "@naomiarotest/typescript-config": "^0.0.22",
         "zod": "^4.1.12"
     },
     "gitHead": "898f42398e2090a088dc66a960b37772980837a1"

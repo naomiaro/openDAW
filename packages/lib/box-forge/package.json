@@ -1,6 +1,6 @@
 {
     "name": "@naomiarotest/lib-box-forge",
-    "version": "0.0.51",
+    "version": "0.0.52",
     "private": false,
     "publishConfig": {
         "access": "public"
@@ -18,16 +18,16 @@
         "test": "npm run gen && vitest run"
     },
     "dependencies": {
-        "@naomiarotest/lib-box": "^0.0.51",
-        "@naomiarotest/lib-dom": "^0.0.51",
-        "@naomiarotest/lib-runtime": "^0.0.51",
-        "@naomiarotest/lib-std": "^0.0.51",
+        "@naomiarotest/lib-box": "^0.0.52",
+        "@naomiarotest/lib-dom": "^0.0.52",
+        "@naomiarotest/lib-runtime": "^0.0.52",
+        "@naomiarotest/lib-std": "^0.0.52",
         "ts-morph": "^25.0.1",
         "tsx": "^4.20.3"
     },
     "devDependencies": {
-        "@naomiarotest/eslint-config": "^0.0.21",
-        "@naomiarotest/typescript-config": "^0.0.21"
+        "@naomiarotest/eslint-config": "^0.0.22",
+        "@naomiarotest/typescript-config": "^0.0.22"
     },
     "gitHead": "ddf7028d7c6a0e6e9d784a88b21ae10235825780"
 }

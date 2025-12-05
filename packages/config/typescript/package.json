@@ -1,9 +1,9 @@
 {
-  "name": "@naomiarotest/typescript-config",
-  "version": "0.0.21",
-  "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "ddf7028d7c6a0e6e9d784a88b21ae10235825780"
+    "name": "@naomiarotest/typescript-config",
+    "version": "0.0.22",
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "gitHead": "ddf7028d7c6a0e6e9d784a88b21ae10235825780"
 }

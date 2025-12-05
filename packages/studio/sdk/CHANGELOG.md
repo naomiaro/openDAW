@@ -3,13 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## 0.0.61 (2025-12-05)
+## 0.0.62 (2025-12-05)
 
 **Note:** Version bump only for package @naomiarotest/studio-sdk
 
+## 0.0.61 (2025-12-05)
 
-
-
+**Note:** Version bump only for package @naomiarotest/studio-sdk
 
 ## [0.0.59](https://github.com/andremichelle/opendaw/compare/@opendaw/studio-sdk@0.0.58...@opendaw/studio-sdk@0.0.59) (2025-11-17)
 

@@ -3,13 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## 0.0.33 (2025-12-05)
+## 0.0.34 (2025-12-05)
 
 **Note:** Version bump only for package @naomiarotest/lib-midi
 
+## 0.0.33 (2025-12-05)
 
-
-
+**Note:** Version bump only for package @naomiarotest/lib-midi
 
 ## [0.0.32](https://github.com/andremichelle/openDAW/compare/@opendaw/lib-midi@0.0.31...@opendaw/lib-midi@0.0.32) (2025-11-17)
 

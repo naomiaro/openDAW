@@ -1,32 +1,32 @@
 {
-  "name": "@naomiarotest/studio-enums",
-  "version": "0.0.42",
-  "license": "LGPL-3.0-or-later",
-  "publishConfig": {
-    "access": "public"
-  },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    }
-  },
-  "files": [
-    "dist/**/*"
-  ],
-  "scripts": {
-    "build": "tsc",
-    "lint": "eslint \"**/*.ts\"",
-    "test": "echo \"No tests to run\""
-  },
-  "dependencies": {
-    "@naomiarotest/lib-std": "^0.0.51"
-  },
-  "devDependencies": {
-    "@naomiarotest/eslint-config": "^0.0.21",
-    "@naomiarotest/typescript-config": "^0.0.21"
-  },
-  "gitHead": "898f42398e2090a088dc66a960b37772980837a1"
+    "name": "@naomiarotest/studio-enums",
+    "version": "0.0.43",
+    "license": "LGPL-3.0-or-later",
+    "publishConfig": {
+        "access": "public"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist/**/*"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint \"**/*.ts\"",
+        "test": "echo \"No tests to run\""
+    },
+    "dependencies": {
+        "@naomiarotest/lib-std": "^0.0.52"
+    },
+    "devDependencies": {
+        "@naomiarotest/eslint-config": "^0.0.22",
+        "@naomiarotest/typescript-config": "^0.0.22"
+    },
+    "gitHead": "898f42398e2090a088dc66a960b37772980837a1"
 }
