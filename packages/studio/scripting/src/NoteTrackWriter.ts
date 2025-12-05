@@ -1,8 +1,8 @@
 import {NoteRegionImpl, NoteTrackImpl} from "./impl"
-import {asDefined, isDefined, UUID} from "@opendaw/lib-std"
-import {AudioUnitBox, NoteEventBox, NoteEventCollectionBox, NoteRegionBox, TrackBox} from "@opendaw/studio-boxes"
-import {TrackType} from "@opendaw/studio-adapters"
-import {BoxGraph} from "@opendaw/lib-box"
+import {asDefined, isDefined, UUID} from "@naomiarotest/lib-std"
+import {AudioUnitBox, NoteEventBox, NoteEventCollectionBox, NoteRegionBox, TrackBox} from "@naomiarotest/studio-boxes"
+import {TrackType} from "@naomiarotest/studio-adapters"
+import {BoxGraph} from "@naomiarotest/lib-box"
 import {NoteRegion} from "./Api"
 import {IndexRef} from "./IndexRef"
 

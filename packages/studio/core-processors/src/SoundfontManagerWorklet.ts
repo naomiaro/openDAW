@@ -1,6 +1,6 @@
-import {Peaks} from "@opendaw/lib-fusion"
-import {EngineToClient, SoundfontLoader, SoundfontLoaderManager, SoundfontLoaderState} from "@opendaw/studio-adapters"
-import {Observer, Option, SortedSet, Subscription, Terminable, UUID} from "@opendaw/lib-std"
+import {Peaks} from "@naomiarotest/lib-fusion"
+import {EngineToClient, SoundfontLoader, SoundfontLoaderManager, SoundfontLoaderState} from "@naomiarotest/studio-adapters"
+import {Observer, Option, SortedSet, Subscription, Terminable, UUID} from "@naomiarotest/lib-std"
 import type {SoundFont2} from "soundfont2"
 
 class SoundfontLoaderWorklet implements SoundfontLoader {

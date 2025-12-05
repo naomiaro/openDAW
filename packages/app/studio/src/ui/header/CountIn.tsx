@@ -1,8 +1,8 @@
 import css from "./CountIn.sass?inline"
-import {Html} from "@opendaw/lib-dom"
-import {Lifecycle, TAU, Terminable, unitValue} from "@opendaw/lib-std"
-import {createElement, DomElement} from "@opendaw/lib-jsx"
-import {Engine} from "@opendaw/studio-core"
+import {Html} from "@naomiarotest/lib-dom"
+import {Lifecycle, TAU, Terminable, unitValue} from "@naomiarotest/lib-std"
+import {createElement, DomElement} from "@naomiarotest/lib-jsx"
+import {Engine} from "@naomiarotest/studio-core"
 
 const className = Html.adoptStyleSheet(css, "CountIn")
 

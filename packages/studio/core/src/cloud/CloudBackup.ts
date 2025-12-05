@@ -7,9 +7,9 @@ import {
     RuntimeSignal,
     TimeSpan,
     unitValue
-} from "@opendaw/lib-std"
-import {Browser} from "@opendaw/lib-dom"
-import {Promises} from "@opendaw/lib-runtime"
+} from "@naomiarotest/lib-std"
+import {Browser} from "@naomiarotest/lib-dom"
+import {Promises} from "@naomiarotest/lib-runtime"
 import {CloudService} from "./CloudService"
 import {CloudHandler} from "./CloudHandler"
 import {CloudAuthManager} from "./CloudAuthManager"

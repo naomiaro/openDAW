@@ -9,15 +9,15 @@ import {
     Strings,
     Terminator,
     UUID
-} from "@opendaw/lib-std"
-import {createElement, Inject} from "@opendaw/lib-jsx"
+} from "@naomiarotest/lib-std"
+import {createElement, Inject} from "@naomiarotest/lib-jsx"
 import {MenuButton} from "@/ui/components/MenuButton"
 import {MenuItem} from "@/ui/model/menu-item"
-import {MidiDevices, Project} from "@opendaw/studio-core"
-import {MIDIOutputDeviceBoxAdapter} from "@opendaw/studio-adapters"
-import {Colors, IconSymbol} from "@opendaw/studio-enums"
-import {MIDIOutputBox, RootBox} from "@opendaw/studio-boxes"
-import {Html} from "@opendaw/lib-dom"
+import {MidiDevices, Project} from "@naomiarotest/studio-core"
+import {MIDIOutputDeviceBoxAdapter} from "@naomiarotest/studio-adapters"
+import {Colors, IconSymbol} from "@naomiarotest/studio-enums"
+import {MIDIOutputBox, RootBox} from "@naomiarotest/studio-boxes"
+import {Html} from "@naomiarotest/lib-dom"
 import {NumberInput} from "@/ui/components/NumberInput"
 import {Checkbox} from "@/ui/components/Checkbox"
 import {Icon} from "@/ui/components/Icon"

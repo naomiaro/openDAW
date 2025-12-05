@@ -1,4 +1,4 @@
-import {Progress} from "@opendaw/lib-std"
+import {Progress} from "@naomiarotest/lib-std"
 import type {AcceptedSource} from "./FFmpegWorker"
 
 export interface FFmpegConverter<OPTIONS> {

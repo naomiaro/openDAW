@@ -1,10 +1,10 @@
 import css from "./SampleUploadPage.sass?inline"
-import {createElement, PageContext, PageFactory} from "@opendaw/lib-jsx"
+import {createElement, PageContext, PageFactory} from "@naomiarotest/lib-jsx"
 import {StudioService} from "@/service/StudioService.ts"
-import {Files, Html} from "@opendaw/lib-dom"
+import {Files, Html} from "@naomiarotest/lib-dom"
 import {Dialogs} from "@/ui/components/dialogs.tsx"
-import {estimateBpm} from "@opendaw/lib-dsp"
-import {FilePickerAcceptTypes, OpenSampleAPI, WavFile} from "@opendaw/studio-core"
+import {estimateBpm} from "@naomiarotest/lib-dsp"
+import {FilePickerAcceptTypes, OpenSampleAPI, WavFile} from "@naomiarotest/studio-core"
 
 const className = Html.adoptStyleSheet(css, "SampleUploadPage")
 

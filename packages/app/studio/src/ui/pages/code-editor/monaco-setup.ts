@@ -4,8 +4,8 @@ import "monaco-editor/esm/vs/language/typescript/monaco.contribution"
 import "monaco-editor/esm/vs/basic-languages/typescript/typescript.contribution"
 import EditorWorker from "monaco-editor/esm/vs/editor/editor.worker?worker"
 import TsWorker from "monaco-editor/esm/vs/language/typescript/ts.worker?worker"
-import declarations from "@opendaw/studio-scripting/api.declaration?raw"
-import library from "@opendaw/studio-scripting/library?raw"
+import declarations from "@naomiarotest/studio-scripting/api.declaration?raw"
+import library from "@naomiarotest/studio-scripting/library?raw"
 
 // noinspection JSUnusedGlobalSymbols
 self.MonacoEnvironment = {

@@ -1,4 +1,4 @@
-import {Box} from "@opendaw/lib-box"
+import {Box} from "@naomiarotest/lib-box"
 import {MenuItem} from "@/ui/model/menu-item.ts"
 import {Dialogs} from "@/ui/components/dialogs.tsx"
 

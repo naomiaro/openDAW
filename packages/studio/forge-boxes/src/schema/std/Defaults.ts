@@ -1,6 +1,6 @@
-import {PointerRules, UnreferenceableType} from "@opendaw/lib-box"
-import {FieldName, FieldSchema, PointerFieldSchema, PrimitiveFieldSchema} from "@opendaw/lib-box-forge"
-import {Pointers} from "@opendaw/studio-enums"
+import {PointerRules, UnreferenceableType} from "@naomiarotest/lib-box"
+import {FieldName, FieldSchema, PointerFieldSchema, PrimitiveFieldSchema} from "@naomiarotest/lib-box-forge"
+import {Pointers} from "@naomiarotest/studio-enums"
 
 export const UnipolarConstraints = {constraints: "unipolar", unit: "%"} as const
 export const BipolarConstraints = {constraints: "bipolar", unit: "%"} as const

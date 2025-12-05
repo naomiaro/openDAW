@@ -1,5 +1,5 @@
-import {EmptyExec, Lazy, UUID} from "@opendaw/lib-std"
-import {Soundfont, SoundfontMetaData} from "@opendaw/studio-adapters"
+import {EmptyExec, Lazy, UUID} from "@naomiarotest/lib-std"
+import {Soundfont, SoundfontMetaData} from "@naomiarotest/studio-adapters"
 import {Workers} from "../Workers"
 import {Storage} from "../Storage"
 

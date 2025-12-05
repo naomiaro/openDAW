@@ -1,10 +1,10 @@
 import css from "./OpenBundlePage.sass?inline"
-import {createElement, PageContext, PageFactory} from "@opendaw/lib-jsx"
+import {createElement, PageContext, PageFactory} from "@naomiarotest/lib-jsx"
 import {StudioService} from "@/service/StudioService.ts"
-import {Html} from "@opendaw/lib-dom"
-import {network, Promises} from "@opendaw/lib-runtime"
-import {Option, RuntimeNotifier} from "@opendaw/lib-std"
-import {ProjectBundle} from "@opendaw/studio-core"
+import {Html} from "@naomiarotest/lib-dom"
+import {network, Promises} from "@naomiarotest/lib-runtime"
+import {Option, RuntimeNotifier} from "@naomiarotest/lib-std"
+import {ProjectBundle} from "@naomiarotest/studio-core"
 
 const className = Html.adoptStyleSheet(css, "OpenBundlePage")
 

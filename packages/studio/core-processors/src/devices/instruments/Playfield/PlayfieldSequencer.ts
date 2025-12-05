@@ -1,5 +1,5 @@
-import {Terminable} from "@opendaw/lib-std"
-import {Event} from "@opendaw/lib-dsp"
+import {Terminable} from "@naomiarotest/lib-std"
+import {Event} from "@naomiarotest/lib-dsp"
 import {Block} from "../../../processing"
 import {EngineContext} from "../../../EngineContext"
 import {EventProcessor} from "../../../EventProcessor"

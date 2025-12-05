@@ -1,7 +1,7 @@
-import {EventCollection, ppqn, ValueEvent} from "@opendaw/lib-dsp"
-import {int, Nullable} from "@opendaw/lib-std"
+import {EventCollection, ppqn, ValueEvent} from "@naomiarotest/lib-dsp"
+import {int, Nullable} from "@naomiarotest/lib-std"
 import {ValueModifyStrategy} from "@/ui/timeline/editors/value/ValueModifyStrategies.ts"
-import {ValueEventBoxAdapter} from "@opendaw/studio-adapters"
+import {ValueEventBoxAdapter} from "@naomiarotest/studio-adapters"
 import {UIValueEvent} from "./UIValueEvent"
 
 export interface ValueEventDraft extends UIValueEvent {

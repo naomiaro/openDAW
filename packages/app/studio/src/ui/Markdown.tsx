@@ -1,7 +1,7 @@
-import {Browser, Html, ModfierKeys} from "@opendaw/lib-dom"
+import {Browser, Html, ModfierKeys} from "@naomiarotest/lib-dom"
 import css from "./Markdown.sass?inline"
-import {isDefined} from "@opendaw/lib-std"
-import {createElement, RouteLocation} from "@opendaw/lib-jsx"
+import {isDefined} from "@naomiarotest/lib-std"
+import {createElement, RouteLocation} from "@naomiarotest/lib-jsx"
 import markdownit from "markdown-it"
 import {markdownItTable} from "markdown-it-table"
 

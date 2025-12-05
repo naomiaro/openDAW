@@ -1,7 +1,7 @@
 import {BlockFlag, ProcessInfo} from "./processing"
-import {Event, Fragmentor, UpdateClockRate} from "@opendaw/lib-dsp"
+import {Event, Fragmentor, UpdateClockRate} from "@naomiarotest/lib-dsp"
 import {EngineContext} from "./EngineContext"
-import {Arrays, Bits, int, Terminable} from "@opendaw/lib-std"
+import {Arrays, Bits, int, Terminable} from "@naomiarotest/lib-std"
 import {AbstractProcessor} from "./AbstractProcessor"
 import {EventBuffer} from "./EventBuffer"
 

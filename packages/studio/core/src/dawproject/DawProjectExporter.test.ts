@@ -8,12 +8,12 @@ import {
     SampleLoader,
     SampleLoaderManager,
     SampleLoaderState
-} from "@opendaw/studio-adapters"
-import {Observer, Option, panic, Subscription, Terminable, UUID} from "@opendaw/lib-std"
-import {Xml} from "@opendaw/lib-xml"
-import {FileReferenceSchema} from "@opendaw/lib-dawproject"
+} from "@naomiarotest/studio-adapters"
+import {Observer, Option, panic, Subscription, Terminable, UUID} from "@naomiarotest/lib-std"
+import {Xml} from "@naomiarotest/lib-xml"
+import {FileReferenceSchema} from "@naomiarotest/lib-dawproject"
 import {DawProjectExporter} from "./DawProjectExporter"
-import {Peaks} from "@opendaw/lib-fusion"
+import {Peaks} from "@naomiarotest/lib-fusion"
 
 describe("DawProjectExport", () => {
     it("export", async () => {

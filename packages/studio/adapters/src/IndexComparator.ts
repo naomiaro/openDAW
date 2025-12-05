@@ -1,4 +1,4 @@
-import {Comparator, int, panic} from "@opendaw/lib-std"
+import {Comparator, int, panic} from "@naomiarotest/lib-std"
 
 export const IndexComparator: Comparator<int> = (a: int, b: int): int => {
     if (a === b) {return 0}

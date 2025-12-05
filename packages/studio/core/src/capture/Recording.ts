@@ -1,8 +1,8 @@
-import {asInstanceOf, assert, Errors, Option, Terminable, Terminator} from "@opendaw/lib-std"
-import {Promises} from "@opendaw/lib-runtime"
-import {AudioUnitType} from "@opendaw/studio-enums"
-import {AudioUnitBox} from "@opendaw/studio-boxes"
-import {InstrumentFactories} from "@opendaw/studio-adapters"
+import {asInstanceOf, assert, Errors, Option, Terminable, Terminator} from "@naomiarotest/lib-std"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {AudioUnitType} from "@naomiarotest/studio-enums"
+import {AudioUnitBox} from "@naomiarotest/studio-boxes"
+import {InstrumentFactories} from "@naomiarotest/studio-adapters"
 import {Project} from "../project"
 
 export class Recording {

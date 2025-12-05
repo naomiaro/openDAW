@@ -1,4 +1,4 @@
-import {createElement, JsxValue} from "@opendaw/lib-jsx"
+import {createElement, JsxValue} from "@naomiarotest/lib-jsx"
 import {Button, Dialog, DialogHandler} from "@/ui/components/Dialog.tsx"
 import {
     Arrays,
@@ -11,14 +11,14 @@ import {
     RuntimeNotification,
     Terminable,
     Terminator
-} from "@opendaw/lib-std"
+} from "@naomiarotest/lib-std"
 import {Surface} from "@/ui/surface/Surface.tsx"
-import {Colors, IconSymbol} from "@opendaw/studio-enums"
-import {Box, BoxGraph} from "@opendaw/lib-box"
+import {Colors, IconSymbol} from "@naomiarotest/studio-enums"
+import {Box, BoxGraph} from "@naomiarotest/lib-box"
 import {BoxDebugView} from "./BoxDebugView"
 import {BoxesDebugView} from "@/ui/components/BoxesDebugView.tsx"
 import {ProgressBar} from "@/ui/components/ProgressBar.tsx"
-import {Browser} from "@opendaw/lib-dom"
+import {Browser} from "@naomiarotest/lib-dom"
 
 export namespace Dialogs {
     type Default = {

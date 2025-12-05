@@ -1,7 +1,7 @@
-import {Color, isDefined, Lifecycle, Parameter, PI_HALF, TAU, unitValue} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+import {Color, isDefined, Lifecycle, Parameter, PI_HALF, TAU, unitValue} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 import css from "./Knob.sass?inline"
-import {Html, Svg} from "@opendaw/lib-dom"
+import {Html, Svg} from "@naomiarotest/lib-dom"
 
 const className = Html.adoptStyleSheet(css, "knob")
 

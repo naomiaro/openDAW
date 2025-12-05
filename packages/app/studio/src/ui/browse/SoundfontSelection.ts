@@ -1,10 +1,10 @@
-import {asDefined, isAbsent, RuntimeNotifier, UUID} from "@opendaw/lib-std"
-import {InstrumentFactories, Soundfont} from "@opendaw/studio-adapters"
-import {OpenSoundfontAPI, ProjectStorage, SoundfontStorage} from "@opendaw/studio-core"
+import {asDefined, isAbsent, RuntimeNotifier, UUID} from "@naomiarotest/lib-std"
+import {InstrumentFactories, Soundfont} from "@naomiarotest/studio-adapters"
+import {OpenSoundfontAPI, ProjectStorage, SoundfontStorage} from "@naomiarotest/studio-core"
 import {HTMLSelection} from "@/ui/HTMLSelection"
 import {StudioService} from "@/service/StudioService"
 import {Dialogs} from "../components/dialogs"
-import {SoundfontFileBox} from "@opendaw/studio-boxes"
+import {SoundfontFileBox} from "@naomiarotest/studio-boxes"
 
 export class SoundfontSelection {
     readonly #service: StudioService

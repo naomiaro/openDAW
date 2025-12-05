@@ -1,4 +1,4 @@
-import {Terminable} from "@opendaw/lib-std"
+import {Terminable} from "@naomiarotest/lib-std"
 
 export interface DeviceChain extends Terminable {
     invalidateWiring(): void

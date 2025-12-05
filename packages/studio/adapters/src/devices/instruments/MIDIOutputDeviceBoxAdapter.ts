@@ -6,9 +6,9 @@ import {
     Terminator,
     UUID,
     ValueMapping
-} from "@opendaw/lib-std"
-import {MIDIOutputBox, MIDIOutputDeviceBox, MIDIOutputParameterBox} from "@opendaw/studio-boxes"
-import {Address, BooleanField, StringField} from "@opendaw/lib-box"
+} from "@naomiarotest/lib-std"
+import {MIDIOutputBox, MIDIOutputDeviceBox, MIDIOutputParameterBox} from "@naomiarotest/studio-boxes"
+import {Address, BooleanField, StringField} from "@naomiarotest/lib-box"
 import {DeviceHost, Devices, InstrumentDeviceBoxAdapter} from "../../DeviceAdapter"
 import {BoxAdaptersContext} from "../../BoxAdaptersContext"
 import {ParameterAdapterSet} from "../../ParameterAdapterSet"

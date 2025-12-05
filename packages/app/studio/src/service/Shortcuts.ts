@@ -1,8 +1,8 @@
 import {StudioService} from "@/service/StudioService"
 import {PanelType} from "@/ui/workspace/PanelType"
-import {Events, Keyboard} from "@opendaw/lib-dom"
+import {Events, Keyboard} from "@naomiarotest/lib-dom"
 import {DefaultWorkspace} from "@/ui/workspace/Default"
-import {Arrays, isNull} from "@opendaw/lib-std"
+import {Arrays, isNull} from "@naomiarotest/lib-std"
 import {Workspace} from "@/ui/workspace/Workspace"
 import {Surface} from "@/ui/surface/Surface"
 

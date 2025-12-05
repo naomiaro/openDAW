@@ -1,9 +1,9 @@
-import {Selection} from "@opendaw/lib-std"
+import {Selection} from "@naomiarotest/lib-std"
 import {TimelineSelectableLocator} from "@/ui/timeline/TimelineSelectableLocator.ts"
-import {BoxEditing} from "@opendaw/lib-box"
-import {Event} from "@opendaw/lib-dsp"
-import {Events, Keyboard} from "@opendaw/lib-dom"
-import {BoxAdapter} from "@opendaw/studio-adapters"
+import {BoxEditing} from "@naomiarotest/lib-box"
+import {Event} from "@naomiarotest/lib-dsp"
+import {Events, Keyboard} from "@naomiarotest/lib-dom"
+import {BoxAdapter} from "@naomiarotest/studio-adapters"
 
 export const attachShortcuts = <E extends Event & BoxAdapter>(element: Element,
                                                               editing: BoxEditing,

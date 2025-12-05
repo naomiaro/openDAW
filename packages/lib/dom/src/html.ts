@@ -1,4 +1,4 @@
-import {asDefined, assert, Color, int, isDefined, panic, Rect, RGBA, Subscription} from "@opendaw/lib-std"
+import {asDefined, assert, Color, int, isDefined, panic, Rect, RGBA, Subscription} from "@naomiarotest/lib-std"
 
 export namespace Html {
     export const parse = (source: string): HTMLOrSVGElement & Element => {

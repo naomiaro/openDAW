@@ -1,4 +1,4 @@
-import {Exec, Func, Procedure, Provider, safeExecute} from "@opendaw/lib-std"
+import {Exec, Func, Procedure, Provider, safeExecute} from "@naomiarotest/lib-std"
 import {createElement, replaceChildren} from "../create-element"
 import {DomElement, JsxValue} from "../types"
 

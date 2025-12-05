@@ -1,5 +1,5 @@
-import {assert, Bits, isInstanceOf, Option, SortedSet, UUID} from "@opendaw/lib-std"
-import {AudioBuffer, LoopableRegion, RenderQuantum} from "@opendaw/lib-dsp"
+import {assert, Bits, isInstanceOf, Option, SortedSet, UUID} from "@naomiarotest/lib-std"
+import {AudioBuffer, LoopableRegion, RenderQuantum} from "@naomiarotest/lib-dsp"
 import {
     AudioClipBoxAdapter,
     AudioData,
@@ -8,7 +8,7 @@ import {
     TapeDeviceBoxAdapter,
     TrackBoxAdapter,
     TrackType
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {EngineContext} from "../../EngineContext"
 import {AudioGenerator, Block, BlockFlag, ProcessInfo, Processor} from "../../processing"
 import {AbstractProcessor} from "../../AbstractProcessor"

@@ -1,10 +1,10 @@
-import {TimelineBox} from "@opendaw/studio-boxes"
-import {int, Observer, Subscription, UUID} from "@opendaw/lib-std"
-import {Address} from "@opendaw/lib-box"
+import {TimelineBox} from "@naomiarotest/studio-boxes"
+import {int, Observer, Subscription, UUID} from "@naomiarotest/lib-std"
+import {Address} from "@naomiarotest/lib-box"
 import {BoxAdapter} from "../BoxAdapter"
 import {MarkerTrackAdapter} from "./MarkerTrackAdapter"
 import {BoxAdaptersContext} from "../BoxAdaptersContext"
-import {PPQN, ppqn} from "@opendaw/lib-dsp"
+import {PPQN, ppqn} from "@naomiarotest/lib-dsp"
 
 export class TimelineBoxAdapter implements BoxAdapter {
     readonly #box: TimelineBox

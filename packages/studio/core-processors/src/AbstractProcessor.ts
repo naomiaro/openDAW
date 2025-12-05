@@ -1,12 +1,12 @@
-import {Arrays, Option, panic, Terminable, TerminableOwner, Terminator} from "@opendaw/lib-std"
-import {PointerField, PrimitiveValues} from "@opendaw/lib-box"
-import {Pointers} from "@opendaw/studio-enums"
-import {AutomatableParameterFieldAdapter} from "@opendaw/studio-adapters"
+import {Arrays, Option, panic, Terminable, TerminableOwner, Terminator} from "@naomiarotest/lib-std"
+import {PointerField, PrimitiveValues} from "@naomiarotest/lib-box"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {AutomatableParameterFieldAdapter} from "@naomiarotest/studio-adapters"
 import {AutomatableParameter} from "./AutomatableParameter"
 import {ProcessInfo, Processor} from "./processing"
 import {EngineContext} from "./EngineContext"
 import {EventBuffer} from "./EventBuffer"
-import {ppqn} from "@opendaw/lib-dsp"
+import {ppqn} from "@naomiarotest/lib-dsp"
 
 export abstract class AbstractProcessor implements Processor, TerminableOwner, Terminable {
     readonly #terminator = new Terminator()

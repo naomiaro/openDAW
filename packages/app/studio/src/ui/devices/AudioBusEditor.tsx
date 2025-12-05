@@ -1,12 +1,12 @@
 import css from "./AudioBusEditor.sass?inline"
-import {Lifecycle} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+import {Lifecycle} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {DeviceEditor} from "@/ui/devices/DeviceEditor.tsx"
-import {IconSymbol} from "@opendaw/studio-enums"
-import {AudioBusBoxAdapter} from "@opendaw/studio-adapters"
+import {IconSymbol} from "@naomiarotest/studio-enums"
+import {AudioBusBoxAdapter} from "@naomiarotest/studio-adapters"
 import {MenuItems} from "@/ui/devices/menu-items.ts"
 import {DevicePeakMeter} from "@/ui/devices/panel/DevicePeakMeter.tsx"
-import {Html} from "@opendaw/lib-dom"
+import {Html} from "@naomiarotest/lib-dom"
 import {StudioService} from "@/service/StudioService"
 
 const className = Html.adoptStyleSheet(css, "Editor")

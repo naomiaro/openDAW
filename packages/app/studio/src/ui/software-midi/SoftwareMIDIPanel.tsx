@@ -1,5 +1,5 @@
 import css from "./SoftwareMIDIPanel.sass?inline"
-import {Dragging, Events, Html} from "@opendaw/lib-dom"
+import {Dragging, Events, Html} from "@naomiarotest/lib-dom"
 import {
     asDefined,
     asInstanceOf,
@@ -12,23 +12,23 @@ import {
     ParseResult,
     StringResult,
     Terminable
-} from "@opendaw/lib-std"
-import {createElement, DomElement} from "@opendaw/lib-jsx"
+} from "@naomiarotest/lib-std"
+import {createElement, DomElement} from "@naomiarotest/lib-jsx"
 import {PianoRollLayout} from "@/ui/PianoRollLayout"
 import {PianoKeyCodes} from "@/ui/software-midi/Mapping"
-import {MidiDevices} from "@opendaw/studio-core"
-import {AudioUnitBoxAdapter} from "@opendaw/studio-adapters"
+import {MidiDevices} from "@naomiarotest/studio-core"
+import {AudioUnitBoxAdapter} from "@naomiarotest/studio-adapters"
 import {NumberInput} from "@/ui/components/NumberInput"
 import {MenuButton} from "@/ui/components/MenuButton"
 import {MenuItem} from "@/ui/model/menu-item"
 import {Icon} from "@/ui/components/Icon"
-import {Colors, IconSymbol} from "@opendaw/studio-enums"
-import {MidiData} from "@opendaw/lib-midi"
+import {Colors, IconSymbol} from "@naomiarotest/studio-enums"
+import {MidiData} from "@naomiarotest/lib-midi"
 import {FlexSpacer} from "@/ui/components/FlexSpacer"
 import {PianoRoll} from "@/ui/software-midi/PianoRoll"
 import {Button} from "@/ui/components/Button"
 import {StudioService} from "@/service/StudioService"
-import {AudioUnitBox, CaptureMidiBox} from "@opendaw/studio-boxes"
+import {AudioUnitBox, CaptureMidiBox} from "@naomiarotest/studio-boxes"
 import {Surface} from "@/ui/surface/Surface"
 
 const className = Html.adoptStyleSheet(css, "SoftwareMIDIPanel")

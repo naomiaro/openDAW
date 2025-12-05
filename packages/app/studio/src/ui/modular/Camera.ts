@@ -1,5 +1,5 @@
-import {Dragging, Events, Html} from "@opendaw/lib-dom"
-import {assert, Notifier, Observer, Option, Point, Subscription, Terminable, Terminator} from "@opendaw/lib-std"
+import {Dragging, Events, Html} from "@naomiarotest/lib-dom"
+import {assert, Notifier, Observer, Option, Point, Subscription, Terminable, Terminator} from "@naomiarotest/lib-std"
 
 export class Camera implements Terminable {
     readonly #element: HTMLElement

@@ -1,4 +1,4 @@
-import {unitValue} from "@opendaw/lib-std"
+import {unitValue} from "@naomiarotest/lib-std"
 
 export interface Scale {
     unitToNorm(unit: number): unitValue

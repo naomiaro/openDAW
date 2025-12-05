@@ -3,12 +3,12 @@ import {MenuItem} from "@/ui/model/menu-item"
 import {Surface} from "@/ui/surface/Surface"
 import {FloatingTextInput} from "@/ui/components/FloatingTextInput"
 import {ElementCapturing} from "@/ui/canvas/capturing"
-import {MarkerBoxAdapter} from "@opendaw/studio-adapters"
-import {Arrays, EmptyExec} from "@opendaw/lib-std"
-import {BoxEditing} from "@opendaw/lib-box"
+import {MarkerBoxAdapter} from "@naomiarotest/studio-adapters"
+import {Arrays, EmptyExec} from "@naomiarotest/lib-std"
+import {BoxEditing} from "@naomiarotest/lib-box"
 import {DebugMenus} from "@/ui/menu/debug"
 import {Markers} from "@/ui/timeline/tracks/primary/marker/Markers"
-import {TimelineRange} from "@opendaw/studio-core"
+import {TimelineRange} from "@naomiarotest/studio-core"
 
 export namespace MarkerContextMenu {
     export const install = (element: Element,

@@ -1,8 +1,8 @@
 import css from "./AudioEditorHeader.sass?inline"
-import {Lifecycle} from "@opendaw/lib-std"
+import {Lifecycle} from "@naomiarotest/lib-std"
 import {StudioService} from "@/service/StudioService.ts"
-import {createElement} from "@opendaw/lib-jsx"
-import {Html} from "@opendaw/lib-dom"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {Html} from "@naomiarotest/lib-dom"
 
 const className = Html.adoptStyleSheet(css, "AudioEditorHeader")
 

@@ -1,5 +1,5 @@
-import {assert, int, nextPowOf2, unitValue, ValueMapping} from "@opendaw/lib-std"
-import {BiquadCoeff, BiquadMono, BiquadProcessor, StereoMatrix} from "@opendaw/lib-dsp"
+import {assert, int, nextPowOf2, unitValue, ValueMapping} from "@naomiarotest/lib-std"
+import {BiquadCoeff, BiquadMono, BiquadProcessor, StereoMatrix} from "@naomiarotest/lib-dsp"
 
 export class DelayDeviceDsp {
     static readonly #FilterMapping: ValueMapping<number> = ValueMapping.exponential(20.0 / sampleRate, 20000.0 / sampleRate)

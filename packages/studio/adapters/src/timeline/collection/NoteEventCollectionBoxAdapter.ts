@@ -1,4 +1,4 @@
-import {BoxVisitor, NoteEventBox, NoteEventCollectionBox} from "@opendaw/studio-boxes"
+import {BoxVisitor, NoteEventBox, NoteEventCollectionBox} from "@naomiarotest/studio-boxes"
 import {
     asDefined,
     Coordinates,
@@ -13,10 +13,10 @@ import {
     Subscription,
     Terminator,
     UUID
-} from "@opendaw/lib-std"
-import {Address, Box} from "@opendaw/lib-box"
-import {EventCollection, NoteEvent, ppqn} from "@opendaw/lib-dsp"
-import {Pointers} from "@opendaw/studio-enums"
+} from "@naomiarotest/lib-std"
+import {Address, Box} from "@naomiarotest/lib-box"
+import {EventCollection, NoteEvent, ppqn} from "@naomiarotest/lib-dsp"
+import {Pointers} from "@naomiarotest/studio-enums"
 import {BoxAdapter} from "../../BoxAdapter"
 import {NoteEventBoxAdapter} from "../event/NoteEventBoxAdapter"
 import {BoxAdaptersContext} from "../../BoxAdaptersContext"

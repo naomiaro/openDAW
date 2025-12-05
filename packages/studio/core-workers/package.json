@@ -1,5 +1,5 @@
 {
-    "name": "@opendaw/studio-core-workers",
+    "name": "@naomiarotest/studio-core-workers",
     "version": "0.0.46",
     "license": "LGPL-3.0-or-later",
     "private": true,
@@ -12,16 +12,16 @@
         "test": "echo \"No tests to run\""
     },
     "dependencies": {
-        "@opendaw/lib-box": "^0.0.50",
-        "@opendaw/lib-dsp": "^0.0.50",
-        "@opendaw/lib-runtime": "^0.0.50",
-        "@opendaw/lib-std": "^0.0.50",
-        "@opendaw/studio-adapters": "^0.0.51",
-        "@opendaw/studio-boxes": "^0.0.50",
-        "@opendaw/studio-enums": "^0.0.41"
+        "@naomiarotest/lib-box": "^0.0.50",
+        "@naomiarotest/lib-dsp": "^0.0.50",
+        "@naomiarotest/lib-runtime": "^0.0.50",
+        "@naomiarotest/lib-std": "^0.0.50",
+        "@naomiarotest/studio-adapters": "^0.0.51",
+        "@naomiarotest/studio-boxes": "^0.0.50",
+        "@naomiarotest/studio-enums": "^0.0.41"
     },
     "devDependencies": {
-        "@opendaw/eslint-config": "^0.0.20",
-        "@opendaw/typescript-config": "^0.0.20"
+        "@naomiarotest/eslint-config": "^0.0.20",
+        "@naomiarotest/typescript-config": "^0.0.20"
     }
 }

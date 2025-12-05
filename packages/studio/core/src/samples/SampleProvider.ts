@@ -1,5 +1,5 @@
-import {Progress, UUID} from "@opendaw/lib-std"
-import {AudioData, SampleMetaData} from "@opendaw/studio-adapters"
+import {Progress, UUID} from "@naomiarotest/lib-std"
+import {AudioData, SampleMetaData} from "@naomiarotest/studio-adapters"
 
 export interface SampleProvider {
     fetch(uuid: UUID.Bytes, progress: Progress.Handler): Promise<[AudioData, SampleMetaData]>

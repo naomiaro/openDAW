@@ -1,16 +1,16 @@
 import {ContextMenu} from "@/ui/ContextMenu.ts"
 import {MenuItem} from "@/ui/model/menu-item.ts"
 import {ElementCapturing} from "@/ui/canvas/capturing.ts"
-import {AnyClipBoxAdapter} from "@opendaw/studio-adapters"
-import {EmptyExec, Procedure, Selection, UUID} from "@opendaw/lib-std"
+import {AnyClipBoxAdapter} from "@naomiarotest/studio-adapters"
+import {EmptyExec, Procedure, Selection, UUID} from "@naomiarotest/lib-std"
 import {Surface} from "@/ui/surface/Surface.tsx"
 import {NameValidator} from "@/ui/validator/name.ts"
 import {ClipCaptureTarget} from "@/ui/timeline/tracks/audio-unit/clips/ClipCapturing.ts"
 import {DebugMenus} from "@/ui/menu/debug"
 import {exportNotesToMidiFile} from "@/ui/timeline/editors/notes/NoteUtils"
-import {AudioRegionBox, NoteRegionBox, ValueRegionBox} from "@opendaw/studio-boxes"
+import {AudioRegionBox, NoteRegionBox, ValueRegionBox} from "@naomiarotest/studio-boxes"
 import {ColorMenu} from "@/ui/timeline/ColorMenu"
-import {Project} from "@opendaw/studio-core"
+import {Project} from "@naomiarotest/studio-core"
 
 type Creation = {
     element: HTMLElement

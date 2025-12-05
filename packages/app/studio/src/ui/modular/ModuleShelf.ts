@@ -1,8 +1,8 @@
 import {MenuItem} from "@/ui/model/menu-item.ts"
-import {ModuleDelayBox, ModuleGainBox, ModuleMultiplierBox} from "@opendaw/studio-boxes"
-import {quantizeRound, UUID} from "@opendaw/lib-std"
+import {ModuleDelayBox, ModuleGainBox, ModuleMultiplierBox} from "@naomiarotest/studio-boxes"
+import {quantizeRound, UUID} from "@naomiarotest/lib-std"
 import {Camera} from "@/ui/modular/Camera.ts"
-import {ModularAdapter} from "@opendaw/studio-adapters"
+import {ModularAdapter} from "@naomiarotest/studio-adapters"
 import {StudioService} from "@/service/StudioService"
 
 export class ModuleShelf {

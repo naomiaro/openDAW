@@ -1,12 +1,12 @@
-import {Arrays, clamp, int, Option, Selection} from "@opendaw/lib-std"
-import {AnyLoopableRegionBoxAdapter, AnyRegionBoxAdapter, TrackBoxAdapter} from "@opendaw/studio-adapters"
-import {ppqn, RegionCollection} from "@opendaw/lib-dsp"
+import {Arrays, clamp, int, Option, Selection} from "@naomiarotest/lib-std"
+import {AnyLoopableRegionBoxAdapter, AnyRegionBoxAdapter, TrackBoxAdapter} from "@naomiarotest/studio-adapters"
+import {ppqn, RegionCollection} from "@naomiarotest/lib-dsp"
 import {Snapping} from "@/ui/timeline/Snapping.ts"
-import {BoxEditing} from "@opendaw/lib-box"
+import {BoxEditing} from "@naomiarotest/lib-box"
 import {TracksManager} from "@/ui/timeline/tracks/audio-unit/TracksManager.ts"
-import {RegionClipResolver, RegionModifyStrategy} from "@opendaw/studio-core"
+import {RegionClipResolver, RegionModifyStrategy} from "@naomiarotest/studio-core"
 import {Dialogs} from "@/ui/components/dialogs.tsx"
-import {Dragging} from "@opendaw/lib-dom"
+import {Dragging} from "@naomiarotest/lib-dom"
 import {RegionModifier} from "@/ui/timeline/tracks/audio-unit/regions/RegionModifier"
 
 class SelectedModifyStrategy implements RegionModifyStrategy {

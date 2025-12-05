@@ -1,15 +1,15 @@
-import {Nullable, Option, StringMapping, Terminable, ValueAxis} from "@opendaw/lib-std"
+import {Nullable, Option, StringMapping, Terminable, ValueAxis} from "@naomiarotest/lib-std"
 import {ValueCaptureTarget} from "@/ui/timeline/editors/value/ValueEventCapturing"
 import {Surface} from "@/ui/surface/Surface"
 import {ValueModifyStrategy} from "@/ui/timeline/editors/value/ValueModifyStrategies"
-import {Events} from "@opendaw/lib-dom"
+import {Events} from "@naomiarotest/lib-dom"
 import {ElementCapturing} from "@/ui/canvas/capturing"
 import {ValueEventOwnerReader} from "@/ui/timeline/editors/EventOwnerReader"
 import {ValueEditingContext} from "@/ui/timeline/editors/value/ValueEditingContext"
 import {ObservableModifyContext} from "@/ui/timeline/ObservableModifyContext"
 import {ValueModifier} from "@/ui/timeline/editors/value/ValueModifier"
-import {ValueEvent} from "@opendaw/lib-dsp"
-import {TimelineRange} from "@opendaw/studio-core"
+import {ValueEvent} from "@naomiarotest/lib-dsp"
+import {TimelineRange} from "@naomiarotest/studio-core"
 
 export namespace ValueTooltip {
     type Creation = {

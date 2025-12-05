@@ -1,12 +1,12 @@
 import css from "./GraphPage.sass?inline"
-import {Await, createElement, DomElement, Frag, PageContext, PageFactory} from "@opendaw/lib-jsx"
-import {Html} from "@opendaw/lib-dom"
+import {Await, createElement, DomElement, Frag, PageContext, PageFactory} from "@naomiarotest/lib-jsx"
+import {Html} from "@naomiarotest/lib-dom"
 import type {StudioService} from "@/service/StudioService.ts"
 import {GraphData} from "./graph-runtime"
 import {ThreeDots} from "@/ui/spinner/ThreeDots"
-import {UUID} from "@opendaw/lib-std"
-import {Colors} from "@opendaw/studio-enums"
-import {RootBox} from "@opendaw/studio-boxes"
+import {UUID} from "@naomiarotest/lib-std"
+import {Colors} from "@naomiarotest/studio-enums"
+import {RootBox} from "@naomiarotest/studio-boxes"
 
 const className = Html.adoptStyleSheet(css, "GraphPage")
 

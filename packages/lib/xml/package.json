@@ -1,5 +1,5 @@
 {
-    "name": "@opendaw/lib-xml",
+    "name": "@naomiarotest/lib-xml",
     "version": "0.0.36",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -22,11 +22,11 @@
         "test": "echo \"No tests to run\""
     },
     "dependencies": {
-        "@opendaw/lib-std": "^0.0.50"
+        "@naomiarotest/lib-std": "^0.0.50"
     },
     "devDependencies": {
-        "@opendaw/eslint-config": "^0.0.20",
-        "@opendaw/typescript-config": "^0.0.20",
+        "@naomiarotest/eslint-config": "^0.0.20",
+        "@naomiarotest/typescript-config": "^0.0.20",
         "jsdom": "^26.1.0"
     },
     "gitHead": "b000505c56dbc68bce90bac93f722198deab0ecf"

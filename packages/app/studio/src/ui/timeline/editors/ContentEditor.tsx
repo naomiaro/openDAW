@@ -1,6 +1,6 @@
 import css from "./ContentEditor.sass?inline"
-import {Lifecycle, Option, Terminator} from "@opendaw/lib-std"
-import {createElement, Frag, replaceChildren} from "@opendaw/lib-jsx"
+import {Lifecycle, Option, Terminator} from "@naomiarotest/lib-std"
+import {createElement, Frag, replaceChildren} from "@naomiarotest/lib-jsx"
 import {StudioService} from "@/service/StudioService.ts"
 import {
     AudioClipBox,
@@ -10,7 +10,7 @@ import {
     NoteRegionBox,
     ValueClipBox,
     ValueRegionBox
-} from "@opendaw/studio-boxes"
+} from "@naomiarotest/studio-boxes"
 import {NoteEditor} from "@/ui/timeline/editors/notes/NoteEditor.tsx"
 import {
     AudioClipBoxAdapter,
@@ -19,16 +19,16 @@ import {
     NoteRegionBoxAdapter,
     ValueClipBoxAdapter,
     ValueRegionBoxAdapter
-} from "@opendaw/studio-adapters"
-import {Box, PointerField, Vertex} from "@opendaw/lib-box"
+} from "@naomiarotest/studio-adapters"
+import {Box, PointerField, Vertex} from "@naomiarotest/lib-box"
 import {SnapSelector} from "@/ui/timeline/SnapSelector.tsx"
 import {Snapping} from "@/ui/timeline/Snapping.ts"
-import {TimelineRange} from "@opendaw/studio-core"
+import {TimelineRange} from "@naomiarotest/studio-core"
 import {TimeAxis} from "@/ui/timeline/TimeAxis.tsx"
 import {TimelineRangeSlider} from "@/ui/timeline/TimelineRangeSlider.tsx"
 import {ValueEventsEditor} from "./value/ValueEventsEditor.tsx"
 import {FlexSpacer} from "@/ui/components/FlexSpacer.tsx"
-import {PPQN} from "@opendaw/lib-dsp"
+import {PPQN} from "@naomiarotest/lib-dsp"
 import {AudioEditor} from "@/ui/timeline/editors/audio/AudioEditor.tsx"
 import {MenuButton} from "@/ui/components/MenuButton"
 import {MenuItem} from "@/ui/model/menu-item.ts"
@@ -43,9 +43,9 @@ import {
     ValueEventOwnerReader
 } from "@/ui/timeline/editors/EventOwnerReader.ts"
 import {RegionReader} from "@/ui/timeline/editors/RegionReader.ts"
-import {Colors, Pointers} from "@opendaw/studio-enums"
+import {Colors, Pointers} from "@naomiarotest/studio-enums"
 import {ValueEditingContext} from "@/ui/timeline/editors/value/ValueEditingContext.ts"
-import {AnimationFrame, Events, Html, Keyboard} from "@opendaw/lib-dom"
+import {AnimationFrame, Events, Html, Keyboard} from "@naomiarotest/lib-dom"
 
 const className = Html.adoptStyleSheet(css, "ContentEditor")
 

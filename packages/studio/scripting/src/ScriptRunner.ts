@@ -1,5 +1,5 @@
-import {Chord, dbToGain, FFT, gainToDb, Interpolation, midiToHz, PPQN} from "@opendaw/lib-dsp"
-import {AudioPlayback} from "@opendaw/studio-enums"
+import {Chord, dbToGain, FFT, gainToDb, Interpolation, midiToHz, PPQN} from "@naomiarotest/lib-dsp"
+import {AudioPlayback} from "@naomiarotest/studio-enums"
 import {ScriptHostProtocol} from "./ScriptHostProtocol"
 import {ScriptExecutionContext} from "./ScriptExecutionProtocol"
 import {Api} from "./Api"

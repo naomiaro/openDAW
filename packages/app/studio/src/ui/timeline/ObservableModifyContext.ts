@@ -1,7 +1,7 @@
-import {Notifier, Observer, Option, Subscription, Terminator} from "@opendaw/lib-std"
-import {BoxEditing} from "@opendaw/lib-box"
+import {Notifier, Observer, Option, Subscription, Terminator} from "@naomiarotest/lib-std"
+import {BoxEditing} from "@naomiarotest/lib-box"
 import {ObservableModifier} from "@/ui/timeline/ObservableModifier.ts"
-import {Dragging} from "@opendaw/lib-dom"
+import {Dragging} from "@naomiarotest/lib-dom"
 
 export class ObservableModifyContext<MODIFIER extends ObservableModifier> {
     readonly #editing: BoxEditing

@@ -1,15 +1,15 @@
-import {Lifecycle, Terminable} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+import {Lifecycle, Terminable} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {DeviceEditor} from "@/ui/devices/DeviceEditor.tsx"
 import {MenuItems} from "@/ui/devices/menu-items.ts"
 import {DevicePeakMeter} from "@/ui/devices/panel/DevicePeakMeter.tsx"
-import {DeviceHost, InstrumentFactories, NoteLifeCycle, PlayfieldSampleBoxAdapter} from "@opendaw/studio-adapters"
+import {DeviceHost, InstrumentFactories, NoteLifeCycle, PlayfieldSampleBoxAdapter} from "@naomiarotest/studio-adapters"
 import {SlotEditor} from "@/ui/devices/instruments/PlayfieldDeviceEditor/SlotEditor"
-import {Events} from "@opendaw/lib-dom"
+import {Events} from "@naomiarotest/lib-dom"
 import {Icon} from "@/ui/components/Icon"
 import {TextTooltip} from "@/ui/surface/TextTooltip"
 import {StudioService} from "@/service/StudioService"
-import {Colors, IconSymbol} from "@opendaw/studio-enums"
+import {Colors, IconSymbol} from "@naomiarotest/studio-enums"
 
 type Construct = {
     lifecycle: Lifecycle

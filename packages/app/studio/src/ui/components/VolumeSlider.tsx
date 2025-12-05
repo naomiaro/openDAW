@@ -1,11 +1,11 @@
 import css from "./VolumeSlider.sass?inline"
-import {createElement} from "@opendaw/lib-jsx"
-import {Lifecycle, Option, Parameter, Terminator, unitValue} from "@opendaw/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {Lifecycle, Option, Parameter, Terminator, unitValue} from "@naomiarotest/lib-std"
 import {ValueDragging} from "@/ui/hooks/dragging.ts"
 import {ValueTooltip} from "@/ui/surface/ValueTooltip.tsx"
-import {BoxEditing} from "@opendaw/lib-box"
-import {CssUtils, Html} from "@opendaw/lib-dom"
-import {Colors} from "@opendaw/studio-enums"
+import {BoxEditing} from "@naomiarotest/lib-box"
+import {CssUtils, Html} from "@naomiarotest/lib-dom"
+import {Colors} from "@naomiarotest/studio-enums"
 
 const className = Html.adoptStyleSheet(css, "vertical-slider")
 

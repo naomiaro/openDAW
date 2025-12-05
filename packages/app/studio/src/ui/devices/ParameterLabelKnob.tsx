@@ -1,13 +1,13 @@
 import css from "./ParameterLabelKnob.sass?inline"
-import {Lifecycle, unitValue, ValueGuide} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+import {Lifecycle, unitValue, ValueGuide} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {RelativeUnitValueDragging} from "@/ui/wrapper/RelativeUnitValueDragging.tsx"
 import {LabelKnob} from "@/ui/composite/LabelKnob.tsx"
-import {AutomatableParameterFieldAdapter, DeviceBoxAdapter} from "@opendaw/studio-adapters"
-import {BoxEditing} from "@opendaw/lib-box"
+import {AutomatableParameterFieldAdapter, DeviceBoxAdapter} from "@naomiarotest/studio-adapters"
+import {BoxEditing} from "@naomiarotest/lib-box"
 import {attachParameterContextMenu} from "@/ui/menu/automation.ts"
-import {Html} from "@opendaw/lib-dom"
-import {MIDILearning} from "@opendaw/studio-core"
+import {Html} from "@naomiarotest/lib-dom"
+import {MIDILearning} from "@naomiarotest/studio-core"
 
 const className = Html.adoptStyleSheet(css, "ParameterLabelKnob")
 

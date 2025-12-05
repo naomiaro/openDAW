@@ -1,6 +1,6 @@
-import {InaccessibleProperty} from "@opendaw/lib-std"
-import {Api} from "@opendaw/studio-scripting"
-import {Chord, PPQN} from "@opendaw/lib-dsp"
+import {InaccessibleProperty} from "@naomiarotest/lib-std"
+import {Api} from "@naomiarotest/studio-scripting"
+import {Chord, PPQN} from "@naomiarotest/lib-dsp"
 
 const openDAW: Api = InaccessibleProperty("Not to be executed.")
 

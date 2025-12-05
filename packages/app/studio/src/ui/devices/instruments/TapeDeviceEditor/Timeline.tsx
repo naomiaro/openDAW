@@ -1,9 +1,9 @@
-import {asDefined, Lifecycle, ObservableValue, quantizeFloor} from "@opendaw/lib-std"
-import {deferNextFrame, Html} from "@opendaw/lib-dom"
-import {ppqn, PPQN} from "@opendaw/lib-dsp"
-import {createElement} from "@opendaw/lib-jsx"
-import {AudioUnitTracks} from "@opendaw/studio-adapters"
-import {Colors} from "@opendaw/studio-enums"
+import {asDefined, Lifecycle, ObservableValue, quantizeFloor} from "@naomiarotest/lib-std"
+import {deferNextFrame, Html} from "@naomiarotest/lib-dom"
+import {ppqn, PPQN} from "@naomiarotest/lib-dsp"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {AudioUnitTracks} from "@naomiarotest/studio-adapters"
+import {Colors} from "@naomiarotest/studio-enums"
 
 type Construct = {
     lifecycle: Lifecycle

@@ -1,4 +1,4 @@
-import {assert, int, nextPowOf2, unitValue} from "@opendaw/lib-std"
+import {assert, int, nextPowOf2, unitValue} from "@naomiarotest/lib-std"
 
 export class Delay {
     readonly #delaySize: int

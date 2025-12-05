@@ -17,11 +17,11 @@ import {
     Terminator,
     unitValue,
     ValueMapping
-} from "@opendaw/lib-std"
-import {ppqn} from "@opendaw/lib-dsp"
-import {Address, PointerField, PointerTypes, PrimitiveField, PrimitiveType, PrimitiveValues} from "@opendaw/lib-box"
-import {Pointers} from "@opendaw/studio-enums"
-import {BoxVisitor, TrackBox} from "@opendaw/studio-boxes"
+} from "@naomiarotest/lib-std"
+import {ppqn} from "@naomiarotest/lib-dsp"
+import {Address, PointerField, PointerTypes, PrimitiveField, PrimitiveType, PrimitiveValues} from "@naomiarotest/lib-box"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {BoxVisitor, TrackBox} from "@naomiarotest/studio-boxes"
 import {TrackBoxAdapter} from "./timeline/TrackBoxAdapter"
 import {BoxAdaptersContext} from "./BoxAdaptersContext"
 

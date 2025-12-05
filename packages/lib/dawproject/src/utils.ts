@@ -1,7 +1,7 @@
 import {BooleanParameterSchema, RealParameterSchema, Unit} from "./defaults"
-import {Xml} from "@opendaw/lib-xml"
-import {asDefined} from "@opendaw/lib-std"
-import {semitoneToHz} from "@opendaw/lib-dsp"
+import {Xml} from "@naomiarotest/lib-xml"
+import {asDefined} from "@naomiarotest/lib-std"
+import {semitoneToHz} from "@naomiarotest/lib-dsp"
 
 export namespace ParameterEncoder {
     export const bool = (id: string, value: boolean, name?: string) => Xml.element({

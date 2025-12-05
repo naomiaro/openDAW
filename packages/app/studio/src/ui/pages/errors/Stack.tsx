@@ -1,6 +1,6 @@
 import css from "./Stack.sass?inline"
-import {Html} from "@opendaw/lib-dom"
-import {createElement} from "@opendaw/lib-jsx"
+import {Html} from "@naomiarotest/lib-dom"
+import {createElement} from "@naomiarotest/lib-jsx"
 
 const className = Html.adoptStyleSheet(css, "Stack")
 

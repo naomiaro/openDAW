@@ -1,5 +1,5 @@
 {
-    "name": "@opendaw/lib-std",
+    "name": "@naomiarotest/lib-std",
     "version": "0.0.50",
     "license": "LGPL-3.0-or-later",
     "publishConfig": {
@@ -22,8 +22,8 @@
         "test": "vitest run"
     },
     "devDependencies": {
-        "@opendaw/eslint-config": "^0.0.20",
-        "@opendaw/typescript-config": "^0.0.20",
+        "@naomiarotest/eslint-config": "^0.0.20",
+        "@naomiarotest/typescript-config": "^0.0.20",
         "zod": "^4.1.12"
     },
     "gitHead": "b000505c56dbc68bce90bac93f722198deab0ecf"

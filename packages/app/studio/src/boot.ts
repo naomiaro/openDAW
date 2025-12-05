@@ -1,21 +1,21 @@
 import "./main.sass"
 import {App} from "@/ui/App.tsx"
-import {panic, Progress, RuntimeNotification, RuntimeNotifier, UUID} from "@opendaw/lib-std"
+import {panic, Progress, RuntimeNotification, RuntimeNotifier, UUID} from "@naomiarotest/lib-std"
 import {StudioService} from "@/service/StudioService"
-import {AudioData, SampleMetaData, SoundfontMetaData} from "@opendaw/studio-adapters"
+import {AudioData, SampleMetaData, SoundfontMetaData} from "@naomiarotest/studio-adapters"
 import {Dialogs} from "@/ui/components/dialogs.tsx"
 import {installCursors} from "@/ui/Cursors.ts"
 import {BuildInfo} from "./BuildInfo"
 import {Surface} from "@/ui/surface/Surface.tsx"
-import {replaceChildren} from "@opendaw/lib-jsx"
+import {replaceChildren} from "@naomiarotest/lib-jsx"
 import {ContextMenu} from "@/ui/ContextMenu.ts"
 import {Spotlight} from "@/ui/spotlight/Spotlight.tsx"
 import {testFeatures} from "@/features.ts"
 import {MissingFeature} from "@/ui/MissingFeature.tsx"
 import {UpdateMessage} from "@/ui/UpdateMessage.tsx"
 import {showStoragePersistDialog} from "@/AppDialogs"
-import {Promises} from "@opendaw/lib-runtime"
-import {AnimationFrame, Browser, Events, Keyboard} from "@opendaw/lib-dom"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {AnimationFrame, Browser, Events, Keyboard} from "@naomiarotest/lib-dom"
 import {AudioOutputDevice} from "@/audio/AudioOutputDevice"
 import {FontLoader} from "@/ui/FontLoader"
 import {ErrorHandler} from "@/errors/ErrorHandler.ts"
@@ -28,7 +28,7 @@ import {
     OpenSoundfontAPI,
     SampleStorage,
     Workers
-} from "@opendaw/studio-core"
+} from "@naomiarotest/studio-core"
 
 const loadBuildInfo = async () => fetch(`/build-info.json?v=${Date.now()}`)
     .then(x => x.json())

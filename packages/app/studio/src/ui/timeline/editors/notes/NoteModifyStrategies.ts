@@ -1,5 +1,5 @@
-import {EventCollection, ppqn} from "@opendaw/lib-dsp"
-import {Coordinates, int, Option, unitValue} from "@opendaw/lib-std"
+import {EventCollection, ppqn} from "@naomiarotest/lib-dsp"
+import {Coordinates, int, Option, unitValue} from "@naomiarotest/lib-std"
 
 import {NoteEventOwnerReader} from "@/ui/timeline/editors/EventOwnerReader.ts"
 import {UINoteEvent} from "@/ui/timeline/editors/notes/UINoteEvent.ts"

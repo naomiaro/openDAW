@@ -1,8 +1,8 @@
 import css from "./DevicePanel.sass?inline"
-import {asDefined, Lifecycle, ObservableValue, Option, Terminable, Terminator, UUID} from "@opendaw/lib-std"
-import {appendChildren, createElement} from "@opendaw/lib-jsx"
+import {asDefined, Lifecycle, ObservableValue, Option, Terminable, Terminator, UUID} from "@naomiarotest/lib-std"
+import {appendChildren, createElement} from "@naomiarotest/lib-jsx"
 import {StudioService} from "@/service/StudioService"
-import {AudioUnitBox, BoxVisitor, PlayfieldSampleBox} from "@opendaw/studio-boxes"
+import {AudioUnitBox, BoxVisitor, PlayfieldSampleBox} from "@naomiarotest/studio-boxes"
 import {
     AudioEffectDeviceAdapter,
     AudioUnitInputAdapter,
@@ -11,20 +11,20 @@ import {
     IndexedBoxAdapterCollection,
     MidiEffectDeviceAdapter,
     PlayfieldSampleBoxAdapter
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {ScrollModel} from "@/ui/components/ScrollModel.ts"
 import {Orientation, Scroller} from "@/ui/components/Scroller"
 import {DeviceMidiMeter} from "@/ui/devices/panel/DeviceMidiMeter.tsx"
 import {ChannelStrip} from "@/ui/mixer/ChannelStrip"
 import {installAutoScroll} from "@/ui/AutoScroll"
-import {deferNextFrame, Events, Html} from "@opendaw/lib-dom"
+import {deferNextFrame, Events, Html} from "@naomiarotest/lib-dom"
 import {DevicePanelDragAndDrop} from "@/ui/devices/DevicePanelDragAndDrop"
 import {NoAudioUnitSelectedPlaceholder} from "@/ui/devices/panel/NoAudioUnitSelectedPlaceholder"
 import {NoEffectPlaceholder} from "@/ui/devices/panel/NoEffectPlaceholder"
 import {DeviceMount} from "@/ui/devices/panel/DeviceMount"
-import {Box} from "@opendaw/lib-box"
-import {Pointers} from "@opendaw/studio-enums"
-import {Project, ProjectProfile} from "@opendaw/studio-core"
+import {Box} from "@naomiarotest/lib-box"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {Project, ProjectProfile} from "@naomiarotest/studio-core"
 
 const className = Html.adoptStyleSheet(css, "DevicePanel")
 

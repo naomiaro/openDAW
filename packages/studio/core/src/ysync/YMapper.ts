@@ -8,9 +8,9 @@ import {
     PointerField,
     PrimitiveField,
     Vertex
-} from "@opendaw/lib-box"
+} from "@naomiarotest/lib-box"
 import * as Y from "yjs"
-import {asDefined, asInstanceOf, assert, isDefined, JSONValue, UUID} from "@opendaw/lib-std"
+import {asDefined, asInstanceOf, assert, isDefined, JSONValue, UUID} from "@naomiarotest/lib-std"
 
 export namespace YMapper {
     export const createBoxMap = (box: Box): Y.Map<unknown> => {

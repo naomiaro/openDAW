@@ -1,9 +1,9 @@
 import "./style.css"
-import {assert, Errors, InaccessibleProperty, Progress, UUID} from "@opendaw/lib-std"
-import {PPQN} from "@opendaw/lib-dsp"
-import {AnimationFrame, Browser, Files} from "@opendaw/lib-dom"
-import {Promises} from "@opendaw/lib-runtime"
-import {AudioData, SampleMetaData} from "@opendaw/studio-adapters"
+import {assert, Errors, InaccessibleProperty, Progress, UUID} from "@naomiarotest/lib-std"
+import {PPQN} from "@naomiarotest/lib-dsp"
+import {AnimationFrame, Browser, Files} from "@naomiarotest/lib-dom"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {AudioData, SampleMetaData} from "@naomiarotest/studio-adapters"
 import {
     AudioWorklets,
     DefaultSampleLoaderManager,
@@ -12,10 +12,10 @@ import {
     Project,
     ProjectEnv,
     Workers
-} from "@opendaw/studio-core"
+} from "@naomiarotest/studio-core"
 import {testFeatures} from "./features"
-import WorkersUrl from "@opendaw/studio-core/workers-main.js?worker&url"
-import WorkletsUrl from "@opendaw/studio-core/processors.js?url"
+import WorkersUrl from "@naomiarotest/studio-core/workers-main.js?worker&url"
+import WorkletsUrl from "@naomiarotest/studio-core/processors.js?url"
 import {importSample} from "./helper"
 
 /**

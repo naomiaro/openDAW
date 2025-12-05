@@ -9,9 +9,9 @@ import {
     Option,
     RuntimeNotifier,
     UUID
-} from "@opendaw/lib-std"
-import {Address, Box, BoxGraph, PointerField} from "@opendaw/lib-box"
-import {AudioUnitType} from "@opendaw/studio-enums"
+} from "@naomiarotest/lib-std"
+import {Address, Box, BoxGraph, PointerField} from "@naomiarotest/lib-box"
+import {AudioUnitType} from "@naomiarotest/studio-enums"
 import {
     AudioFileBox,
     AudioUnitBox,
@@ -21,7 +21,7 @@ import {
     CaptureMidiBox,
     SoundfontFileBox,
     TrackBox
-} from "@opendaw/studio-boxes"
+} from "@naomiarotest/studio-boxes"
 import {ProjectSkeleton} from "../project/ProjectSkeleton"
 import {ProjectUtils} from "../project/ProjectUtils"
 import {TrackType} from "../timeline/TrackType"

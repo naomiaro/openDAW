@@ -1,4 +1,4 @@
-import {dbToGain} from "@opendaw/lib-dsp"
+import {dbToGain} from "@naomiarotest/lib-dsp"
 
 export namespace AudioUtils {
     export const findLastNonSilentSample = (buffer: AudioBuffer, thresholdDb: number = -72.0): number => {

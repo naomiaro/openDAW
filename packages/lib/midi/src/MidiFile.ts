@@ -1,4 +1,4 @@
-import {byte, ByteArrayInput, ByteArrayOutput} from "@opendaw/lib-std"
+import {byte, ByteArrayInput, ByteArrayOutput} from "@naomiarotest/lib-std"
 import {MidiTrack} from "./MidiTrack"
 import {Chunk} from "./Chunk"
 import {MidiFileDecoder} from "./MidiFileDecoder"

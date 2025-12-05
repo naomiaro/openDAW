@@ -9,8 +9,8 @@ import {
     ObservableValue,
     safeExecute,
     unitValue
-} from "@opendaw/lib-std"
-import {MidiData} from "@opendaw/lib-midi"
+} from "@naomiarotest/lib-std"
+import {MidiData} from "@naomiarotest/lib-midi"
 
 type OnMidiMessage = Nullable<(this: MIDIInput, ev: MIDIMessageEvent) => any>
 

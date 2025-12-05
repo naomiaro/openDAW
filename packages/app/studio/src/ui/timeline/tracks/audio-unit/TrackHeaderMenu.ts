@@ -1,12 +1,12 @@
 import {MenuItem} from "@/ui/model/menu-item"
-import {isInstanceOf, Procedure, RuntimeNotifier, UUID} from "@opendaw/lib-std"
-import {AudioUnitBoxAdapter, DeviceAccepts, ProjectUtils, TrackBoxAdapter, TrackType} from "@opendaw/studio-adapters"
+import {isInstanceOf, Procedure, RuntimeNotifier, UUID} from "@naomiarotest/lib-std"
+import {AudioUnitBoxAdapter, DeviceAccepts, ProjectUtils, TrackBoxAdapter, TrackType} from "@naomiarotest/studio-adapters"
 import {DebugMenus} from "@/ui/menu/debug"
 import {MidiImport} from "@/ui/timeline/MidiImport.ts"
-import {CaptureMidiBox, TrackBox} from "@opendaw/studio-boxes"
+import {CaptureMidiBox, TrackBox} from "@naomiarotest/studio-boxes"
 import {StudioService} from "@/service/StudioService"
 import {MenuCapture} from "@/ui/timeline/tracks/audio-unit/menu/capture"
-import {Project} from "@opendaw/studio-core"
+import {Project} from "@naomiarotest/studio-core"
 
 export const installTrackHeaderMenu = (service: StudioService,
                                        audioUnitBoxAdapter: AudioUnitBoxAdapter,

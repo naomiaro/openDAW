@@ -1,5 +1,5 @@
 {
-    "name": "@opendaw/lib-midi",
+    "name": "@naomiarotest/lib-midi",
     "version": "0.0.32",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -22,12 +22,12 @@
         "test": "echo \"No tests to run\""
     },
     "dependencies": {
-        "@opendaw/lib-dsp": "^0.0.50",
-        "@opendaw/lib-std": "^0.0.50"
+        "@naomiarotest/lib-dsp": "^0.0.50",
+        "@naomiarotest/lib-std": "^0.0.50"
     },
     "devDependencies": {
-        "@opendaw/eslint-config": "^0.0.20",
-        "@opendaw/typescript-config": "^0.0.20"
+        "@naomiarotest/eslint-config": "^0.0.20",
+        "@naomiarotest/typescript-config": "^0.0.20"
     },
     "gitHead": "b000505c56dbc68bce90bac93f722198deab0ecf"
 }

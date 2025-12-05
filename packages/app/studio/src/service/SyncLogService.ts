@@ -1,8 +1,8 @@
 import {FooterLabel} from "@/service/FooterLabel"
-import {asDefined, Exec, isDefined} from "@opendaw/lib-std"
-import {Promises} from "@opendaw/lib-runtime"
+import {asDefined, Exec, isDefined} from "@naomiarotest/lib-std"
+import {Promises} from "@naomiarotest/lib-runtime"
 import {StudioService} from "@/service/StudioService"
-import {Commit, FilePickerAcceptTypes, SyncLogReader, SyncLogWriter} from "@opendaw/studio-core"
+import {Commit, FilePickerAcceptTypes, SyncLogReader, SyncLogWriter} from "@naomiarotest/studio-core"
 
 export namespace SyncLogService {
     export const start = async (service: StudioService) => {

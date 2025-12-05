@@ -1,7 +1,7 @@
-import {assert, clamp, float, int, Observer, Option, Strings, Subscription, UUID} from "@opendaw/lib-std"
-import {ppqn, PPQN} from "@opendaw/lib-dsp"
-import {BoxGraph, Field, IndexedBox, PointerField} from "@opendaw/lib-box"
-import {AudioUnitType, Pointers} from "@opendaw/studio-enums"
+import {assert, clamp, float, int, Observer, Option, Strings, Subscription, UUID} from "@naomiarotest/lib-std"
+import {ppqn, PPQN} from "@naomiarotest/lib-dsp"
+import {BoxGraph, Field, IndexedBox, PointerField} from "@naomiarotest/lib-box"
+import {AudioUnitType, Pointers} from "@naomiarotest/studio-enums"
 import {
     AudioUnitBox,
     CaptureAudioBox,
@@ -14,7 +14,7 @@ import {
     ValueClipBox,
     ValueEventCollectionBox,
     ValueRegionBox
-} from "@opendaw/studio-boxes"
+} from "@naomiarotest/studio-boxes"
 import {
     AnyClipBox,
     AudioUnitBoxAdapter,
@@ -29,7 +29,7 @@ import {
     InstrumentProduct,
     ProjectQueries,
     TrackType
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {Project} from "./Project"
 import {EffectFactory} from "../EffectFactory"
 import {EffectBox} from "../EffectBox"

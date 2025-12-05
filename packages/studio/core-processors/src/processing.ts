@@ -1,5 +1,5 @@
-import {int, Terminable} from "@opendaw/lib-std"
-import {AudioBuffer, ppqn} from "@opendaw/lib-dsp"
+import {int, Terminable} from "@naomiarotest/lib-std"
+import {AudioBuffer, ppqn} from "@naomiarotest/lib-dsp"
 import {EventBuffer} from "./EventBuffer"
 
 export const enum BlockFlag {

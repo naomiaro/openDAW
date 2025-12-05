@@ -1,6 +1,6 @@
 import type {Dropbox, DropboxResponse, files} from "dropbox"
-import {Errors, isDefined, Option, panic} from "@opendaw/lib-std"
-import {Promises} from "@opendaw/lib-runtime"
+import {Errors, isDefined, Option, panic} from "@naomiarotest/lib-std"
+import {Promises} from "@naomiarotest/lib-runtime"
 import {CloudHandler} from "./CloudHandler"
 
 export class DropboxHandler implements CloudHandler {

@@ -1,4 +1,4 @@
-import {FloatArray, int, Procedure} from "@opendaw/lib-std"
+import {FloatArray, int, Procedure} from "@naomiarotest/lib-std"
 
 export interface SamplePeakProtocol {
     generateAsync(progress: Procedure<number>,

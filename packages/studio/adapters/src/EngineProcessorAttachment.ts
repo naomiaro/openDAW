@@ -1,4 +1,4 @@
-import {int, Option} from "@opendaw/lib-std"
+import {int, Option} from "@naomiarotest/lib-std"
 
 export type ProcessorOptions = { pauseOnLoopDisabled?: boolean }
 

@@ -9,8 +9,8 @@ import {
     Subscription,
     Terminable,
     UUID
-} from "@opendaw/lib-std"
-import {Box, Update} from "@opendaw/lib-box"
+} from "@naomiarotest/lib-std"
+import {Box, Update} from "@naomiarotest/lib-box"
 import {
     ArpeggioDeviceBox,
     AudioBusBox,
@@ -64,7 +64,7 @@ import {
     VaporisateurDeviceBox,
     VelocityDeviceBox,
     ZeitgeistDeviceBox
-} from "@opendaw/studio-boxes"
+} from "@naomiarotest/studio-boxes"
 import {AudioUnitBoxAdapter} from "./audio-unit/AudioUnitBoxAdapter"
 import {DelayDeviceBoxAdapter} from "./devices/audio-effects/DelayDeviceBoxAdapter"
 import {ReverbDeviceBoxAdapter} from "./devices/audio-effects/ReverbDeviceBoxAdapter"

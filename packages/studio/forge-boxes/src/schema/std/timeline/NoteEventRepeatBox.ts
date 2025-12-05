@@ -1,6 +1,6 @@
 // TODO Create, refer this and remove 'play-count' and 'play-curve' from NoteEventBox
-import {BoxSchema} from "@opendaw/lib-box-forge"
-import {Pointers} from "@opendaw/studio-enums"
+import {BoxSchema} from "@naomiarotest/lib-box-forge"
+import {Pointers} from "@naomiarotest/studio-enums"
 import {BipolarConstraints, UnipolarConstraints} from "../Defaults"
 
 export const NoteEventRepeatBox: BoxSchema<Pointers> = {

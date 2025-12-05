@@ -1,4 +1,4 @@
-import {Arrays, assert, int, panic, Procedure} from "@opendaw/lib-std"
+import {Arrays, assert, int, panic, Procedure} from "@naomiarotest/lib-std"
 
 declare let document: any
 

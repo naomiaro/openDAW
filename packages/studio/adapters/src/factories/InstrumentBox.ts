@@ -5,7 +5,7 @@ import {
     SoundfontDeviceBox,
     TapeDeviceBox,
     VaporisateurDeviceBox
-} from "@opendaw/studio-boxes"
+} from "@naomiarotest/studio-boxes"
 
 export type InstrumentBox =
     TapeDeviceBox

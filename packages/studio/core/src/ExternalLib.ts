@@ -1,5 +1,5 @@
-import {Promises} from "@opendaw/lib-runtime"
-import {int} from "@opendaw/lib-std"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {int} from "@naomiarotest/lib-std"
 
 export namespace ExternalLib {
     const callback = (error: unknown, count: int) => {

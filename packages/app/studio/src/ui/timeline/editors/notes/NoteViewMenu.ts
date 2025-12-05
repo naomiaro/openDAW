@@ -1,8 +1,8 @@
 import {MenuCollector, MenuItem} from "@/ui/model/menu-item.ts"
-import {Procedure} from "@opendaw/lib-std"
-import {NoteEventBoxAdapter} from "@opendaw/studio-adapters"
-import {EventCollection} from "@opendaw/lib-dsp"
-import {TimelineRange} from "@opendaw/studio-core"
+import {Procedure} from "@naomiarotest/lib-std"
+import {NoteEventBoxAdapter} from "@naomiarotest/studio-adapters"
+import {EventCollection} from "@naomiarotest/lib-dsp"
+import {TimelineRange} from "@naomiarotest/studio-core"
 import {PitchPositioner} from "@/ui/timeline/editors/notes/pitch/PitchPositioner.ts"
 
 import {NoteEventOwnerReader} from "@/ui/timeline/editors/EventOwnerReader.ts"

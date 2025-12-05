@@ -1,8 +1,8 @@
-import {ppqn, PPQN, RenderQuantum} from "@opendaw/lib-dsp"
+import {ppqn, PPQN, RenderQuantum} from "@naomiarotest/lib-dsp"
 import {Block, BlockFlags, ProcessInfo} from "./processing"
 import {EngineContext} from "./EngineContext"
-import {Exec, int, isDefined, Iterables, Nullable, Procedure, SetMultimap, Terminable} from "@opendaw/lib-std"
-import {MarkerBoxAdapter} from "@opendaw/studio-adapters"
+import {Exec, int, isDefined, Iterables, Nullable, Procedure, SetMultimap, Terminable} from "@naomiarotest/lib-std"
+import {MarkerBoxAdapter} from "@naomiarotest/studio-adapters"
 
 type Action = null
     | { type: "loop", target: ppqn }

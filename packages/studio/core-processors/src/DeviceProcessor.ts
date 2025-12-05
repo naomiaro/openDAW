@@ -1,4 +1,4 @@
-import {Terminable, UUID} from "@opendaw/lib-std"
+import {Terminable, UUID} from "@naomiarotest/lib-std"
 import {Processor} from "./processing"
 
 export interface DeviceProcessor extends Terminable {

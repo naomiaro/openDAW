@@ -1,4 +1,4 @@
-import {byte, Procedure, Terminable, unitValue, UUID} from "@opendaw/lib-std"
+import {byte, Procedure, Terminable, unitValue, UUID} from "@naomiarotest/lib-std"
 import {NoteSignal} from "./NoteSignal"
 
 export namespace NoteLifeCycle {

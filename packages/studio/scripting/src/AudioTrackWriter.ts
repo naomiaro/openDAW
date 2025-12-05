@@ -1,12 +1,12 @@
-import {UUID} from "@opendaw/lib-std"
-import {AudioRegionBox, AudioUnitBox, TrackBox, ValueEventCollectionBox} from "@opendaw/studio-boxes"
-import {TrackType} from "@opendaw/studio-adapters"
-import {BoxGraph} from "@opendaw/lib-box"
+import {UUID} from "@naomiarotest/lib-std"
+import {AudioRegionBox, AudioUnitBox, TrackBox, ValueEventCollectionBox} from "@naomiarotest/studio-boxes"
+import {TrackType} from "@naomiarotest/studio-adapters"
+import {BoxGraph} from "@naomiarotest/lib-box"
 import {IndexRef} from "./IndexRef"
 import {AudioTrackImpl} from "./impl/AudioTrackImpl"
 import {AudioRegionImpl} from "./impl/AudioRegionImpl"
-import {AudioPlayback} from "@opendaw/studio-enums"
-import {TimeBase} from "@opendaw/lib-dsp"
+import {AudioPlayback} from "@naomiarotest/studio-enums"
+import {TimeBase} from "@naomiarotest/lib-dsp"
 import {AudioFileBoxfactory} from "./AudioFileBoxfactory"
 
 export namespace AudioTrackWriter {

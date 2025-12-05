@@ -1,7 +1,7 @@
-import {Svg} from "@opendaw/lib-dom"
-import {gainToDb} from "@opendaw/lib-dsp"
-import {clamp, int, ObservableValue, Point, unitValue, ValueMapping} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+import {Svg} from "@naomiarotest/lib-dom"
+import {gainToDb} from "@naomiarotest/lib-dsp"
+import {clamp, int, ObservableValue, Point, unitValue, ValueMapping} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 
 export namespace VUMeter {
     export interface Design {

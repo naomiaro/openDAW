@@ -1,4 +1,4 @@
-import {ExportStemConfiguration} from "@opendaw/studio-adapters"
+import {ExportStemConfiguration} from "@naomiarotest/studio-adapters"
 
 export type AudioUnitOptions = Omit<ExportStemConfiguration, "fileName">
 

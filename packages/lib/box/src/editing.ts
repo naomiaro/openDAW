@@ -1,5 +1,5 @@
 import {BoxGraph} from "./graph"
-import {Arrays, assert, Editing, int, Maybe, Option, Provider} from "@opendaw/lib-std"
+import {Arrays, assert, Editing, int, Maybe, Option, Provider} from "@naomiarotest/lib-std"
 import {Update} from "./updates"
 
 class Modification {

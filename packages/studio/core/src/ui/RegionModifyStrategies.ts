@@ -1,6 +1,6 @@
-import {ppqn, Region, RegionCollection} from "@opendaw/lib-dsp"
-import {int} from "@opendaw/lib-std"
-import {AnyLoopableRegionBoxAdapter, AnyRegionBoxAdapter} from "@opendaw/studio-adapters"
+import {ppqn, Region, RegionCollection} from "@naomiarotest/lib-dsp"
+import {int} from "@naomiarotest/lib-std"
+import {AnyLoopableRegionBoxAdapter, AnyRegionBoxAdapter} from "@naomiarotest/studio-adapters"
 
 export interface RegionModifyStrategies {
     showOrigin(): boolean

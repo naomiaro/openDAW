@@ -1,4 +1,4 @@
-import {Observer, Option, Subscription, UUID} from "@opendaw/lib-std"
+import {Observer, Option, Subscription, UUID} from "@naomiarotest/lib-std"
 import type {SoundFont2} from "soundfont2"
 import {SoundfontLoaderState} from "./SoundfontLoaderState"
 

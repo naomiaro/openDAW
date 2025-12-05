@@ -1,4 +1,4 @@
-import {Exec, Procedure} from "@opendaw/lib-std"
+import {Exec, Procedure} from "@naomiarotest/lib-std"
 
 export interface Result<T> {
     success: Procedure<T>

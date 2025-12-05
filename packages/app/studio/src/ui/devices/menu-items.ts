@@ -1,13 +1,13 @@
-import {DeviceHost, Devices, EffectDeviceBoxAdapter, PresetDecoder, PresetEncoder} from "@opendaw/studio-adapters"
+import {DeviceHost, Devices, EffectDeviceBoxAdapter, PresetDecoder, PresetEncoder} from "@naomiarotest/studio-adapters"
 import {MenuItem} from "@/ui/model/menu-item.ts"
-import {BoxEditing, PrimitiveField, PrimitiveValues, StringField} from "@opendaw/lib-box"
-import {EmptyExec, isInstanceOf, panic, RuntimeNotifier} from "@opendaw/lib-std"
+import {BoxEditing, PrimitiveField, PrimitiveValues, StringField} from "@naomiarotest/lib-box"
+import {EmptyExec, isInstanceOf, panic, RuntimeNotifier} from "@naomiarotest/lib-std"
 import {Surface} from "@/ui/surface/Surface"
 import {FloatingTextInput} from "@/ui/components/FloatingTextInput"
 import {StudioService} from "@/service/StudioService"
-import {EffectFactories, FilePickerAcceptTypes, Project} from "@opendaw/studio-core"
-import {ModularDeviceBox, VaporisateurDeviceBox} from "@opendaw/studio-boxes"
-import {Files} from "@opendaw/lib-dom"
+import {EffectFactories, FilePickerAcceptTypes, Project} from "@naomiarotest/studio-core"
+import {ModularDeviceBox, VaporisateurDeviceBox} from "@naomiarotest/studio-boxes"
+import {Files} from "@naomiarotest/lib-dom"
 
 export namespace MenuItems {
     export const forAudioUnitInput = (parent: MenuItem, service: StudioService, deviceHost: DeviceHost): void => {

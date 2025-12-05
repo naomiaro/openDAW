@@ -1,5 +1,5 @@
-import {ModuleConnectionBox} from "@opendaw/studio-boxes"
-import {Address, Vertex} from "@opendaw/lib-box"
+import {ModuleConnectionBox} from "@naomiarotest/studio-boxes"
+import {Address, Vertex} from "@naomiarotest/lib-box"
 import {BoxAdapter} from "../BoxAdapter"
 import {BoxAdaptersContext} from "../BoxAdaptersContext"
 

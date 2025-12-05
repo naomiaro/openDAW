@@ -1,5 +1,5 @@
-import {BoxSchema} from "@opendaw/lib-box-forge"
-import {Pointers} from "@opendaw/studio-enums"
+import {BoxSchema} from "@naomiarotest/lib-box-forge"
+import {Pointers} from "@naomiarotest/studio-enums"
 
 export const MIDIOutputParameterBox: BoxSchema<Pointers> = {
     type: "box",

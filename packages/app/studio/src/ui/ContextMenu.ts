@@ -1,8 +1,8 @@
 import {MenuItem} from "@/ui/model/menu-item"
-import {Client, Option, Subscription} from "@opendaw/lib-std"
+import {Client, Option, Subscription} from "@naomiarotest/lib-std"
 import {Menu} from "@/ui/components/Menu.tsx"
 import {Surface} from "@/ui/surface/Surface.tsx"
-import {Events, Html} from "@opendaw/lib-dom"
+import {Events, Html} from "@naomiarotest/lib-dom"
 
 export namespace ContextMenu {
     export const CONTEXT_MENU_EVENT_TYPE = "--context-menu" as const

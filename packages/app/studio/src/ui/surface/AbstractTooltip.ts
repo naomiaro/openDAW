@@ -1,6 +1,6 @@
-import {AnimationFrame} from "@opendaw/lib-dom"
+import {AnimationFrame} from "@naomiarotest/lib-dom"
 import {Surface} from "./Surface"
-import {int, Option, Provider, Terminable} from "@opendaw/lib-std"
+import {int, Option, Provider, Terminable} from "@naomiarotest/lib-std"
 
 export type ClientPosition = { clientX: number, clientY: number }
 

@@ -7,17 +7,17 @@ import {
     TrackBoxAdapter,
     ValueEventCollectionBoxAdapter,
     ValueRegionBoxAdapter
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {
     AudioEventOwnerReader,
     EventOwnerReader,
     NoteEventOwnerReader,
     ValueEventOwnerReader
 } from "@/ui/timeline/editors/EventOwnerReader.ts"
-import {ppqn} from "@opendaw/lib-dsp"
-import {mod, Observer, Option, Subscription} from "@opendaw/lib-std"
-import {Propagation} from "@opendaw/lib-box"
-import {TimelineRange} from "@opendaw/studio-core"
+import {ppqn} from "@naomiarotest/lib-dsp"
+import {mod, Observer, Option, Subscription} from "@naomiarotest/lib-std"
+import {Propagation} from "@naomiarotest/lib-box"
+import {TimelineRange} from "@naomiarotest/studio-core"
 
 export class RegionReader<REGION extends LoopableRegionBoxAdapter<CONTENT>, CONTENT> implements EventOwnerReader<CONTENT> {
     static forAudioRegionBoxAdapter(region: AudioRegionBoxAdapter): AudioEventOwnerReader {

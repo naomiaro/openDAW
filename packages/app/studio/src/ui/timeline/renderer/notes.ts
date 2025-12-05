@@ -1,7 +1,7 @@
-import {NoteRegionBoxAdapter} from "@opendaw/studio-adapters"
-import {LoopableRegion} from "@opendaw/lib-dsp"
+import {NoteRegionBoxAdapter} from "@naomiarotest/studio-adapters"
+import {LoopableRegion} from "@naomiarotest/lib-dsp"
 import {RegionBound} from "@/ui/timeline/renderer/env.ts"
-import {TimelineRange} from "@opendaw/studio-core"
+import {TimelineRange} from "@naomiarotest/studio-core"
 
 export const renderNotes = (context: CanvasRenderingContext2D,
                             range: TimelineRange,

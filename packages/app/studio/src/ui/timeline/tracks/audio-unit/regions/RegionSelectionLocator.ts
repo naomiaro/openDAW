@@ -1,6 +1,6 @@
 import {TimelineCoordinates, TimelineSelectableLocator} from "@/ui/timeline/TimelineSelectableLocator.ts"
-import {AnyRegionBoxAdapter} from "@opendaw/studio-adapters"
-import {isDefined, Iterables, Selection} from "@opendaw/lib-std"
+import {AnyRegionBoxAdapter} from "@naomiarotest/studio-adapters"
+import {isDefined, Iterables, Selection} from "@naomiarotest/lib-std"
 import {TracksManager} from "@/ui/timeline/tracks/audio-unit/TracksManager.ts"
 
 export const createRegionLocator = (manager: TracksManager,

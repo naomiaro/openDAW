@@ -1,11 +1,11 @@
 import css from "./AddParameterButton.sass?inline"
-import {Html} from "@opendaw/lib-dom"
-import {UUID} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
-import {MIDIOutputParameterBox, TrackBox} from "@opendaw/studio-boxes"
-import {IconSymbol} from "@opendaw/studio-enums"
-import {MIDIOutputDeviceBoxAdapter, TrackType} from "@opendaw/studio-adapters"
-import {Project} from "@opendaw/studio-core"
+import {Html} from "@naomiarotest/lib-dom"
+import {UUID} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {MIDIOutputParameterBox, TrackBox} from "@naomiarotest/studio-boxes"
+import {IconSymbol} from "@naomiarotest/studio-enums"
+import {MIDIOutputDeviceBoxAdapter, TrackType} from "@naomiarotest/studio-adapters"
+import {Project} from "@naomiarotest/studio-core"
 import {Icon} from "@/ui/components/Icon"
 
 const className = Html.adoptStyleSheet(css, "AddParameterButton")

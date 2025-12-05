@@ -1,5 +1,5 @@
-import {asDefined, int, Option} from "@opendaw/lib-std"
-import {ExportStemsConfiguration, ProcessorOptions, RingBuffer} from "@opendaw/studio-adapters"
+import {asDefined, int, Option, UUID} from "@naomiarotest/lib-std"
+import {ExportStemsConfiguration, ProcessorOptions, RingBuffer} from "@naomiarotest/studio-adapters"
 import {Project} from "./project/Project"
 import {EngineWorklet} from "./EngineWorklet"
 import {MeterWorklet} from "./MeterWorklet"
@@ -44,11 +44,11 @@ export class AudioWorklets {
         return new EngineWorklet(this.#context, project, exportConfiguration, options)
     }
 
-    createRecording(numberOfChannels: int, numChunks: int, outputLatency: number): RecordingWorklet {
+    createRecording(numberOfChannels: int, numChunks: int, outputLatency: number, captureId: UUID.Bytes): RecordingWorklet {
         const audioBytes = numberOfChannels * numChunks * RenderQuantum * Float32Array.BYTES_PER_ELEMENT
         const pointerBytes = Int32Array.BYTES_PER_ELEMENT * 2
         const sab = new SharedArrayBuffer(audioBytes + pointerBytes)
         const buffer: RingBuffer.Config = {sab, numChunks, numberOfChannels, bufferSize: RenderQuantum}
-        return new RecordingWorklet(this.#context, buffer, outputLatency)
+        return new RecordingWorklet(this.#context, buffer, outputLatency, captureId)
     }
 }

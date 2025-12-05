@@ -1,5 +1,5 @@
-import {RuntimeNotifier} from "@opendaw/lib-std"
-import {Communicator, Messenger, Promises} from "@opendaw/lib-runtime"
+import {RuntimeNotifier} from "@naomiarotest/lib-std"
+import {Communicator, Messenger, Promises} from "@naomiarotest/lib-runtime"
 import {ScriptExecutionContext, ScriptExecutionProtocol} from "./ScriptExecutionProtocol"
 import {ScriptHostProtocol} from "./ScriptHostProtocol"
 

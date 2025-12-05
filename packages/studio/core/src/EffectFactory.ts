@@ -1,7 +1,7 @@
-import {EffectPointerType} from "@opendaw/studio-adapters"
-import {IconSymbol} from "@opendaw/studio-enums"
-import {Field} from "@opendaw/lib-box"
-import {int} from "@opendaw/lib-std"
+import {EffectPointerType} from "@naomiarotest/studio-adapters"
+import {IconSymbol} from "@naomiarotest/studio-enums"
+import {Field} from "@naomiarotest/lib-box"
+import {int} from "@naomiarotest/lib-std"
 import {Project} from "./project"
 import {EffectBox} from "./EffectBox"
 

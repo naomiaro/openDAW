@@ -1,7 +1,7 @@
-import {Arrays, int, Terminable} from "@opendaw/lib-std"
-import {Address} from "@opendaw/lib-box"
-import {RenderQuantum, RMS, StereoMatrix} from "@opendaw/lib-dsp"
-import {LiveStreamBroadcaster} from "@opendaw/lib-fusion"
+import {Arrays, int, Terminable} from "@naomiarotest/lib-std"
+import {Address} from "@naomiarotest/lib-box"
+import {RenderQuantum, RMS, StereoMatrix} from "@naomiarotest/lib-dsp"
+import {LiveStreamBroadcaster} from "@naomiarotest/lib-fusion"
 
 export class PeakBroadcaster implements Terminable {
     static readonly PEAK_DECAY = Math.exp(-1.0 / (sampleRate * 0.250))

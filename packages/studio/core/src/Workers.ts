@@ -1,6 +1,6 @@
-import {assert, FloatArray, int, Lazy, Option, Procedure} from "@opendaw/lib-std"
-import {Communicator, Messenger} from "@opendaw/lib-runtime"
-import type {OpfsProtocol, SamplePeakProtocol} from "@opendaw/lib-fusion"
+import {assert, FloatArray, int, Lazy, Option, Procedure} from "@naomiarotest/lib-std"
+import {Communicator, Messenger} from "@naomiarotest/lib-runtime"
+import type {OpfsProtocol, SamplePeakProtocol} from "@naomiarotest/lib-fusion"
 
 export class Workers {
     static async install(url: string): Promise<void> {

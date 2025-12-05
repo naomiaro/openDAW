@@ -1,4 +1,4 @@
-import {createElement} from "@opendaw/lib-jsx"
+import {createElement} from "@naomiarotest/lib-jsx"
 
 export const Logo = () => {
     const S = 60

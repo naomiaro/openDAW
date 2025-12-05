@@ -1,5 +1,5 @@
 {
-    "name": "@opendaw/eslint-config",
+    "name": "@naomiarotest/eslint-config",
     "version": "0.0.20",
     "private": true,
     "main": "index.js",

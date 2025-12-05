@@ -1,9 +1,9 @@
-import {Arrays, Circle, clamp, Geom, isDefined, Lifecycle, ObservableValue, ValueMapping} from "@opendaw/lib-std"
-import {createElement, Frag} from "@opendaw/lib-jsx"
-import {ppqn, PPQN} from "@opendaw/lib-dsp"
-import {AudioUnitTracks} from "@opendaw/studio-adapters"
-import {deferNextFrame} from "@opendaw/lib-dom"
-import {Colors} from "@opendaw/studio-enums"
+import {Arrays, Circle, clamp, Geom, isDefined, Lifecycle, ObservableValue, ValueMapping} from "@naomiarotest/lib-std"
+import {createElement, Frag} from "@naomiarotest/lib-jsx"
+import {ppqn, PPQN} from "@naomiarotest/lib-dsp"
+import {AudioUnitTracks} from "@naomiarotest/studio-adapters"
+import {deferNextFrame} from "@naomiarotest/lib-dom"
+import {Colors} from "@naomiarotest/studio-enums"
 
 const tapeVelocity = 13.0 / PPQN.Bar // TapeDeviceEditor speed 4.76 cm/s converted into svg coordinates
 const rEmpty = 15

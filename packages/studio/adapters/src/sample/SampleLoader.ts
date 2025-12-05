@@ -1,5 +1,5 @@
-import {Observer, Option, Subscription, UUID} from "@opendaw/lib-std"
-import {Peaks} from "@opendaw/lib-fusion"
+import {Observer, Option, Subscription, UUID} from "@naomiarotest/lib-std"
+import {Peaks} from "@naomiarotest/lib-fusion"
 import {AudioData} from "../audio/AudioData"
 import {SampleLoaderState} from "./SampleLoaderState"
 

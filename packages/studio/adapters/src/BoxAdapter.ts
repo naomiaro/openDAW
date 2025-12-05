@@ -1,5 +1,5 @@
-import {Terminable, UUID} from "@opendaw/lib-std"
-import {Addressable, Box} from "@opendaw/lib-box"
+import {Terminable, UUID} from "@naomiarotest/lib-std"
+import {Addressable, Box} from "@naomiarotest/lib-box"
 
 export interface BoxAdapter extends Addressable, Terminable {
     get box(): Box

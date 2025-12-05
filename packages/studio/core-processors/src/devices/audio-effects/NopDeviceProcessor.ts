@@ -1,12 +1,12 @@
-import {int, Option, Terminable, UUID} from "@opendaw/lib-std"
-import {AudioEffectDeviceAdapter} from "@opendaw/studio-adapters"
+import {int, Option, Terminable, UUID} from "@naomiarotest/lib-std"
+import {AudioEffectDeviceAdapter} from "@naomiarotest/studio-adapters"
 import {EngineContext} from "../../EngineContext"
 import {ProcessInfo, Processor} from "../../processing"
 import {AbstractProcessor} from "../../AbstractProcessor"
 import {PeakBroadcaster} from "../../PeakBroadcaster"
 import {AutomatableParameter} from "../../AutomatableParameter"
 import {AudioEffectDeviceProcessor} from "../../AudioEffectDeviceProcessor"
-import {AudioBuffer, RenderQuantum} from "@opendaw/lib-dsp"
+import {AudioBuffer, RenderQuantum} from "@naomiarotest/lib-dsp"
 
 export class NopDeviceProcessor extends AbstractProcessor implements AudioEffectDeviceProcessor {
     static ID: int = 0 | 0

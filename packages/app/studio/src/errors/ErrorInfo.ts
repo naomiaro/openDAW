@@ -1,4 +1,4 @@
-import {isDefined, tryCatch} from "@opendaw/lib-std"
+import {isDefined, tryCatch} from "@naomiarotest/lib-std"
 
 export type ErrorInfo = {
     name: string

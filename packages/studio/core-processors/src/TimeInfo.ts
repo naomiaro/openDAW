@@ -1,4 +1,4 @@
-import {ppqn} from "@opendaw/lib-dsp"
+import {ppqn} from "@naomiarotest/lib-dsp"
 
 export class TimeInfo {
     #position: number = 0.0
@@ -8,6 +8,7 @@ export class TimeInfo {
     isRecording: boolean = false
     isCountingIn: boolean = false
     metronomeEnabled: boolean = false
+    metronomeVolume: number = 0.5
 
     getLeapStateAndReset(): boolean {
         const leap = this.#leap

@@ -1,10 +1,10 @@
 import {Dialog} from "@/ui/components/Dialog"
-import {Sample} from "@opendaw/studio-adapters"
-import {IconSymbol} from "@opendaw/studio-enums"
+import {Sample} from "@naomiarotest/studio-adapters"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 import {Surface} from "@/ui/surface/Surface"
-import {createElement} from "@opendaw/lib-jsx"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {Dialogs} from "@/ui/components/dialogs"
-import {Errors} from "@opendaw/lib-std"
+import {Errors} from "@naomiarotest/lib-std"
 
 export namespace SampleDialogs {
     export const showEditSampleDialog = async (sample: Sample): Promise<Sample> => {

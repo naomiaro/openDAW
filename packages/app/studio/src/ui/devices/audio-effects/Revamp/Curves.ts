@@ -1,4 +1,4 @@
-import {Color, Notifier, Nullable, Observer, Subscription, Terminable} from "@opendaw/lib-std"
+import {Color, Notifier, Nullable, Observer, Subscription, Terminable} from "@naomiarotest/lib-std"
 import {CanvasUnitPainter} from "@/ui/canvas/painter.ts"
 import {
     AutomatableParameterFieldAdapter,
@@ -6,9 +6,9 @@ import {
     Parameters,
     PassParameters,
     ShelfParameters
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {biquad} from "@/ui/devices/audio-effects/Revamp/constants.ts"
-import {gainToDb} from "@opendaw/lib-dsp"
+import {gainToDb} from "@naomiarotest/lib-dsp"
 
 export type ColorSet = {
     full: Color

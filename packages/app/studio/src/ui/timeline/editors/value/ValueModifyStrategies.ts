@@ -1,5 +1,5 @@
-import {Interpolation, ppqn} from "@opendaw/lib-dsp"
-import {Generators, Option, unitValue} from "@opendaw/lib-std"
+import {Interpolation, ppqn} from "@naomiarotest/lib-dsp"
+import {Generators, Option, unitValue} from "@naomiarotest/lib-std"
 import {ValueEventOwnerReader} from "@/ui/timeline/editors/EventOwnerReader.ts"
 import {UIValueEvent} from "@/ui/timeline/editors/value/UIValueEvent.ts"
 

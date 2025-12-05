@@ -1,6 +1,6 @@
 import css from "./AudioUnitsTimeline.sass?inline"
-import {Lifecycle} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+import {Lifecycle} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {StudioService} from "@/service/StudioService.ts"
 import {Scroller} from "@/ui/components/Scroller.tsx"
 import {ScrollModel} from "@/ui/components/ScrollModel.ts"
@@ -8,8 +8,8 @@ import {TrackFactory, TracksManager} from "@/ui/timeline/tracks/audio-unit/Track
 import {Track} from "./Track"
 import {RegionsArea} from "./regions/RegionsArea.tsx"
 import {ClipsArea} from "./clips/ClipsArea.tsx"
-import {AudioUnitBoxAdapter, TrackBoxAdapter} from "@opendaw/studio-adapters"
-import {AnimationFrame, Events, Html} from "@opendaw/lib-dom"
+import {AudioUnitBoxAdapter, TrackBoxAdapter} from "@naomiarotest/studio-adapters"
+import {AnimationFrame, Events, Html} from "@naomiarotest/lib-dom"
 import {ExtraSpace} from "./Constants.ts"
 
 const className = Html.adoptStyleSheet(css, "AudioUnitsTimeline")

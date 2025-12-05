@@ -1,6 +1,6 @@
-import {asDefined, asInstanceOf} from "@opendaw/lib-std"
-import {AudioUnitBox, RootBox} from "@opendaw/studio-boxes"
-import {StringField} from "@opendaw/lib-box"
+import {asDefined, asInstanceOf} from "@naomiarotest/lib-std"
+import {AudioUnitBox, RootBox} from "@naomiarotest/studio-boxes"
+import {StringField} from "@naomiarotest/lib-box"
 
 export namespace ProjectQueries {
     export const existingInstrumentNames = (rootBox: RootBox) => rootBox.audioUnits.pointerHub.incoming().map(({box}) => {

@@ -10,9 +10,9 @@ import {
     Terminable,
     Terminator,
     UUID
-} from "@opendaw/lib-std"
-import {BPMTools} from "@opendaw/lib-dsp"
-import {Peaks, SamplePeaks} from "@opendaw/lib-fusion"
+} from "@naomiarotest/lib-std"
+import {BPMTools} from "@naomiarotest/lib-dsp"
+import {Peaks, SamplePeaks} from "@naomiarotest/lib-fusion"
 import {
     AudioData,
     mergeChunkPlanes,
@@ -20,11 +20,30 @@ import {
     SampleLoader,
     SampleLoaderState,
     SampleMetaData
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {SampleStorage} from "./samples"
 import {RenderQuantum} from "./RenderQuantum"
 import {Workers} from "./Workers"
 import {PeaksWriter} from "./PeaksWriter"
+
+/**
+ * Data emitted for each audio chunk during recording.
+ * Allows external consumers to process audio in real-time.
+ */
+export interface RecordingChunk {
+    /** UUID of this recording session */
+    readonly recordingId: string
+    /** UUID of the capture device (maps to track/audio unit) */
+    readonly captureId: string
+    /** Audio data - one Float32Array per channel, each with 128 samples */
+    readonly channels: ReadonlyArray<Float32Array>
+    /** Cumulative frame index (0, 128, 256, ...) */
+    readonly frameIndex: int
+    /** Sample rate of the audio context */
+    readonly sampleRate: number
+    /** Number of channels */
+    readonly channelCount: int
+}
 
 export class RecordingWorklet extends AudioWorkletNode implements Terminable, SampleLoader {
     readonly #terminator: Terminator = new Terminator()
@@ -33,16 +52,20 @@ export class RecordingWorklet extends AudioWorkletNode implements Terminable, Sa
 
     readonly #output: Array<ReadonlyArray<Float32Array>>
     readonly #notifier: Notifier<SampleLoaderState>
+    readonly #chunkNotifier: Notifier<RecordingChunk> = new Notifier<RecordingChunk>()
     readonly #reader: RingBuffer.Reader
     readonly #peakWriter: PeaksWriter
+    readonly #captureId: UUID.Bytes
 
     #data: Option<AudioData> = Option.None
     #peaks: Option<Peaks> = Option.None
     #isRecording: boolean = true
     #limitSamples: int = Number.POSITIVE_INFINITY
     #state: SampleLoaderState = {type: "record"}
+    #internalPeaksEnabled: boolean = true
+    #frameIndex: int = 0
 
-    constructor(context: BaseAudioContext, config: RingBuffer.Config, outputLatency: number) {
+    constructor(context: BaseAudioContext, config: RingBuffer.Config, outputLatency: number, captureId: UUID.Bytes) {
         super(context, "recording-processor", {
             numberOfInputs: 1,
             channelCount: config.numberOfChannels,
@@ -50,6 +73,7 @@ export class RecordingWorklet extends AudioWorkletNode implements Terminable, Sa
             processorOptions: config
         })
 
+        this.#captureId = captureId
         this.#peakWriter = new PeaksWriter(config.numberOfChannels)
         this.#peaks = Option.wrap(this.#peakWriter)
         this.#output = []
@@ -59,14 +83,43 @@ export class RecordingWorklet extends AudioWorkletNode implements Terminable, Sa
                 this.#output.push(array)
                 const latencyInSamples = (outputLatency * this.context.sampleRate) | 0
                 if (this.numberOfFrames >= latencyInSamples) {
-                    this.#peakWriter.append(array)
+                    if (this.#internalPeaksEnabled) {
+                        this.#peakWriter.append(array)
+                    }
                 }
+
+                // Notify external chunk subscribers
+                this.#chunkNotifier.notify({
+                    recordingId: UUID.toString(this.uuid),
+                    captureId: UUID.toString(this.#captureId),
+                    channels: array,
+                    frameIndex: this.#frameIndex,
+                    sampleRate: this.context.sampleRate,
+                    channelCount: array.length
+                })
+                this.#frameIndex += array[0].length
+
                 const need = this.numberOfFrames - latencyInSamples
                 if (need >= this.#limitSamples) {
                     this.#finalize().catch(error => console.warn(error))
                 }
             }
         })
+    }
+
+    /** Subscribe to receive audio chunks in real-time during recording */
+    subscribeToChunks(observer: Observer<RecordingChunk>): Subscription {
+        return this.#chunkNotifier.subscribe(observer)
+    }
+
+    /** Disable internal peak generation (use when handling peaks externally) */
+    disableInternalPeaks(): void {
+        this.#internalPeaksEnabled = false
+    }
+
+    /** Get the capture device UUID associated with this recording */
+    get captureId(): UUID.Bytes {
+        return this.#captureId
     }
 
     own<T extends Terminable>(terminable: T): T {return this.#terminator.own(terminable)}

@@ -1,6 +1,6 @@
-import {Promises} from "@opendaw/lib-runtime"
-import {Arrays, Errors} from "@opendaw/lib-std"
-import {ConstrainDOM} from "@opendaw/lib-dom"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {Arrays, Errors} from "@naomiarotest/lib-std"
+import {ConstrainDOM} from "@naomiarotest/lib-dom"
 
 export class AudioDevices {
     static async requestPermission() {

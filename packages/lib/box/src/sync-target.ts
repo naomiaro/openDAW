@@ -1,5 +1,5 @@
-import {Arrays, ByteArrayInput, isDefined, Option, Terminable, UUID} from "@opendaw/lib-std"
-import {Communicator, Messenger} from "@opendaw/lib-runtime"
+import {Arrays, ByteArrayInput, isDefined, Option, Terminable, UUID} from "@naomiarotest/lib-std"
+import {Communicator, Messenger} from "@naomiarotest/lib-runtime"
 import {BoxGraph} from "./graph"
 import {Address} from "./address"
 import {Synchronization, UpdateTask} from "./sync"

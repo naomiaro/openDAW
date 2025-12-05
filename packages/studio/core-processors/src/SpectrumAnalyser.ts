@@ -1,5 +1,5 @@
-import {FFT, Window} from "@opendaw/lib-dsp"
-import {int} from "@opendaw/lib-std"
+import {FFT, Window} from "@naomiarotest/lib-dsp"
+import {int} from "@naomiarotest/lib-std"
 
 export class SpectrumAnalyser {
     static readonly DEFAULT_SIZE = 1024

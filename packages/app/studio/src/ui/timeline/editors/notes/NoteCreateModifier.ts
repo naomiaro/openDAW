@@ -1,13 +1,13 @@
-import {Generators, int, MakeMutable, Notifier, Observer, Option, Selection, Terminable} from "@opendaw/lib-std"
+import {Generators, int, MakeMutable, Notifier, Observer, Option, Selection, Terminable} from "@naomiarotest/lib-std"
 import {Snapping} from "@/ui/timeline/Snapping.ts"
-import {BoxEditing} from "@opendaw/lib-box"
+import {BoxEditing} from "@naomiarotest/lib-box"
 import {Line, NoteModifyStrategy} from "./NoteModifyStrategies"
-import {EventCollection, ppqn} from "@opendaw/lib-dsp"
+import {EventCollection, ppqn} from "@naomiarotest/lib-dsp"
 import {NoteModifier} from "@/ui/timeline/editors/notes/NoteModifier.ts"
-import {NoteEventBoxAdapter} from "@opendaw/studio-adapters"
+import {NoteEventBoxAdapter} from "@naomiarotest/studio-adapters"
 import {NoteEventOwnerReader} from "@/ui/timeline/editors/EventOwnerReader.ts"
 import {UINoteEvent} from "@/ui/timeline/editors/notes/UINoteEvent.ts"
-import {Dragging} from "@opendaw/lib-dom"
+import {Dragging} from "@naomiarotest/lib-dom"
 
 type Construct = Readonly<{
     element: Element

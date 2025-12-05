@@ -7,9 +7,9 @@ import {
     Subscription,
     Terminable,
     UUID
-} from "@opendaw/lib-std"
-import {ppqn} from "@opendaw/lib-dsp"
-import {ClipNotification, NoteSignal} from "@opendaw/studio-adapters"
+} from "@naomiarotest/lib-std"
+import {ppqn} from "@naomiarotest/lib-dsp"
+import {ClipNotification, NoteSignal} from "@naomiarotest/studio-adapters"
 import {Project} from "./project"
 
 export interface Engine extends Terminable {
@@ -36,6 +36,7 @@ export interface Engine extends Terminable {
     get isRecording(): ObservableValue<boolean>
     get isCountingIn(): ObservableValue<boolean>
     get metronomeEnabled(): ObservableValue<boolean>
+    get metronomeVolume(): ObservableValue<number>
     get playbackTimestamp(): ObservableValue<ppqn>
     get playbackTimestampEnabled(): MutableObservableValue<boolean>
     get countInBarsTotal(): ObservableValue<int>

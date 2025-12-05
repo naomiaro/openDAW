@@ -1,6 +1,6 @@
-import {AudioEffectDeviceAdapter, CompressorDeviceBoxAdapter} from "@opendaw/studio-adapters"
-import {int, Option, Terminable, UUID} from "@opendaw/lib-std"
-import {AudioBuffer, dbToGain, Event, gainToDb, Ramp, RenderQuantum} from "@opendaw/lib-dsp"
+import {AudioEffectDeviceAdapter, CompressorDeviceBoxAdapter} from "@naomiarotest/studio-adapters"
+import {int, Option, Terminable, UUID} from "@naomiarotest/lib-std"
+import {AudioBuffer, dbToGain, Event, gainToDb, Ramp, RenderQuantum} from "@naomiarotest/lib-dsp"
 import {EngineContext} from "../../EngineContext"
 import {Block, Processor} from "../../processing"
 import {PeakBroadcaster} from "../../PeakBroadcaster"
@@ -14,7 +14,7 @@ import {
     LevelDetector,
     LookAhead,
     SmoothingFilter
-} from "@opendaw/lib-dsp/ctagdrc"
+} from "@naomiarotest/lib-dsp/ctagdrc"
 
 /**
  * Ported from https://github.com/p-hlp/CTAGDRC

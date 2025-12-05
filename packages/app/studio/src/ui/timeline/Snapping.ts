@@ -1,6 +1,6 @@
-import {clamp, int, Notifier, Observable, Observer, Subscription} from "@opendaw/lib-std"
-import {ppqn, PPQN} from "@opendaw/lib-dsp"
-import {TimelineRange} from "@opendaw/studio-core"
+import {clamp, int, Notifier, Observable, Observer, Subscription} from "@naomiarotest/lib-std"
+import {ppqn, PPQN} from "@naomiarotest/lib-dsp"
+import {TimelineRange} from "@naomiarotest/studio-core"
 import {MenuItem, MenuRootData} from "@/ui/model/menu-item"
 
 export interface SnapUnit {

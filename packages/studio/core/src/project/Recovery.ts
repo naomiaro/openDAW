@@ -1,5 +1,5 @@
-import {Option, Provider, UUID} from "@opendaw/lib-std"
-import {Promises} from "@opendaw/lib-runtime"
+import {Option, Provider, UUID} from "@naomiarotest/lib-std"
+import {Promises} from "@naomiarotest/lib-runtime"
 import {Project, ProjectEnv, ProjectMeta, ProjectProfile, Workers} from "../"
 
 export class Recovery {

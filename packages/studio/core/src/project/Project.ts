@@ -8,8 +8,8 @@ import {
     TerminableOwner,
     Terminator,
     UUID
-} from "@opendaw/lib-std"
-import {BoxEditing, BoxGraph} from "@opendaw/lib-box"
+} from "@naomiarotest/lib-std"
+import {BoxEditing, BoxGraph} from "@naomiarotest/lib-box"
 import {
     AudioBusBox,
     AudioFileBox,
@@ -21,7 +21,7 @@ import {
     TimelineBox,
     TrackBox,
     UserInterfaceBox
-} from "@opendaw/studio-boxes"
+} from "@naomiarotest/studio-boxes"
 import {
     BoxAdapters,
     BoxAdaptersContext,
@@ -37,8 +37,8 @@ import {
     UnionBoxTypes,
     UserEditingManager,
     VertexSelection
-} from "@opendaw/studio-adapters"
-import {LiveStreamBroadcaster, LiveStreamReceiver} from "@opendaw/lib-fusion"
+} from "@naomiarotest/studio-adapters"
+import {LiveStreamBroadcaster, LiveStreamReceiver} from "@naomiarotest/lib-fusion"
 import {ProjectEnv} from "./ProjectEnv"
 import {Mixer} from "../Mixer"
 import {ProjectApi} from "./ProjectApi"
@@ -49,8 +49,8 @@ import {EngineWorklet} from "../EngineWorklet"
 import {MidiDevices, MIDILearning} from "../midi"
 import {ProjectValidation} from "./ProjectValidation"
 import {Preferences} from "../Preferences"
-import {ConstantTempoMap, PPQN, ppqn, TempoMap, TimeBase} from "@opendaw/lib-dsp"
-import {MidiData} from "@opendaw/lib-midi"
+import {ConstantTempoMap, PPQN, ppqn, TempoMap, TimeBase} from "@naomiarotest/lib-dsp"
+import {MidiData} from "@naomiarotest/lib-midi"
 
 export type RestartWorklet = { unload: Func<unknown, Promise<unknown>>, load: Procedure<EngineWorklet> }
 

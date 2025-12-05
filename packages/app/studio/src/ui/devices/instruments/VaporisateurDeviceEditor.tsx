@@ -10,8 +10,8 @@ import {
     TAU,
     Terminator,
     Unhandled
-} from "@opendaw/lib-std"
-import {createElement, Frag, replaceChildren} from "@opendaw/lib-jsx"
+} from "@naomiarotest/lib-std"
+import {createElement, Frag, replaceChildren} from "@naomiarotest/lib-jsx"
 import {DeviceEditor} from "@/ui/devices/DeviceEditor.tsx"
 import {MenuItems} from "@/ui/devices/menu-items.ts"
 import {
@@ -19,16 +19,16 @@ import {
     DeviceHost,
     InstrumentFactories,
     VaporisateurDeviceBoxAdapter
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {DevicePeakMeter} from "@/ui/devices/panel/DevicePeakMeter.tsx"
-import {Html} from "@opendaw/lib-dom"
+import {Html} from "@naomiarotest/lib-dom"
 import {StudioService} from "@/service/StudioService"
 import {ParameterLabel} from "@/ui/components/ParameterLabel"
 import {RelativeUnitValueDragging} from "@/ui/wrapper/RelativeUnitValueDragging"
 import {RadioGroup} from "@/ui/components/RadioGroup"
 import {Icon} from "@/ui/components/Icon"
-import {IconSymbol} from "@opendaw/studio-enums"
-import {ClassicWaveform} from "@opendaw/lib-dsp"
+import {IconSymbol} from "@naomiarotest/studio-enums"
+import {ClassicWaveform} from "@naomiarotest/lib-dsp"
 import {EditWrapper} from "@/ui/wrapper/EditWrapper"
 import {WaveformDisplay} from "@/ui/devices/instruments/VaporisateurDeviceEditor/WaveformDisplay"
 import {EnvelopeDisplay} from "@/ui/devices/instruments/VaporisateurDeviceEditor/EnvelopeDisplay"

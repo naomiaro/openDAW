@@ -1,6 +1,6 @@
-import {Box, BoxGraph} from "@opendaw/lib-box"
-import {AudioUnitBox, DelayDeviceBox} from "@opendaw/studio-boxes"
-import {Unhandled, UUID} from "@opendaw/lib-std"
+import {Box, BoxGraph} from "@naomiarotest/lib-box"
+import {AudioUnitBox, DelayDeviceBox} from "@naomiarotest/studio-boxes"
+import {Unhandled, UUID} from "@naomiarotest/lib-std"
 import {AudioEffects} from "./Api"
 
 export class AudioEffectFactory {

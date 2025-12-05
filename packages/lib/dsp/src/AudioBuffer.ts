@@ -1,4 +1,4 @@
-import {Arrays, assert, int} from "@opendaw/lib-std"
+import {Arrays, assert, int} from "@naomiarotest/lib-std"
 import {RenderQuantum} from "./constants"
 
 export class AudioBuffer {

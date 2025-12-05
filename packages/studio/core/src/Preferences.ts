@@ -1,5 +1,5 @@
 import {z} from "zod"
-import {isDefined, Notifier, Observer, Subscription, tryCatch} from "@opendaw/lib-std"
+import {isDefined, Notifier, Observer, Subscription, tryCatch} from "@naomiarotest/lib-std"
 
 const PreferencesSchema = z.object({
     "auto-open-clips": z.boolean().default(false),

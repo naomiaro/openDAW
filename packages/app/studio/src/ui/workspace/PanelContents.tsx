@@ -1,5 +1,5 @@
-import {Lifecycle, Maps} from "@opendaw/lib-std"
-import {JsxValue} from "@opendaw/lib-jsx"
+import {Lifecycle, Maps} from "@naomiarotest/lib-std"
+import {JsxValue} from "@naomiarotest/lib-jsx"
 import {PanelType} from "@/ui/workspace/PanelType.ts"
 import {PanelContent} from "@/ui/workspace/PanelContent.tsx"
 import {Workspace} from "./Workspace"

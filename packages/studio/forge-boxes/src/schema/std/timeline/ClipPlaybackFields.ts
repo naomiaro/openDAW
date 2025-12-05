@@ -1,5 +1,5 @@
-import {Pointers} from "@opendaw/studio-enums"
-import {ClassSchema} from "@opendaw/lib-box-forge"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {ClassSchema} from "@naomiarotest/lib-box-forge"
 
 export const ClipPlaybackFields = {
     name: "ClipPlaybackFields",

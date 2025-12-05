@@ -1,6 +1,6 @@
-import {BoxSchema} from "@opendaw/lib-box-forge"
-import {AudioPlayback, Pointers} from "@opendaw/studio-enums"
-import {TimeBase} from "@opendaw/lib-dsp"
+import {BoxSchema} from "@naomiarotest/lib-box-forge"
+import {AudioPlayback, Pointers} from "@naomiarotest/studio-enums"
+import {TimeBase} from "@naomiarotest/lib-dsp"
 import {HueConstraints, PPQNPositionConstraints} from "../Defaults"
 
 export const AudioRegionBox: BoxSchema<Pointers> = {

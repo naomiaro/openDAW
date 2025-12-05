@@ -1,26 +1,26 @@
 import css from "./GenericModuleView.sass?inline"
-import {ifDefined, Lifecycle, Option, UUID} from "@opendaw/lib-std"
-import {appendChildren, createElement, Frag, Inject, JsxValue} from "@opendaw/lib-jsx"
+import {ifDefined, Lifecycle, Option, UUID} from "@naomiarotest/lib-std"
+import {appendChildren, createElement, Frag, Inject, JsxValue} from "@naomiarotest/lib-jsx"
 import {
     AutomatableParameterFieldAdapter,
     Direction,
     ModuleAdapter,
     ModuleConnectorAdapter
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {Icon} from "@/ui/components/Icon.tsx"
 import {MenuButton} from "@/ui/components/MenuButton.tsx"
 import {MenuItem} from "../model/menu-item"
 import {ConnectorView} from "@/ui/modular/ConnectorView.tsx"
 import {ModularEnvironment} from "@/ui/modular/ModularEnvironment.ts"
-import {PrimitiveType} from "@opendaw/lib-box"
+import {PrimitiveType} from "@naomiarotest/lib-box"
 import {Checkbox} from "@/ui/components/Checkbox.tsx"
 import {ParameterLabel} from "@/ui/components/ParameterLabel.tsx"
 import {RelativeUnitValueDragging} from "@/ui/wrapper/RelativeUnitValueDragging.tsx"
 import {ContextMenu} from "@/ui/ContextMenu.ts"
-import {DeviceInterfaceKnobBox} from "@opendaw/studio-boxes"
-import {Events, Html} from "@opendaw/lib-dom"
-import {Colors} from "@opendaw/studio-enums"
-import {IconSymbol} from "@opendaw/studio-enums"
+import {DeviceInterfaceKnobBox} from "@naomiarotest/studio-boxes"
+import {Events, Html} from "@naomiarotest/lib-dom"
+import {Colors} from "@naomiarotest/studio-enums"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 
 const className = Html.adoptStyleSheet(css, "GenericModuleView")
 

@@ -11,15 +11,15 @@ import {
     tryCatch,
     unitValue,
     UUID
-} from "@opendaw/lib-std"
-import {NoteEventBox, NoteEventCollectionBox, NoteRegionBox, TrackBox} from "@opendaw/studio-boxes"
-import {AudioUnitBoxAdapter, ColorCodes, TrackType} from "@opendaw/studio-adapters"
-import {PPQN, ppqn} from "@opendaw/lib-dsp"
+} from "@naomiarotest/lib-std"
+import {NoteEventBox, NoteEventCollectionBox, NoteRegionBox, TrackBox} from "@naomiarotest/studio-boxes"
+import {AudioUnitBoxAdapter, ColorCodes, TrackType} from "@naomiarotest/studio-adapters"
+import {PPQN, ppqn} from "@naomiarotest/lib-dsp"
 import {Dialogs} from "@/ui/components/dialogs.tsx"
-import {Promises, Wait} from "@opendaw/lib-runtime"
-import {Files} from "@opendaw/lib-dom"
-import {Project} from "@opendaw/studio-core"
-import {ControlType, MidiFile} from "@opendaw/lib-midi"
+import {Promises, Wait} from "@naomiarotest/lib-runtime"
+import {Files} from "@naomiarotest/lib-dom"
+import {Project} from "@naomiarotest/studio-core"
+import {ControlType, MidiFile} from "@naomiarotest/lib-midi"
 
 export namespace MidiImport {
     export const toTracks = async (project: Project, audioUnitBoxAdapter: AudioUnitBoxAdapter) => {

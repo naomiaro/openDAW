@@ -1,16 +1,16 @@
 import css from "./AudioEditorCanvas.sass?inline"
-import {Lifecycle} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+import {Lifecycle} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {StudioService} from "@/service/StudioService.ts"
-import {TimelineRange} from "@opendaw/studio-core"
+import {TimelineRange} from "@naomiarotest/studio-core"
 import {CanvasPainter} from "@/ui/canvas/painter.ts"
-import {LoopableRegion} from "@opendaw/lib-dsp"
+import {LoopableRegion} from "@naomiarotest/lib-dsp"
 import {renderAudio} from "@/ui/timeline/renderer/audio.ts"
 import {Snapping} from "@/ui/timeline/Snapping.ts"
 import {renderTimeGrid} from "@/ui/timeline/editors/TimeGridRenderer.ts"
 import {AudioEventOwnerReader} from "@/ui/timeline/editors/EventOwnerReader.ts"
 import {installEditorMainBody} from "../EditorBody"
-import {Html} from "@opendaw/lib-dom"
+import {Html} from "@naomiarotest/lib-dom"
 
 const className = Html.adoptStyleSheet(css, "AudioEditorCanvas")
 

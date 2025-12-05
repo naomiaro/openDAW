@@ -1,7 +1,7 @@
 import {Api, Project} from "../Api"
 import {ProjectImpl} from "./ProjectImpl"
 import {ScriptHostProtocol} from "../ScriptHostProtocol"
-import {AudioData, Sample} from "@opendaw/studio-adapters"
+import {AudioData, Sample} from "@naomiarotest/studio-adapters"
 import {ProjectUnpacker} from "../ProjectUnpacker"
 
 export class ApiImpl implements Api {

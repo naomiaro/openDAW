@@ -15,7 +15,7 @@ import {
     UnknownMidiEffectDeviceBox,
     VelocityDeviceBox,
     ZeitgeistDeviceBox
-} from "@opendaw/studio-boxes"
+} from "@naomiarotest/studio-boxes"
 
 export type EffectBox =
     | ArpeggioDeviceBox | PitchDeviceBox | VelocityDeviceBox | ZeitgeistDeviceBox | UnknownMidiEffectDeviceBox

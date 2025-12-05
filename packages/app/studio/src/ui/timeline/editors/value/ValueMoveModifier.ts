@@ -13,19 +13,19 @@ import {
     Terminable,
     unitValue,
     ValueAxis
-} from "@opendaw/lib-std"
+} from "@naomiarotest/lib-std"
 import {Snapping} from "@/ui/timeline/Snapping.ts"
-import {BoxEditing} from "@opendaw/lib-box"
+import {BoxEditing} from "@naomiarotest/lib-box"
 import {
     AutomatableParameterFieldAdapter,
     ValueEventBoxAdapter,
     ValueEventCollectionBoxAdapter
-} from "@opendaw/studio-adapters"
-import {EventCollection, Interpolation, ppqn, ValueEvent} from "@opendaw/lib-dsp"
+} from "@naomiarotest/studio-adapters"
+import {EventCollection, Interpolation, ppqn, ValueEvent} from "@naomiarotest/lib-dsp"
 import {ValueModifier} from "./ValueModifier"
 import {ValueEventDraft} from "./ValueEventDraft.ts"
 import {ValueEventOwnerReader} from "@/ui/timeline/editors/EventOwnerReader.ts"
-import {Dragging} from "@opendaw/lib-dom"
+import {Dragging} from "@naomiarotest/lib-dom"
 import {UIValueEvent} from "@/ui/timeline/editors/value/UIValueEvent.ts"
 
 type Construct = Readonly<{

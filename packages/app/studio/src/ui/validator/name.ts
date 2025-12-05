@@ -1,4 +1,4 @@
-import {EmptyExec, RuntimeNotifier} from "@opendaw/lib-std"
+import {EmptyExec, RuntimeNotifier} from "@naomiarotest/lib-std"
 import {Result, Validator} from "./validator"
 
 export const NameValidator: Validator<string> = {

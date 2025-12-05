@@ -1,17 +1,17 @@
 import css from "./TrackHeader.sass?inline"
-import {Errors, Lifecycle, panic, Terminator} from "@opendaw/lib-std"
-import {createElement, Group, replaceChildren} from "@opendaw/lib-jsx"
+import {Errors, Lifecycle, panic, Terminator} from "@naomiarotest/lib-std"
+import {createElement, Group, replaceChildren} from "@naomiarotest/lib-jsx"
 import {Icon} from "@/ui/components/Icon.tsx"
 import {MenuButton} from "@/ui/components/MenuButton.tsx"
 import {MenuItem} from "@/ui/model/menu-item.ts"
-import {AudioUnitBoxAdapter, ColorCodes, TrackBoxAdapter, TrackType} from "@opendaw/studio-adapters"
+import {AudioUnitBoxAdapter, ColorCodes, TrackBoxAdapter, TrackType} from "@naomiarotest/studio-adapters"
 import {AudioUnitChannelControls} from "@/ui/timeline/tracks/audio-unit/AudioUnitChannelControls.tsx"
 import {installTrackHeaderMenu} from "@/ui/timeline/tracks/audio-unit/TrackHeaderMenu.ts"
-import {Events, Html, Keyboard} from "@opendaw/lib-dom"
+import {Events, Html, Keyboard} from "@naomiarotest/lib-dom"
 import {StudioService} from "@/service/StudioService"
 import {Surface} from "@/ui/surface/Surface"
-import {Promises} from "@opendaw/lib-runtime"
-import {Colors, IconSymbol} from "@opendaw/studio-enums"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {Colors, IconSymbol} from "@naomiarotest/studio-enums"
 
 const className = Html.adoptStyleSheet(css, "TrackHeader")
 

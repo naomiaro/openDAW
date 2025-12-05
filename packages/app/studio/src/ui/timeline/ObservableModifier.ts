@@ -1,4 +1,4 @@
-import {Observer, Subscription} from "@opendaw/lib-std"
+import {Observer, Subscription} from "@naomiarotest/lib-std"
 import {Modifier} from "@/ui/timeline/Modifier.ts"
 
 export interface ObservableModifier extends Modifier {

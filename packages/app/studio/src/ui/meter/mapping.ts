@@ -1,5 +1,5 @@
-import {dbToGain, gainToDb} from "@opendaw/lib-dsp"
-import {unitValue, ValueMapping} from "@opendaw/lib-std"
+import {dbToGain, gainToDb} from "@naomiarotest/lib-dsp"
+import {unitValue, ValueMapping} from "@naomiarotest/lib-std"
 
 export class GainMapping implements ValueMapping<number> {
     private readonly linear: ValueMapping<number>

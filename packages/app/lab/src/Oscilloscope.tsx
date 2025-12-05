@@ -1,4 +1,4 @@
-import {Lifecycle} from "@opendaw/lib-std"
+import {Lifecycle} from "@naomiarotest/lib-std"
 
 export interface OscilloscopeProps {
     lifecycle: Lifecycle

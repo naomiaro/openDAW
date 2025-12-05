@@ -1,9 +1,9 @@
 import {ValueEvent, ValueRegion, ValueRegionProps, ValueTrack} from "../Api"
-import {ppqn} from "@opendaw/lib-dsp"
-import {int} from "@opendaw/lib-std"
+import {ppqn} from "@naomiarotest/lib-dsp"
+import {int} from "@naomiarotest/lib-std"
 import {ValueEventImpl} from "./ValueEventImpl"
-import {ColorCodes, TrackType} from "@opendaw/studio-adapters"
-import {Wait} from "@opendaw/lib-runtime"
+import {ColorCodes, TrackType} from "@naomiarotest/studio-adapters"
+import {Wait} from "@naomiarotest/lib-runtime"
 
 export class ValueRegionImpl implements ValueRegion {
     readonly track: ValueTrack

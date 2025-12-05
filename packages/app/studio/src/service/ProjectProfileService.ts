@@ -8,11 +8,11 @@ import {
     RuntimeNotifier,
     Terminable,
     UUID
-} from "@opendaw/lib-std"
+} from "@naomiarotest/lib-std"
 import {ProjectDialogs} from "@/project/ProjectDialogs"
 import {Dialogs} from "@/ui/components/dialogs"
-import {Promises} from "@opendaw/lib-runtime"
-import {Files} from "@opendaw/lib-dom"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {Files} from "@naomiarotest/lib-dom"
 import {
     FilePickerAcceptTypes,
     Project,
@@ -23,8 +23,8 @@ import {
     ProjectStorage,
     SampleService,
     SoundfontService
-} from "@opendaw/studio-core"
-import {SampleLoaderManager, SoundfontLoaderManager} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-core"
+import {SampleLoaderManager, SoundfontLoaderManager} from "@naomiarotest/studio-adapters"
 
 export class ProjectProfileService implements MutableObservableValue<Option<ProjectProfile>> {
     readonly #profile: DefaultObservableValue<Option<ProjectProfile>>

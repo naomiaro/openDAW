@@ -1,10 +1,10 @@
 import css from "./PianoRoll.sass?inline"
-import {Events, Html} from "@opendaw/lib-dom"
-import {createElement, Group} from "@opendaw/lib-jsx"
+import {Events, Html} from "@naomiarotest/lib-dom"
+import {createElement, Group} from "@naomiarotest/lib-jsx"
 import {PianoRollLayout} from "@/ui/PianoRollLayout.ts"
-import {isDefined, isInstanceOf, Lifecycle, Notifier} from "@opendaw/lib-std"
-import {LoopableRegion, PPQN, ppqn} from "@opendaw/lib-dsp"
-import {NoteRegionBoxAdapter} from "@opendaw/studio-adapters"
+import {isDefined, isInstanceOf, Lifecycle, Notifier} from "@naomiarotest/lib-std"
+import {LoopableRegion, PPQN, ppqn} from "@naomiarotest/lib-dsp"
+import {NoteRegionBoxAdapter} from "@naomiarotest/studio-adapters"
 import {StudioService} from "@/service/StudioService"
 
 const className = Html.adoptStyleSheet(css, "PianoRoll")

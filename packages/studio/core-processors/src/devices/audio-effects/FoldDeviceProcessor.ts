@@ -1,11 +1,11 @@
-import {int, Option, Terminable, UUID} from "@opendaw/lib-std"
-import {AudioEffectDeviceAdapter, FoldDeviceBoxAdapter} from "@opendaw/studio-adapters"
+import {int, Option, Terminable, UUID} from "@naomiarotest/lib-std"
+import {AudioEffectDeviceAdapter, FoldDeviceBoxAdapter} from "@naomiarotest/studio-adapters"
 import {EngineContext} from "../../EngineContext"
 import {Block, Processor} from "../../processing"
 import {PeakBroadcaster} from "../../PeakBroadcaster"
 import {AutomatableParameter} from "../../AutomatableParameter"
 import {AudioEffectDeviceProcessor} from "../../AudioEffectDeviceProcessor"
-import {AudioBuffer, dbToGain, Ramp, RenderQuantum, ResamplerStereo, StereoMatrix, wavefold} from "@opendaw/lib-dsp"
+import {AudioBuffer, dbToGain, Ramp, RenderQuantum, ResamplerStereo, StereoMatrix, wavefold} from "@naomiarotest/lib-dsp"
 import {AudioProcessor} from "../../AudioProcessor"
 
 const oversamplingValues = [2, 4, 8] as const

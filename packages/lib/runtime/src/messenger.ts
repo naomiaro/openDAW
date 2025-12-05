@@ -7,7 +7,7 @@ import {
     Procedure,
     Subscription,
     Terminable
-} from "@opendaw/lib-std"
+} from "@naomiarotest/lib-std"
 
 export type Port = {
     postMessage(message: any, transfer?: Array<Transferable>): void

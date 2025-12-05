@@ -1,5 +1,5 @@
 {
-    "name": "@opendaw/studio-boxes",
+    "name": "@naomiarotest/studio-boxes",
     "version": "0.0.50",
     "license": "LGPL-3.0-or-later",
     "publishConfig": {
@@ -22,14 +22,14 @@
         "test": "echo \"No tests to run\""
     },
     "dependencies": {
-        "@opendaw/lib-box": "^0.0.50",
-        "@opendaw/lib-std": "^0.0.50",
-        "@opendaw/studio-enums": "^0.0.41"
+        "@naomiarotest/lib-box": "^0.0.50",
+        "@naomiarotest/lib-std": "^0.0.50",
+        "@naomiarotest/studio-enums": "^0.0.41"
     },
     "devDependencies": {
-        "@opendaw/eslint-config": "^0.0.20",
-        "@opendaw/studio-forge-boxes": "^0.0.50",
-        "@opendaw/typescript-config": "^0.0.20"
+        "@naomiarotest/eslint-config": "^0.0.20",
+        "@naomiarotest/studio-forge-boxes": "^0.0.50",
+        "@naomiarotest/typescript-config": "^0.0.20"
     },
     "gitHead": "b000505c56dbc68bce90bac93f722198deab0ecf"
 }

@@ -1,9 +1,9 @@
-import {AudioData, InstrumentFactories, SampleMetaData} from "@opendaw/studio-adapters"
-import {Arrays, Progress, UUID} from "@opendaw/lib-std"
-import {Project, SampleStorage, Workers} from "@opendaw/studio-core"
-import {SamplePeaks} from "@opendaw/lib-fusion"
-import {estimateBpm, PPQN} from "@opendaw/lib-dsp"
-import {AudioFileBox, AudioRegionBox, ValueEventCollectionBox} from "@opendaw/studio-boxes"
+import {AudioData, InstrumentFactories, SampleMetaData} from "@naomiarotest/studio-adapters"
+import {Arrays, Progress, UUID} from "@naomiarotest/lib-std"
+import {Project, SampleStorage, Workers} from "@naomiarotest/studio-core"
+import {SamplePeaks} from "@naomiarotest/lib-fusion"
+import {estimateBpm, PPQN} from "@naomiarotest/lib-dsp"
+import {AudioFileBox, AudioRegionBox, ValueEventCollectionBox} from "@naomiarotest/studio-boxes"
 
 export const importSample = async ({api, boxGraph, timelineBox, rootBox}
                                    : Project, name: string, arrayBuffer: ArrayBuffer, context: AudioContext) => {

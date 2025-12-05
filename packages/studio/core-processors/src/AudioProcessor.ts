@@ -1,5 +1,5 @@
-import {Event, PPQN} from "@opendaw/lib-dsp"
-import {assert, int, Maybe, panic} from "@opendaw/lib-std"
+import {Event, PPQN} from "@naomiarotest/lib-dsp"
+import {assert, int, Maybe, panic} from "@naomiarotest/lib-std"
 import {Block, ProcessInfo} from "./processing"
 import {AbstractProcessor} from "./AbstractProcessor"
 import {UpdateEvent} from "./UpdateClock"

@@ -1,4 +1,4 @@
-import {UUID} from "@opendaw/lib-std"
+import {UUID} from "@naomiarotest/lib-std"
 import {
     ArpeggioDeviceBox,
     CompressorDeviceBox,
@@ -19,8 +19,8 @@ import {
     TidalDeviceBox,
     VelocityDeviceBox,
     ZeitgeistDeviceBox
-} from "@opendaw/studio-boxes"
-import {IconSymbol} from "@opendaw/studio-enums"
+} from "@naomiarotest/studio-boxes"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 import {EffectFactory} from "./EffectFactory"
 import {EffectParameterDefaults} from "./EffectParameterDefaults"
 

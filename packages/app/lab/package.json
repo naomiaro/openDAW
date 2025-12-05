@@ -1,5 +1,5 @@
 {
-    "name": "@opendaw/lab",
+    "name": "@naomiarotest/lab",
     "private": true,
     "version": "0.0.59",
     "type": "module",
@@ -11,20 +11,20 @@
         "lint": "eslint \"src/**/*.ts\""
     },
     "dependencies": {
-        "@opendaw/lib-box": "^0.0.50",
-        "@opendaw/lib-dom": "^0.0.50",
-        "@opendaw/lib-dsp": "^0.0.50",
-        "@opendaw/lib-jsx": "^0.0.50",
-        "@opendaw/lib-runtime": "^0.0.50",
-        "@opendaw/lib-std": "^0.0.50",
-        "@opendaw/studio-adapters": "^0.0.51",
-        "@opendaw/studio-boxes": "^0.0.50",
-        "@opendaw/studio-core": "^0.0.59",
-        "@opendaw/studio-enums": "^0.0.41"
+        "@naomiarotest/lib-box": "^0.0.50",
+        "@naomiarotest/lib-dom": "^0.0.50",
+        "@naomiarotest/lib-dsp": "^0.0.50",
+        "@naomiarotest/lib-jsx": "^0.0.50",
+        "@naomiarotest/lib-runtime": "^0.0.50",
+        "@naomiarotest/lib-std": "^0.0.50",
+        "@naomiarotest/studio-adapters": "^0.0.51",
+        "@naomiarotest/studio-boxes": "^0.0.50",
+        "@naomiarotest/studio-core": "^0.0.59",
+        "@naomiarotest/studio-enums": "^0.0.41"
     },
     "devDependencies": {
-        "@opendaw/eslint-config": "^0.0.20",
-        "@opendaw/typescript-config": "^0.0.20",
+        "@naomiarotest/eslint-config": "^0.0.20",
+        "@naomiarotest/typescript-config": "^0.0.20",
         "@types/node": "^22.15.18",
         "eslint": "^8.57.0",
         "sass": "^1.88.0",

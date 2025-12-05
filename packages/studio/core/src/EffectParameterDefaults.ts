@@ -1,5 +1,5 @@
-import {RevampDeviceBox} from "@opendaw/studio-boxes"
-import {INVERSE_SQRT_2} from "@opendaw/lib-std"
+import {RevampDeviceBox} from "@naomiarotest/studio-boxes"
+import {INVERSE_SQRT_2} from "@naomiarotest/lib-std"
 
 export namespace EffectParameterDefaults {
     export const defaultRevampDeviceBox = (box: RevampDeviceBox) => {

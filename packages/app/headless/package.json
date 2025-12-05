@@ -1,5 +1,5 @@
 {
-    "name": "@opendaw/app-headless",
+    "name": "@naomiarotest/app-headless",
     "private": true,
     "version": "0.0.59",
     "type": "module",
@@ -11,11 +11,11 @@
         "lint": "eslint \"src/**/*.ts\""
     },
     "dependencies": {
-        "@opendaw/studio-sdk": "^0.0.59"
+        "@naomiarotest/studio-sdk": "^0.0.59"
     },
     "devDependencies": {
-        "@opendaw/eslint-config": "^0.0.20",
-        "@opendaw/typescript-config": "^0.0.20",
+        "@naomiarotest/eslint-config": "^0.0.20",
+        "@naomiarotest/typescript-config": "^0.0.20",
         "@types/node": "^22.15.18",
         "eslint": "^8.57.0",
         "sass": "^1.88.0",

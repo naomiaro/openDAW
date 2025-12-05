@@ -9,11 +9,11 @@ import {
     SoundfontFileBox,
     TapeDeviceBox,
     VaporisateurDeviceBox
-} from "@opendaw/studio-boxes"
-import {byte, isDefined, UUID} from "@opendaw/lib-std"
-import {ClassicWaveform} from "@opendaw/lib-dsp"
-import {BoxGraph, Field} from "@opendaw/lib-box"
-import {IconSymbol, Pointers, VoicingMode} from "@opendaw/studio-enums"
+} from "@naomiarotest/studio-boxes"
+import {byte, isDefined, UUID} from "@naomiarotest/lib-std"
+import {ClassicWaveform} from "@naomiarotest/lib-dsp"
+import {BoxGraph, Field} from "@naomiarotest/lib-box"
+import {IconSymbol, Pointers, VoicingMode} from "@naomiarotest/studio-enums"
 import {InstrumentFactory} from "./InstrumentFactory"
 import {TrackType} from "../timeline/TrackType"
 

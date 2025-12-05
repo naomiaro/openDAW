@@ -1,4 +1,4 @@
-import {Arrays, int, panic} from "@opendaw/lib-std"
+import {Arrays, int, panic} from "@naomiarotest/lib-std"
 
 export namespace WavFile {
     const MAGIC_RIFF = 0x46464952

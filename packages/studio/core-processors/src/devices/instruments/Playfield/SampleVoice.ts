@@ -1,6 +1,6 @@
-import {AudioData, Gate, PlayfieldSampleBoxAdapter} from "@opendaw/studio-adapters"
-import {NoteEvent, velocityToGain} from "@opendaw/lib-dsp"
-import {Id, int} from "@opendaw/lib-std"
+import {AudioData, Gate, PlayfieldSampleBoxAdapter} from "@naomiarotest/studio-adapters"
+import {NoteEvent, velocityToGain} from "@naomiarotest/lib-dsp"
+import {Id, int} from "@naomiarotest/lib-std"
 import {AutomatableParameters} from "./AutomatableParameters"
 
 const FAST_RELEASE = Math.floor(0.005 * sampleRate)

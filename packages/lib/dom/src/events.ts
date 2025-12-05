@@ -1,4 +1,4 @@
-import {isDefined, Nullable, Procedure, Subscription} from "@opendaw/lib-std"
+import {isDefined, Nullable, Procedure, Subscription} from "@naomiarotest/lib-std"
 
 type KnownEventMap = WindowEventMap & MIDIInputEventMap & MIDIPortEventMap
 

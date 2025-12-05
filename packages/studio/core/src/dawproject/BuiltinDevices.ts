@@ -1,8 +1,8 @@
-import {ifDefined, int, UUID} from "@opendaw/lib-std"
-import {BoxGraph, Field} from "@opendaw/lib-box"
-import {BandSchema, EqBandType, EqualizerSchema, ParameterDecoder} from "@opendaw/lib-dawproject"
-import {Pointers} from "@opendaw/studio-enums"
-import {RevampDeviceBox, RevampPass, RevampShelf} from "@opendaw/studio-boxes"
+import {ifDefined, int, UUID} from "@naomiarotest/lib-std"
+import {BoxGraph, Field} from "@naomiarotest/lib-box"
+import {BandSchema, EqBandType, EqualizerSchema, ParameterDecoder} from "@naomiarotest/lib-dawproject"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {RevampDeviceBox, RevampPass, RevampShelf} from "@naomiarotest/studio-boxes"
 import {EffectParameterDefaults} from "../EffectParameterDefaults"
 
 export namespace BuiltinDevices {

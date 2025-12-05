@@ -1,4 +1,4 @@
-import {AnyRegionBoxAdapter} from "@opendaw/studio-adapters"
+import {AnyRegionBoxAdapter} from "@naomiarotest/studio-adapters"
 
 export interface RegionPaintBucket {
     labelColor: string

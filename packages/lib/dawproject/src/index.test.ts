@@ -1,6 +1,6 @@
 import {describe, expect, it} from "vitest"
-import {asInstanceOf} from "@opendaw/lib-std"
-import {Xml} from "@opendaw/lib-xml"
+import {asInstanceOf} from "@naomiarotest/lib-std"
+import {Xml} from "@naomiarotest/lib-xml"
 import {MetaDataSchema, ProjectSchema, TrackSchema} from "./"
 import exampleXml from "@test-files/bitwig.example.xml?raw"
 

@@ -1,11 +1,11 @@
 import css from "./DeviceParameters.sass?inline"
-import {Html} from "@opendaw/lib-dom"
-import {clamp, int, Lifecycle, ParseResult, StringResult} from "@opendaw/lib-std"
-import {createElement, Frag} from "@opendaw/lib-jsx"
+import {Html} from "@naomiarotest/lib-dom"
+import {clamp, int, Lifecycle, ParseResult, StringResult} from "@naomiarotest/lib-std"
+import {createElement, Frag} from "@naomiarotest/lib-jsx"
 import {NumberInput} from "@/ui/components/NumberInput"
 import {EditWrapper} from "@/ui/wrapper/EditWrapper"
-import {BoxEditing} from "@opendaw/lib-box"
-import {MIDIOutputDeviceBox} from "@opendaw/studio-boxes"
+import {BoxEditing} from "@naomiarotest/lib-box"
+import {MIDIOutputDeviceBox} from "@naomiarotest/studio-boxes"
 
 const className = Html.adoptStyleSheet(css, "DeviceParameters")
 

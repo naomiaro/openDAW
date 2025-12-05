@@ -1,5 +1,5 @@
-import {Messenger} from "@opendaw/lib-runtime"
-import {OpfsWorker, SamplePeakWorker} from "@opendaw/lib-fusion"
+import {Messenger} from "@naomiarotest/lib-runtime"
+import {OpfsWorker, SamplePeakWorker} from "@naomiarotest/lib-fusion"
 
 const messenger: Messenger = Messenger.for(self)
 

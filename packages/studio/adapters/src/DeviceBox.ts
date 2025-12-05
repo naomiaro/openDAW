@@ -1,6 +1,6 @@
-import {Pointers} from "@opendaw/studio-enums"
-import {BooleanField, Box, Int32Field, PointerField, StringField} from "@opendaw/lib-box"
-import {isDefined, isInstanceOf, Maybe, panic} from "@opendaw/lib-std"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {BooleanField, Box, Int32Field, PointerField, StringField} from "@naomiarotest/lib-box"
+import {isDefined, isInstanceOf, Maybe, panic} from "@naomiarotest/lib-std"
 
 export type DeviceBox = {
     host: PointerField

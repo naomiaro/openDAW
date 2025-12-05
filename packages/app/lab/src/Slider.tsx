@@ -1,7 +1,7 @@
 import css from "./Slider.sass?inline"
-import {Events, Html} from "@opendaw/lib-dom"
-import {Lifecycle, Parameter} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+import {Events, Html} from "@naomiarotest/lib-dom"
+import {Lifecycle, Parameter} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 
 const className = Html.adoptStyleSheet(css, "Slider")
 

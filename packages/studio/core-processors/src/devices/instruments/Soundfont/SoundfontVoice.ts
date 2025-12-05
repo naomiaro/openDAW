@@ -8,8 +8,8 @@ import {
     SILENCE_THRESHOLD,
     Smooth,
     velocityToGain
-} from "@opendaw/lib-dsp"
-import {Id, int, isNotUndefined, Optional} from "@opendaw/lib-std"
+} from "@naomiarotest/lib-dsp"
+import {Id, int, isNotUndefined, Optional} from "@naomiarotest/lib-std"
 import {GeneratorType} from "./GeneratorType"
 
 const getNumericGenerator = (generators: ZoneMap<Generator>, type: GeneratorType): Optional<number> =>

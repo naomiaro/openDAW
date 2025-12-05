@@ -7,9 +7,9 @@ import {
     Option,
     RuntimeNotifier,
     Terminable
-} from "@opendaw/lib-std"
-import {Promises} from "@opendaw/lib-runtime"
-import {AudioUnitBox, CaptureAudioBox} from "@opendaw/studio-boxes"
+} from "@naomiarotest/lib-std"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {AudioUnitBox, CaptureAudioBox} from "@naomiarotest/studio-boxes"
 import {Capture} from "./Capture"
 import {CaptureDevices} from "./CaptureDevices"
 import {RecordAudio} from "./RecordAudio"
@@ -95,7 +95,7 @@ export class CaptureAudio extends Capture<CaptureAudioBox> {
         const mediaStream = streamOption.unwrap()
         const channelCount = mediaStream.getAudioTracks().at(0)?.getSettings().channelCount ?? 1
         const numChunks = 128
-        const recordingWorklet = audioWorklets.createRecording(channelCount, numChunks, audioContext.outputLatency)
+        const recordingWorklet = audioWorklets.createRecording(channelCount, numChunks, audioContext.outputLatency, this.uuid)
         return RecordAudio.start({
             recordingWorklet,
             mediaStream,

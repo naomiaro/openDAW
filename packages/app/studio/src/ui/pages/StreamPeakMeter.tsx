@@ -1,8 +1,8 @@
 import css from "./StreamPeakMeter.sass?inline"
-import {Arrays, int, Lifecycle, Terminator, ValueMapping} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
-import {AnimationFrame, Html} from "@opendaw/lib-dom"
-import {Colors} from "@opendaw/studio-enums"
+import {Arrays, int, Lifecycle, Terminator, ValueMapping} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {AnimationFrame, Html} from "@naomiarotest/lib-dom"
+import {Colors} from "@naomiarotest/studio-enums"
 
 const className = Html.adoptStyleSheet(css, "StreamPeakMeter")
 

@@ -15,12 +15,12 @@ import {
     ValueEventCurveBox,
     VaporisateurDeviceBox,
     ZeitgeistDeviceBox
-} from "@opendaw/studio-boxes"
-import {asDefined, asInstanceOf, clamp, Float, UUID, ValueOwner} from "@opendaw/lib-std"
-import {AudioPlayback, AudioUnitType} from "@opendaw/studio-enums"
-import {ProjectSkeleton} from "@opendaw/studio-adapters"
-import {Field} from "@opendaw/lib-box"
-import {PPQN, ppqn, seconds, TimeBase} from "@opendaw/lib-dsp"
+} from "@naomiarotest/studio-boxes"
+import {asDefined, asInstanceOf, clamp, Float, UUID, ValueOwner} from "@naomiarotest/lib-std"
+import {AudioPlayback, AudioUnitType} from "@naomiarotest/studio-enums"
+import {ProjectSkeleton} from "@naomiarotest/studio-adapters"
+import {Field} from "@naomiarotest/lib-box"
+import {PPQN, ppqn, seconds, TimeBase} from "@naomiarotest/lib-dsp"
 
 const isIntEncodedAsFloat = (v: number) =>
     v > 0 && v < 1e-6 && Number.isFinite(v) && (v / 1.401298464324817e-45) % 1 === 0

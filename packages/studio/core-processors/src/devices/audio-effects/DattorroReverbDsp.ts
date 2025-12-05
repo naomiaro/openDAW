@@ -1,5 +1,5 @@
-import {float, int} from "@opendaw/lib-std"
-import {StereoMatrix} from "@opendaw/lib-dsp"
+import {float, int} from "@naomiarotest/lib-std"
+import {StereoMatrix} from "@naomiarotest/lib-dsp"
 
 // https://github.com/khoin/DattorroReverbNode
 // https://ccrma.stanford.edu/~dattorro/EffectDesignPart1.pdf

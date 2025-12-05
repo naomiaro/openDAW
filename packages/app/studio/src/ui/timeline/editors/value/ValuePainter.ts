@@ -1,8 +1,8 @@
-import {Arrays, Func, Option, Procedure, Provider, TAU, unitValue} from "@opendaw/lib-std"
+import {Arrays, Func, Option, Procedure, Provider, TAU, unitValue} from "@naomiarotest/lib-std"
 import {Snapping} from "@/ui/timeline/Snapping.ts"
 import {CanvasPainter} from "@/ui/canvas/painter.ts"
 import {renderValueStream} from "@/ui/timeline/renderer/value.ts"
-import {ValueEvent} from "@opendaw/lib-dsp"
+import {ValueEvent} from "@naomiarotest/lib-dsp"
 import {renderTimeGrid} from "@/ui/timeline/editors/TimeGridRenderer.ts"
 import {EventRadius} from "@/ui/timeline/editors/value/Constants.ts"
 import {ObservableModifyContext} from "@/ui/timeline/ObservableModifyContext.ts"
@@ -11,7 +11,7 @@ import {ValueModifyStrategy} from "@/ui/timeline/editors/value/ValueModifyStrate
 import {ValueEventOwnerReader} from "@/ui/timeline/editors/EventOwnerReader.ts"
 import {UIValueEvent} from "@/ui/timeline/editors/value/UIValueEvent.ts"
 import {ValueEditingContext} from "@/ui/timeline/editors/value/ValueEditingContext"
-import {TimelineRange} from "@opendaw/studio-core"
+import {TimelineRange} from "@naomiarotest/studio-core"
 
 export type Construct = {
     range: TimelineRange

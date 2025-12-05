@@ -1,9 +1,9 @@
-import {DefaultObservableValue, int, Lifecycle, ObservableValue, Option, Terminator, UUID} from "@opendaw/lib-std"
-import {createElement, replaceChildren} from "@opendaw/lib-jsx"
-import {NoteStreamReceiver, PlayfieldDeviceBoxAdapter, PlayfieldSampleBoxAdapter} from "@opendaw/studio-adapters"
+import {DefaultObservableValue, int, Lifecycle, ObservableValue, Option, Terminator, UUID} from "@naomiarotest/lib-std"
+import {createElement, replaceChildren} from "@naomiarotest/lib-jsx"
+import {NoteStreamReceiver, PlayfieldDeviceBoxAdapter, PlayfieldSampleBoxAdapter} from "@naomiarotest/studio-adapters"
 import {StudioService} from "@/service/StudioService"
 import {SampleSelector, SampleSelectStrategy} from "@/ui/devices/SampleSelector"
-import {AudioFileBox, PlayfieldSampleBox} from "@opendaw/studio-boxes"
+import {AudioFileBox, PlayfieldSampleBox} from "@naomiarotest/studio-boxes"
 import {EmptySlot} from "@/ui/devices/instruments/PlayfieldDeviceEditor/EmptySlot"
 import {BusySlot} from "./BusySlot"
 

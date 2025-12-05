@@ -1,6 +1,6 @@
-import {Peaks} from "@opendaw/lib-fusion"
-import {AudioData, EngineToClient, SampleLoader, SampleLoaderManager, SampleLoaderState} from "@opendaw/studio-adapters"
-import {Observer, Option, SortedSet, Subscription, Terminable, UUID} from "@opendaw/lib-std"
+import {Peaks} from "@naomiarotest/lib-fusion"
+import {AudioData, EngineToClient, SampleLoader, SampleLoaderManager, SampleLoaderState} from "@naomiarotest/studio-adapters"
+import {Observer, Option, SortedSet, Subscription, Terminable, UUID} from "@naomiarotest/lib-std"
 
 class AudioLoaderWorklet implements SampleLoader {
     readonly peaks: Option<Peaks> = Option.None

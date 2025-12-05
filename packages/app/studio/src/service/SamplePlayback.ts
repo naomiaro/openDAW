@@ -7,8 +7,8 @@ import {
     Subscription,
     unitValue,
     UUID
-} from "@opendaw/lib-std"
-import {OpenSampleAPI, SampleStorage, WavFile} from "@opendaw/studio-core"
+} from "@naomiarotest/lib-std"
+import {OpenSampleAPI, SampleStorage, WavFile} from "@naomiarotest/studio-core"
 
 export type PlaybackEvent = {
     type: "idle"

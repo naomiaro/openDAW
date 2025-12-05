@@ -1,8 +1,8 @@
-import {int} from "@opendaw/lib-std"
-import {PeaksPainter} from "@opendaw/lib-fusion"
+import {int} from "@naomiarotest/lib-std"
+import {PeaksPainter} from "@naomiarotest/lib-fusion"
 import {CanvasPainter} from "@/ui/canvas/painter"
 
-import {PlayfieldSampleBoxAdapter} from "@opendaw/studio-adapters"
+import {PlayfieldSampleBoxAdapter} from "@naomiarotest/studio-adapters"
 
 export namespace SlotUtils {
     export const color = (semitone: int) => `hsl(${semitone / 13 * 360}, 100%, 70%)`

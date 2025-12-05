@@ -1,10 +1,10 @@
 import "./style.css"
-import {assert, UUID} from "@opendaw/lib-std"
-import {Browser} from "@opendaw/lib-dom"
-import {Soundfont} from "@opendaw/studio-adapters"
-import {AudioWorklets, Workers} from "@opendaw/studio-core"
-import WorkersUrl from "@opendaw/studio-core/workers-main.js?worker&url"
-import WorkletsUrl from "@opendaw/studio-core/processors.js?url"
+import {assert, UUID} from "@naomiarotest/lib-std"
+import {Browser} from "@naomiarotest/lib-dom"
+import {Soundfont} from "@naomiarotest/studio-adapters"
+import {AudioWorklets, Workers} from "@naomiarotest/studio-core"
+import WorkersUrl from "@naomiarotest/studio-core/workers-main.js?worker&url"
+import WorkletsUrl from "@naomiarotest/studio-core/processors.js?url"
 import {SoundFont2} from "soundfont2"
 
 /**

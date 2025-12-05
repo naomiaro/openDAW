@@ -8,8 +8,8 @@ import {
     SortedSet,
     Subscription,
     Terminable
-} from "@opendaw/lib-std"
-import {Address, Addressable} from "@opendaw/lib-box"
+} from "@naomiarotest/lib-std"
+import {Address, Addressable} from "@naomiarotest/lib-box"
 import {VertexSelection} from "./VertexSelection"
 import {SelectableVertex} from "./SelectableVertex"
 

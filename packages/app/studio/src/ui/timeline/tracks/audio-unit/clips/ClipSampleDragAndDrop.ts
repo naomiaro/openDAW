@@ -1,12 +1,12 @@
-import {AudioClipBox, ValueEventCollectionBox} from "@opendaw/studio-boxes"
+import {AudioClipBox, ValueEventCollectionBox} from "@naomiarotest/studio-boxes"
 import {ElementCapturing} from "@/ui/canvas/capturing.ts"
-import {PPQN} from "@opendaw/lib-dsp"
-import {UUID} from "@opendaw/lib-std"
+import {PPQN} from "@naomiarotest/lib-dsp"
+import {UUID} from "@naomiarotest/lib-std"
 import {CreateParameters, TimelineDragAndDrop} from "@/ui/timeline/tracks/audio-unit/TimelineDragAndDrop"
 import {ClipCaptureTarget} from "./ClipCapturing"
 import {ClipWidth} from "@/ui/timeline/tracks/audio-unit/clips/constants"
 import {StudioService} from "@/service/StudioService"
-import {ColorCodes} from "@opendaw/studio-adapters"
+import {ColorCodes} from "@naomiarotest/studio-adapters"
 
 export class ClipSampleDragAndDrop extends TimelineDragAndDrop<ClipCaptureTarget> {
     constructor(service: StudioService, capturing: ElementCapturing<ClipCaptureTarget>) {

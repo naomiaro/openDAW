@@ -1,5 +1,5 @@
-import {ArrayMultimap, int} from "@opendaw/lib-std"
-import {Event} from "@opendaw/lib-dsp"
+import {ArrayMultimap, int} from "@naomiarotest/lib-std"
+import {Event} from "@naomiarotest/lib-dsp"
 
 export class EventBuffer {
     readonly #events: ArrayMultimap<int, Event>

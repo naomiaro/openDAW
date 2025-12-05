@@ -1,10 +1,10 @@
 import css from "./TimelineNavigation.sass?inline"
-import {Lifecycle} from "@opendaw/lib-std"
+import {Lifecycle} from "@naomiarotest/lib-std"
 import {StudioService} from "@/service/StudioService.ts"
 import {LoopAreaEditor} from "@/ui/timeline/LoopAreaEditor.tsx"
 import {TimeAxis} from "@/ui/timeline/TimeAxis.tsx"
-import {createElement} from "@opendaw/lib-jsx"
-import {Html} from "@opendaw/lib-dom"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {Html} from "@naomiarotest/lib-dom"
 
 const className = Html.adoptStyleSheet(css, "TimelineNavigation")
 

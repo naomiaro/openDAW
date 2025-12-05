@@ -1,8 +1,8 @@
 import {BlockFlag, ProcessInfo} from "./processing"
-import {AudioBuffer, Fragmentor, PPQN, RenderQuantum} from "@opendaw/lib-dsp"
-import {assert, Bits, int, TAU} from "@opendaw/lib-std"
+import {AudioBuffer, Fragmentor, PPQN, RenderQuantum} from "@naomiarotest/lib-dsp"
+import {assert, Bits, int, TAU} from "@naomiarotest/lib-std"
 import {TimeInfo} from "./TimeInfo"
-import {TimelineBoxAdapter} from "@opendaw/studio-adapters"
+import {TimelineBoxAdapter} from "@naomiarotest/studio-adapters"
 
 export class Metronome {
     readonly #timelineBoxAdapter: TimelineBoxAdapter

@@ -1,4 +1,4 @@
-import {bipolar, clampUnit, Id, InaccessibleProperty, int, mint, unitValue} from "@opendaw/lib-std"
+import {bipolar, clampUnit, Id, InaccessibleProperty, int, mint, unitValue} from "@naomiarotest/lib-std"
 import {
     Adsr,
     AudioBuffer,
@@ -15,8 +15,8 @@ import {
     Smooth,
     StereoMatrix,
     velocityToGain
-} from "@opendaw/lib-dsp"
-import {VaporisateurSettings} from "@opendaw/studio-adapters"
+} from "@naomiarotest/lib-dsp"
+import {VaporisateurSettings} from "@naomiarotest/studio-adapters"
 import {VaporisateurDeviceProcessor} from "./VaporisateurDeviceProcessor"
 import {Voice} from "../../voicing/Voice"
 import {Block} from "../../processing"

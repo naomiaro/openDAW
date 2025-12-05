@@ -1,5 +1,5 @@
 import css from "./NumberInput.sass?inline"
-import {Events, Html} from "@opendaw/lib-dom"
+import {Events, Html} from "@naomiarotest/lib-dom"
 import {
     int,
     isDefined,
@@ -9,8 +9,8 @@ import {
     StringMapping,
     tryCatch,
     ValueGuard
-} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 
 const defaultClassName = Html.adoptStyleSheet(css, "NumberInput")
 

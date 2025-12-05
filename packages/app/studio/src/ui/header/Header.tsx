@@ -1,23 +1,23 @@
 import css from "./Header.sass?inline"
 import {Checkbox} from "@/ui/components/Checkbox.tsx"
 import {Icon} from "@/ui/components/Icon.tsx"
-import {Lifecycle, Nullable, ObservableValue, Observer, panic, Subscription, Terminator, UUID} from "@opendaw/lib-std"
+import {Lifecycle, Nullable, ObservableValue, Observer, panic, Subscription, Terminator, UUID} from "@naomiarotest/lib-std"
 import {TransportGroup} from "@/ui/header/TransportGroup.tsx"
 import {TimeStateDisplay} from "@/ui/header/TimeStateDisplay.tsx"
 import {RadioGroup} from "@/ui/components/RadioGroup.tsx"
-import {createElement, Frag, RouteLocation} from "@opendaw/lib-jsx"
+import {createElement, Frag, RouteLocation} from "@naomiarotest/lib-jsx"
 import {StudioService} from "@/service/StudioService"
 import {MenuButton} from "@/ui/components/MenuButton.tsx"
 import {Workspace} from "@/ui/workspace/Workspace.ts"
-import {IconSymbol} from "@opendaw/studio-enums"
-import {Html} from "@opendaw/lib-dom"
+import {IconSymbol} from "@naomiarotest/studio-enums"
+import {Html} from "@naomiarotest/lib-dom"
 import {MenuItem} from "@/ui/model/menu-item"
-import {MidiDevices} from "@opendaw/studio-core"
-import {Colors} from "@opendaw/studio-enums"
+import {MidiDevices} from "@naomiarotest/studio-core"
+import {Colors} from "@naomiarotest/studio-enums"
 import {Manual, Manuals} from "@/ui/pages/Manuals"
 import {HorizontalPeakMeter} from "@/ui/components/HorizontalPeakMeter"
-import {Address} from "@opendaw/lib-box"
-import {gainToDb} from "@opendaw/lib-dsp"
+import {Address} from "@naomiarotest/lib-box"
+import {gainToDb} from "@naomiarotest/lib-dsp"
 import {ContextMenu} from "@/ui/ContextMenu"
 
 const className = Html.adoptStyleSheet(css, "Header")
@@ -113,16 +113,37 @@ export const Header = ({lifecycle, service}: Construct) => {
             <hr/>
             <Checkbox lifecycle={lifecycle}
                       onInit={element => lifecycle.own(ContextMenu.subscribe(element, collector =>
-                          collector.addItems(MenuItem.default({label: "Set Count-In (Bars)"})
-                              .setRuntimeChildrenProcedure(parent => parent.addMenuItem(...[1, 2, 3, 4, 5, 6, 7, 8]
-                                  .map(count => MenuItem.default({
-                                      label: String(count),
-                                      checked: count === service.engine.countInBarsTotal.getValue()
-                                  }).setTriggerProcedure(() => service.engine.countInBarsTotal.setValue(count))))))))}
+                          collector.addItems(
+                              MenuItem.default({label: "Set Count-In (Bars)"})
+                                  .setRuntimeChildrenProcedure(parent => parent.addMenuItem(...[1, 2, 3, 4, 5, 6, 7, 8]
+                                      .map(count => MenuItem.default({
+                                          label: String(count),
+                                          checked: count === service.engine.countInBarsTotal.getValue()
+                                      }).setTriggerProcedure(() => service.engine.countInBarsTotal.setValue(count))))),
+                          )
+                      ))}
                       model={service.engine.metronomeEnabled}
                       appearance={{activeColor: Colors.orange, tooltip: "Metronome"}}>
                 <Icon symbol={IconSymbol.Metronome}/>
             </Checkbox>
+            <button onclick={() => {
+                console.log('Setting metronome volume to 0.1');
+                service.engine.metronomeVolume.setValue(0.1);
+                // @ts-ignore
+                console.log('Current volume:', service.engine.metronomeVolume.getValue());
+            }}>vol 10%!</button>
+            <button onclick={() => {
+                console.log('Setting metronome volume to 0.5');
+                service.engine.metronomeVolume.setValue(0.5);
+                // @ts-ignore
+                console.log('Current volume:', service.engine.metronomeVolume.getValue());
+            }}>vol 50%</button>
+            <button onclick={() => {
+                console.log('Setting metronome volume to 1.0');  
+                service.engine.metronomeVolume.setValue(1.0);
+                // @ts-ignore
+                console.log('Current volume:', service.engine.metronomeVolume.getValue());
+            }}>vol 100%</button>
             <hr/>
             <div style={{flex: "1 0 0"}}/>
             <a className="support"
@@ -138,32 +159,30 @@ export const Header = ({lifecycle, service}: Construct) => {
                 <HorizontalPeakMeter lifecycle={lifecycle} peaksInDb={peaksInDb} width="4em"/>
             </div>
             <hr/>
-            <div className="panel-selector">
-                <RadioGroup lifecycle={lifecycle}
-                            model={new class implements ObservableValue<Nullable<Workspace.ScreenKeys>> {
-                                setValue(value: Nullable<Workspace.ScreenKeys>): void {
-                                    if (service.hasProfile) {service.switchScreen(value)}
-                                }
-                                getValue(): Nullable<Workspace.ScreenKeys> {
-                                    return service.layout.screen.getValue()
-                                }
-                                subscribe(observer: Observer<ObservableValue<Nullable<Workspace.ScreenKeys>>>): Subscription {
-                                    return service.layout.screen.subscribe(observer)
-                                }
-                                catchupAndSubscribe(observer: Observer<ObservableValue<Nullable<Workspace.ScreenKeys>>>): Subscription {
-                                    observer(this)
-                                    return this.subscribe(observer)
-                                }
-                            }}
-                            elements={Object.entries(Workspace.Default)
-                                .filter(([_, {hidden}]: [string, Workspace.Screen]) => hidden !== true)
-                                .map(([key, {icon: iconSymbol, name}]) => ({
-                                    value: key,
-                                    element: <Icon symbol={iconSymbol}/>,
-                                    tooltip: name
-                                }))}
-                            appearance={{framed: true, landscape: true}}/>
-            </div>
+            <RadioGroup lifecycle={lifecycle}
+                        model={new class implements ObservableValue<Nullable<Workspace.ScreenKeys>> {
+                            setValue(value: Nullable<Workspace.ScreenKeys>): void {
+                                if (service.hasProfile) {service.switchScreen(value)}
+                            }
+                            getValue(): Nullable<Workspace.ScreenKeys> {
+                                return service.layout.screen.getValue()
+                            }
+                            subscribe(observer: Observer<ObservableValue<Nullable<Workspace.ScreenKeys>>>): Subscription {
+                                return service.layout.screen.subscribe(observer)
+                            }
+                            catchupAndSubscribe(observer: Observer<ObservableValue<Nullable<Workspace.ScreenKeys>>>): Subscription {
+                                observer(this)
+                                return this.subscribe(observer)
+                            }
+                        }}
+                        elements={Object.entries(Workspace.Default)
+                            .filter(([_, {hidden}]: [string, Workspace.Screen]) => hidden !== true)
+                            .map(([key, {icon: iconSymbol, name}]) => ({
+                                value: key,
+                                element: <Icon symbol={iconSymbol}/>,
+                                tooltip: name
+                            }))}
+                        appearance={{framed: true, landscape: true}}/>
         </header>
     )
 }

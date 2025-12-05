@@ -1,12 +1,12 @@
 import {ContextMenu} from "@/ui/ContextMenu.ts"
 import {ElementCapturing} from "@/ui/canvas/capturing.ts"
-import {BoxEditing} from "@opendaw/lib-box"
-import {MutableObservableValue, Selection} from "@opendaw/lib-std"
-import {NoteEventBoxAdapter} from "@opendaw/studio-adapters"
+import {BoxEditing} from "@naomiarotest/lib-box"
+import {MutableObservableValue, Selection} from "@naomiarotest/lib-std"
+import {NoteEventBoxAdapter} from "@naomiarotest/studio-adapters"
 import {PitchCaptureTarget} from "@/ui/timeline/editors/notes/pitch/PitchEventCapturing.ts"
 import {createPitchMenu} from "@/ui/timeline/editors/notes/pitch/PitchMenu.ts"
 import {Snapping} from "@/ui/timeline/Snapping.ts"
-import {EventCollection} from "@opendaw/lib-dsp"
+import {EventCollection} from "@naomiarotest/lib-dsp"
 
 type Construct = {
     element: Element

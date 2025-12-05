@@ -1,8 +1,8 @@
 import {ValueEventImpl, ValueRegionImpl, ValueTrackImpl} from "./impl"
-import {asDefined, isDefined, UUID} from "@opendaw/lib-std"
-import {AudioUnitBox, TrackBox, ValueEventBox, ValueEventCollectionBox, ValueRegionBox} from "@opendaw/studio-boxes"
-import {InterpolationFieldAdapter, TrackType} from "@opendaw/studio-adapters"
-import {Box, BoxGraph} from "@opendaw/lib-box"
+import {asDefined, isDefined, UUID} from "@naomiarotest/lib-std"
+import {AudioUnitBox, TrackBox, ValueEventBox, ValueEventCollectionBox, ValueRegionBox} from "@naomiarotest/studio-boxes"
+import {InterpolationFieldAdapter, TrackType} from "@naomiarotest/studio-adapters"
+import {Box, BoxGraph} from "@naomiarotest/lib-box"
 import {AnyDevice, ValueRegion} from "./Api"
 import {IndexRef} from "./IndexRef"
 

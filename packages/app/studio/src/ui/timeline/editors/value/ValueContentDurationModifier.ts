@@ -1,11 +1,11 @@
-import {int, Notifier, Observer, Option, Terminable, unitValue} from "@opendaw/lib-std"
+import {int, Notifier, Observer, Option, Terminable, unitValue} from "@naomiarotest/lib-std"
 import {Snapping} from "@/ui/timeline/Snapping.ts"
-import {BoxEditing} from "@opendaw/lib-box"
+import {BoxEditing} from "@naomiarotest/lib-box"
 import {ValueEventOwnerReader} from "@/ui/timeline/editors/EventOwnerReader.ts"
-import {Interpolation, ppqn, ValueEvent} from "@opendaw/lib-dsp"
+import {Interpolation, ppqn, ValueEvent} from "@naomiarotest/lib-dsp"
 import {ValueModifier} from "./ValueModifier"
 import {UIValueEvent} from "@/ui/timeline/editors/value/UIValueEvent.ts"
-import {Dragging} from "@opendaw/lib-dom"
+import {Dragging} from "@naomiarotest/lib-dom"
 
 type Construct = Readonly<{
     element: Element

@@ -1,4 +1,4 @@
-import {FontFaceProperties} from "@opendaw/lib-dom"
+import {FontFaceProperties} from "@naomiarotest/lib-dom"
 
 export const Fonts = {
     Rubik: <FontFaceProperties>{

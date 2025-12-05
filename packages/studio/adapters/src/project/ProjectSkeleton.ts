@@ -1,4 +1,4 @@
-import {BoxGraph} from "@opendaw/lib-box"
+import {BoxGraph} from "@naomiarotest/lib-box"
 import {
     AudioBusBox,
     AudioUnitBox,
@@ -9,7 +9,7 @@ import {
     RootBox,
     TimelineBox,
     UserInterfaceBox
-} from "@opendaw/studio-boxes"
+} from "@naomiarotest/studio-boxes"
 import {
     asInstanceOf,
     assert,
@@ -20,8 +20,8 @@ import {
     Option,
     panic,
     UUID
-} from "@opendaw/lib-std"
-import {AudioUnitType, IconSymbol} from "@opendaw/studio-enums"
+} from "@naomiarotest/lib-std"
+import {AudioUnitType, IconSymbol} from "@naomiarotest/studio-enums"
 import {ProjectMandatoryBoxes} from "./ProjectMandatoryBoxes"
 
 export type ProjectSkeleton = {

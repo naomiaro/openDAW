@@ -8,7 +8,7 @@ import {
     int,
     Nullable,
     Unhandled
-} from "@opendaw/lib-std"
+} from "@naomiarotest/lib-std"
 
 export interface Peaks {
     readonly stages: ReadonlyArray<Peaks.Stage>

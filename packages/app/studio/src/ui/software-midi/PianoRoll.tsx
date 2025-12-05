@@ -1,6 +1,6 @@
 import css from "./PianoRoll.sass?inline"
-import {Html} from "@opendaw/lib-dom"
-import {createElement, Frag} from "@opendaw/lib-jsx"
+import {Html} from "@naomiarotest/lib-dom"
+import {createElement, Frag} from "@naomiarotest/lib-jsx"
 import {PianoRollLayout} from "@/ui/PianoRollLayout"
 import {PianoKeyCodes} from "@/ui/software-midi/Mapping"
 

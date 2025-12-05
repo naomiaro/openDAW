@@ -1,8 +1,8 @@
 import {AudioRegion, AudioTrack} from "../Api"
-import {PPQN, ppqn} from "@opendaw/lib-dsp"
-import {int} from "@opendaw/lib-std"
-import {ColorCodes, Sample, TrackType} from "@opendaw/studio-adapters"
-import {AudioPlayback} from "@opendaw/studio-enums"
+import {PPQN, ppqn} from "@naomiarotest/lib-dsp"
+import {int} from "@naomiarotest/lib-std"
+import {ColorCodes, Sample, TrackType} from "@naomiarotest/studio-adapters"
+import {AudioPlayback} from "@naomiarotest/studio-enums"
 
 export class AudioRegionImpl implements AudioRegion {
     readonly track: AudioTrack

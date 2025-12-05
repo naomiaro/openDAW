@@ -1,10 +1,10 @@
-import {asInstanceOf, int, ObservableValue, Option, Terminable, UUID} from "@opendaw/lib-std"
+import {asInstanceOf, int, ObservableValue, Option, Terminable, UUID} from "@naomiarotest/lib-std"
 import {DragAndDrop} from "@/ui/DragAndDrop"
 import {AnyDragData} from "@/ui/AnyDragData"
-import {PlayfieldSampleBox} from "@opendaw/studio-boxes"
-import {Keyboard} from "@opendaw/lib-dom"
-import {PlayfieldSampleBoxAdapter} from "@opendaw/studio-adapters"
-import {Project} from "@opendaw/studio-core"
+import {PlayfieldSampleBox} from "@naomiarotest/studio-boxes"
+import {Keyboard} from "@naomiarotest/lib-dom"
+import {PlayfieldSampleBoxAdapter} from "@naomiarotest/studio-adapters"
+import {Project} from "@naomiarotest/studio-core"
 
 export namespace SlotDragAndDrop {
     type Construct = {

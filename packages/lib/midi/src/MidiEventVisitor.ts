@@ -1,5 +1,5 @@
-import {byte, unitValue} from "@opendaw/lib-std"
-import {ppqn} from "@opendaw/lib-dsp"
+import {byte, unitValue} from "@naomiarotest/lib-std"
+import {ppqn} from "@naomiarotest/lib-dsp"
 
 export interface MidiEventVisitor {
     noteOn?(note: byte, velocity: byte): void

@@ -1,5 +1,5 @@
 import css from "./BusySlot.sass?inline"
-import {Events, Html, Keyboard} from "@opendaw/lib-dom"
+import {Events, Html, Keyboard} from "@naomiarotest/lib-dom"
 import {
     asDefined,
     DefaultObservableValue,
@@ -9,17 +9,17 @@ import {
     ObservableValue,
     Option,
     Terminable
-} from "@opendaw/lib-std"
-import {createElement, DomElement} from "@opendaw/lib-jsx"
+} from "@naomiarotest/lib-std"
+import {createElement, DomElement} from "@naomiarotest/lib-jsx"
 import {StudioService} from "@/service/StudioService.ts"
-import {NoteLifeCycle, PlayfieldDeviceBoxAdapter, PlayfieldSampleBoxAdapter} from "@opendaw/studio-adapters"
-import {IconSymbol} from "@opendaw/studio-enums"
+import {NoteLifeCycle, PlayfieldDeviceBoxAdapter, PlayfieldSampleBoxAdapter} from "@naomiarotest/studio-adapters"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 import {SampleSelector} from "@/ui/devices/SampleSelector"
 import {CanvasPainter} from "@/ui/canvas/painter"
 import {SlotUtils} from "@/ui/devices/instruments/PlayfieldDeviceEditor/SlotUtils"
 import {Icon} from "@/ui/components/Icon"
 import {Checkbox} from "@/ui/components/Checkbox"
-import {BoxEditing} from "@opendaw/lib-box"
+import {BoxEditing} from "@naomiarotest/lib-box"
 import {ContextMenu} from "@/ui/ContextMenu"
 import {MenuItem} from "@/ui/model/menu-item"
 import {EditWrapper} from "@/ui/wrapper/EditWrapper.ts"
@@ -27,7 +27,7 @@ import {SlotDragAndDrop} from "@/ui/devices/instruments/PlayfieldDeviceEditor/Sl
 import {NoteLabel} from "@/ui/devices/instruments/PlayfieldDeviceEditor/NoteLabel"
 import {DebugMenus} from "@/ui/menu/debug"
 import {TextTooltip} from "@/ui/surface/TextTooltip"
-import {Colors} from "@opendaw/studio-enums"
+import {Colors} from "@naomiarotest/studio-enums"
 
 const className = Html.adoptStyleSheet(css, "BusySlot")
 

@@ -1,4 +1,4 @@
-import {DefaultObservableValue, Errors, Option, panic, RuntimeNotifier} from "@opendaw/lib-std"
+import {DefaultObservableValue, Errors, Option, panic, RuntimeNotifier} from "@naomiarotest/lib-std"
 import {
     AudioOfflineRenderer,
     AudioUtils,
@@ -8,10 +8,10 @@ import {
     ProjectMeta,
     ProjectProfile,
     WavFile
-} from "@opendaw/studio-core"
-import {Files} from "@opendaw/lib-dom"
-import {Promises} from "@opendaw/lib-runtime"
-import {ExportStemsConfiguration} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-core"
+import {Files} from "@naomiarotest/lib-dom"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {ExportStemsConfiguration} from "@naomiarotest/studio-adapters"
 import {Dialogs} from "@/ui/components/dialogs"
 
 export namespace Mixdowns {
@@ -169,7 +169,7 @@ export namespace Mixdowns {
 
     const loadFFmepg = async (): Promise<FFmpegWorker> => {
         const {FFmpegWorker} = await Promises.guardedRetry(() =>
-            import("@opendaw/studio-core/FFmpegWorker"), (_, count) => count < 10)
+            import("@naomiarotest/studio-core/FFmpegWorker"), (_, count) => count < 10)
         const progress = new DefaultObservableValue(0.0)
         const progressDialog = RuntimeNotifier.progress({headline: "Loading FFmpeg...", progress})
         const {status, value, error} = await Promises.tryCatch(FFmpegWorker.load(value => progress.setValue(value)))

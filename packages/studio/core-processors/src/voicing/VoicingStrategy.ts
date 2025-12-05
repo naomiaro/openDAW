@@ -1,5 +1,5 @@
-import {Arrays, EmptyExec, Id, int, panic} from "@opendaw/lib-std"
-import {AudioBuffer, NoteEvent} from "@opendaw/lib-dsp"
+import {Arrays, EmptyExec, Id, int, panic} from "@naomiarotest/lib-std"
+import {AudioBuffer, NoteEvent} from "@naomiarotest/lib-dsp"
 import {Block} from "../processing"
 import {Voice} from "./Voice"
 

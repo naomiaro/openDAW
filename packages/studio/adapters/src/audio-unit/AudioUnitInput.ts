@@ -8,11 +8,11 @@ import {
     Subscription,
     Terminable,
     Terminator
-} from "@opendaw/lib-std"
-import {PointerHub} from "@opendaw/lib-box"
-import {AudioBusBox} from "@opendaw/studio-boxes"
-import {Pointers} from "@opendaw/studio-enums"
-import {IconSymbol} from "@opendaw/studio-enums"
+} from "@naomiarotest/lib-std"
+import {PointerHub} from "@naomiarotest/lib-box"
+import {AudioBusBox} from "@naomiarotest/studio-boxes"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 import {AudioUnitInputAdapter} from "./AudioUnitInputAdapter"
 import {BoxAdapters} from "../BoxAdapters"
 import {AudioBusBoxAdapter} from "./AudioBusBoxAdapter"

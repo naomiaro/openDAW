@@ -1,5 +1,5 @@
-import {PPQN} from "@opendaw/lib-dsp"
-import {int, quantizeFloor} from "@opendaw/lib-std"
+import {PPQN} from "@naomiarotest/lib-dsp"
+import {int, quantizeFloor} from "@naomiarotest/lib-std"
 import {TimelineRange} from "./TimelineRange"
 
 export namespace TimeGrid {

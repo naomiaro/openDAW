@@ -1,8 +1,8 @@
 import css from "./BackButton.sass?inline"
-import {Html} from "@opendaw/lib-dom"
+import {Html} from "@naomiarotest/lib-dom"
 import {Icon} from "@/ui/components/Icon"
-import {IconSymbol} from "@opendaw/studio-enums"
-import {createElement, LocalLink} from "@opendaw/lib-jsx"
+import {IconSymbol} from "@naomiarotest/studio-enums"
+import {createElement, LocalLink} from "@naomiarotest/lib-jsx"
 
 const className = Html.adoptStyleSheet(css, "BackButton")
 

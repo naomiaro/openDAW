@@ -1,5 +1,5 @@
-import {BoxSchema, deprecated} from "@opendaw/lib-box-forge"
-import {Pointers} from "@opendaw/studio-enums"
+import {BoxSchema, deprecated} from "@naomiarotest/lib-box-forge"
+import {Pointers} from "@naomiarotest/studio-enums"
 import {IndexConstraints, PPQNPositionConstraints, UnipolarConstraints} from "../Defaults"
 
 export const ValueEventBox: BoxSchema<Pointers> = {

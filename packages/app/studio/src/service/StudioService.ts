@@ -17,7 +17,7 @@ import {
     Terminable,
     Terminator,
     UUID
-} from "@opendaw/lib-std"
+} from "@naomiarotest/lib-std"
 import {populateStudioMenu} from "@/service/StudioMenu"
 import {Snapping} from "@/ui/timeline/Snapping.ts"
 import {PanelContents} from "@/ui/workspace/PanelContents.tsx"
@@ -33,12 +33,12 @@ import {ProjectProfileService} from "./ProjectProfileService"
 import {StudioSignal} from "./StudioSignal"
 import {AudioOutputDevice} from "@/audio/AudioOutputDevice"
 import {FooterLabel} from "@/service/FooterLabel"
-import {RouteLocation} from "@opendaw/lib-jsx"
-import {PPQN} from "@opendaw/lib-dsp"
-import {Browser, ConsoleCommands, Dragging, Files} from "@opendaw/lib-dom"
-import {Promises} from "@opendaw/lib-runtime"
-import {ExportStemsConfiguration, PresetDecoder} from "@opendaw/studio-adapters"
-import {Address} from "@opendaw/lib-box"
+import {RouteLocation} from "@naomiarotest/lib-jsx"
+import {PPQN} from "@naomiarotest/lib-dsp"
+import {Browser, ConsoleCommands, Dragging, Files} from "@naomiarotest/lib-dom"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {ExportStemsConfiguration, PresetDecoder} from "@naomiarotest/studio-adapters"
+import {Address} from "@naomiarotest/lib-box"
 import {
     AudioWorklets,
     CloudAuthManager,
@@ -59,10 +59,10 @@ import {
     SampleService,
     SoundfontService,
     TimelineRange
-} from "@opendaw/studio-core"
+} from "@naomiarotest/studio-core"
 import {ProjectDialogs} from "@/project/ProjectDialogs"
-import {AudioUnitBox} from "@opendaw/studio-boxes"
-import {AudioUnitType} from "@opendaw/studio-enums"
+import {AudioUnitBox} from "@naomiarotest/studio-boxes"
+import {AudioUnitType} from "@naomiarotest/studio-enums"
 import {Surface} from "@/ui/surface/Surface"
 import {SoftwareMIDIPanel} from "@/ui/software-midi/SoftwareMIDIPanel"
 import {Mixdowns} from "@/service/Mixdowns"

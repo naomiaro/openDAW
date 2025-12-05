@@ -8,7 +8,7 @@ import {
     QuantisedGrooveFunction
 } from "./grooves"
 import {PPQN, ppqn} from "./ppqn"
-import {moebiusEase, Random} from "@opendaw/lib-std"
+import {moebiusEase, Random} from "@naomiarotest/lib-std"
 
 const createMEGroove = (duration: ppqn, amount: number) => new GroovePattern({
     duration: (): ppqn => duration,

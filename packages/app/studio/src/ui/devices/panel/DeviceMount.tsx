@@ -1,8 +1,8 @@
-import {AudioEffectDeviceAdapter, DeviceBoxAdapter, DeviceHost, MidiEffectDeviceAdapter} from "@opendaw/studio-adapters"
+import {AudioEffectDeviceAdapter, DeviceBoxAdapter, DeviceHost, MidiEffectDeviceAdapter} from "@naomiarotest/studio-adapters"
 import {DeviceEditorFactory} from "@/ui/devices/DeviceEditorFactory"
-import {Exec, Lifecycle, Option, Subscription, Terminable, Terminator, UUID} from "@opendaw/lib-std"
-import {JsxValue} from "@opendaw/lib-jsx"
-import {Box} from "@opendaw/lib-box"
+import {Exec, Lifecycle, Option, Subscription, Terminable, Terminator, UUID} from "@naomiarotest/lib-std"
+import {JsxValue} from "@naomiarotest/lib-jsx"
+import {Box} from "@naomiarotest/lib-box"
 import {StudioService} from "@/service/StudioService"
 
 type DeviceFactory = (service: StudioService, lifecycle: Lifecycle, box: Box, deviceHost: DeviceHost) => JsxValue

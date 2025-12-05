@@ -10,19 +10,19 @@ import {
     ObservableValue,
     Option,
     Terminator
-} from "@opendaw/lib-std"
-import {createElement, Frag, Inject} from "@opendaw/lib-jsx"
+} from "@naomiarotest/lib-std"
+import {createElement, Frag, Inject} from "@naomiarotest/lib-jsx"
 import {StudioService} from "@/service/StudioService.ts"
-import {PPQN} from "@opendaw/lib-dsp"
+import {PPQN} from "@naomiarotest/lib-dsp"
 import {DblClckTextInput} from "@/ui/wrapper/DblClckTextInput.tsx"
 import {ContextMenu} from "@/ui/ContextMenu.ts"
 import {MenuItem} from "@/ui/model/menu-item.ts"
-import {Dragging, Html} from "@opendaw/lib-dom"
+import {Dragging, Html} from "@naomiarotest/lib-dom"
 import {FlexSpacer} from "@/ui/components/FlexSpacer.tsx"
-import {Propagation} from "@opendaw/lib-box"
-import {ProjectProfile} from "@opendaw/studio-core"
+import {Propagation} from "@naomiarotest/lib-box"
+import {ProjectProfile} from "@naomiarotest/studio-core"
 import {TapButton} from "@/ui/header/TapButton"
-import {Parsing, Validator} from "@opendaw/studio-adapters"
+import {Parsing, Validator} from "@naomiarotest/studio-adapters"
 
 const className = Html.adoptStyleSheet(css, "TimeStateDisplay")
 

@@ -1,14 +1,14 @@
 import css from "./PitchDeviceEditor.sass?inline"
-import {DeviceHost, PitchDeviceBoxAdapter} from "@opendaw/studio-adapters"
-import {Lifecycle} from "@opendaw/lib-std"
+import {DeviceHost, PitchDeviceBoxAdapter} from "@naomiarotest/studio-adapters"
+import {Lifecycle} from "@naomiarotest/lib-std"
 import {DeviceEditor} from "@/ui/devices/DeviceEditor.tsx"
 import {MenuItems} from "@/ui/devices/menu-items.ts"
-import {createElement} from "@opendaw/lib-jsx"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {ControlBuilder} from "@/ui/devices/ControlBuilder.tsx"
 import {DeviceMidiMeter} from "@/ui/devices/panel/DeviceMidiMeter.tsx"
-import {Html} from "@opendaw/lib-dom"
+import {Html} from "@naomiarotest/lib-dom"
 import {StudioService} from "@/service/StudioService"
-import {EffectFactories} from "@opendaw/studio-core"
+import {EffectFactories} from "@naomiarotest/studio-core"
 
 const className = Html.adoptStyleSheet(css, "PitchDeviceEditor")
 

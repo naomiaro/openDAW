@@ -11,9 +11,9 @@ import {
     Option,
     Subscription,
     Terminator
-} from "@opendaw/lib-std"
-import {MidiData} from "@opendaw/lib-midi"
-import {Promises} from "@opendaw/lib-runtime"
+} from "@naomiarotest/lib-std"
+import {MidiData} from "@naomiarotest/lib-midi"
+import {Promises} from "@naomiarotest/lib-runtime"
 import {MIDIMessageSubscriber} from "./MIDIMessageSubscriber"
 import {SoftwareMIDIInput} from "./SoftwareMIDIInput"
 

@@ -1,5 +1,5 @@
-import {Address, PointerTypes, PrimitiveField, PrimitiveValues} from "@opendaw/lib-box"
-import {assert, SortedSet, StringMapping, Terminable, unitValue, ValueMapping} from "@opendaw/lib-std"
+import {Address, PointerTypes, PrimitiveField, PrimitiveValues} from "@naomiarotest/lib-box"
+import {assert, SortedSet, StringMapping, Terminable, unitValue, ValueMapping} from "@naomiarotest/lib-std"
 import {AutomatableParameterFieldAdapter} from "./AutomatableParameterFieldAdapter"
 
 import {BoxAdaptersContext} from "./BoxAdaptersContext"

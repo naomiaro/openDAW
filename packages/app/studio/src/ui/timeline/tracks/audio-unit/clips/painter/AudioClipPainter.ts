@@ -1,8 +1,8 @@
 import {CanvasPainter} from "@/ui/canvas/painter.ts"
-import {int, Nullable, Procedure, TAU} from "@opendaw/lib-std"
-import {AudioClipBoxAdapter} from "@opendaw/studio-adapters"
-import {Peaks} from "@opendaw/lib-fusion"
-import {dbToGain} from "@opendaw/lib-dsp"
+import {int, Nullable, Procedure, TAU} from "@naomiarotest/lib-std"
+import {AudioClipBoxAdapter} from "@naomiarotest/studio-adapters"
+import {Peaks} from "@naomiarotest/lib-fusion"
+import {dbToGain} from "@naomiarotest/lib-dsp"
 
 export const createAudioClipPainter = (adapter: AudioClipBoxAdapter): Procedure<CanvasPainter> => painter => {
     const {context, actualHeight: size} = painter

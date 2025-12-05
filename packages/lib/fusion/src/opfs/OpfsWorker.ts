@@ -1,5 +1,5 @@
-import {Arrays, asDefined, isNotUndefined, panic} from "@opendaw/lib-std"
-import {Communicator, Messenger, Promises} from "@opendaw/lib-runtime"
+import {Arrays, asDefined, isNotUndefined, panic} from "@naomiarotest/lib-std"
+import {Communicator, Messenger, Promises} from "@naomiarotest/lib-runtime"
 import {OpfsProtocol} from "./OpfsProtocol"
 import "../types"
 

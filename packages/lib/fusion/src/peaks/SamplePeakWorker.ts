@@ -1,5 +1,5 @@
-import {Arrays, float, Float16, FloatArray, int, panic, Procedure} from "@opendaw/lib-std"
-import {Communicator, Messenger, stopwatch} from "@opendaw/lib-runtime"
+import {Arrays, float, Float16, FloatArray, int, panic, Procedure} from "@naomiarotest/lib-std"
+import {Communicator, Messenger, stopwatch} from "@naomiarotest/lib-runtime"
 import {Peaks, SamplePeaks} from "./Peaks"
 import {SamplePeakProtocol} from "./SamplePeakProtocol"
 

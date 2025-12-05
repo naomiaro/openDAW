@@ -1,7 +1,7 @@
 import css from "./TapButton.sass?inline"
-import {Html} from "@opendaw/lib-dom"
-import {createElement} from "@opendaw/lib-jsx"
-import {PPQN} from "@opendaw/lib-dsp"
+import {Html} from "@naomiarotest/lib-dom"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {PPQN} from "@naomiarotest/lib-dsp"
 import {StudioService} from "@/service/StudioService"
 
 const className = Html.adoptStyleSheet(css, "TapButton")

@@ -1,7 +1,7 @@
-import {InaccessibleProperty} from "@opendaw/lib-std"
-import {Api} from "@opendaw/studio-scripting"
-import {dbToGain} from "@opendaw/lib-dsp"
-import {AudioPlayback} from "@opendaw/studio-enums"
+import {InaccessibleProperty} from "@naomiarotest/lib-std"
+import {Api} from "@naomiarotest/studio-scripting"
+import {dbToGain} from "@naomiarotest/lib-dsp"
+import {AudioPlayback} from "@naomiarotest/studio-enums"
 
 const openDAW: Api = InaccessibleProperty("Not to be executed.")
 

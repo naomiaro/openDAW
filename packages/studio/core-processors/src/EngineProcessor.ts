@@ -16,9 +16,9 @@ import {
     Terminable,
     Terminator,
     UUID
-} from "@opendaw/lib-std"
-import {Address, BoxGraph, createSyncTarget} from "@opendaw/lib-box"
-import {AudioFileBox, BoxIO, BoxVisitor} from "@opendaw/studio-boxes"
+} from "@naomiarotest/lib-std"
+import {Address, BoxGraph, createSyncTarget} from "@naomiarotest/lib-box"
+import {AudioFileBox, BoxIO, BoxVisitor} from "@naomiarotest/studio-boxes"
 import {EngineContext} from "./EngineContext"
 import {TimeInfo} from "./TimeInfo"
 import {
@@ -41,23 +41,23 @@ import {
     SoundfontLoaderManager,
     TimelineBoxAdapter,
     TrackBoxAdapter
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {AudioUnit} from "./AudioUnit"
 import {Processor, ProcessPhase} from "./processing"
 import {Mixer} from "./Mixer"
-import {LiveStreamBroadcaster} from "@opendaw/lib-fusion"
+import {LiveStreamBroadcaster} from "@naomiarotest/lib-fusion"
 import {UpdateClock} from "./UpdateClock"
 import {PeakBroadcaster} from "./PeakBroadcaster"
 import {Metronome} from "./Metronome"
 import {BlockRenderer} from "./BlockRenderer"
-import {ConstantTempoMap, Graph, ppqn, PPQN, TempoMap, TopologicalSort} from "@opendaw/lib-dsp"
+import {ConstantTempoMap, Graph, ppqn, PPQN, TempoMap, TopologicalSort} from "@naomiarotest/lib-dsp"
 import {SampleManagerWorklet} from "./SampleManagerWorklet"
 import {ClipSequencingAudioContext} from "./ClipSequencingAudioContext"
-import {Communicator, Messenger} from "@opendaw/lib-runtime"
+import {Communicator, Messenger} from "@naomiarotest/lib-runtime"
 import {AudioUnitOptions} from "./AudioUnitOptions"
 import type {SoundFont2} from "soundfont2"
 import {SoundfontManagerWorklet} from "./SoundfontManagerWorklet"
-import {MidiData} from "@opendaw/lib-midi"
+import {MidiData} from "@naomiarotest/lib-midi"
 import {MIDITransportClock} from "./MIDITransportClock"
 import {MIDISender} from "./MIDISender"
 
@@ -102,6 +102,7 @@ export class EngineProcessor extends AudioWorkletProcessor implements EngineCont
     #panic: boolean = false // will throw an error if set to true to test error handling
     #valid: boolean = true // to shut down the engine
     #metronomeEnabled: boolean = false
+    #metronomeVolume: number = 0.5
     #recordingStartTime: ppqn = 0.0
     #playbackTimestamp: ppqn = 0.0 // this is where we start playing again (after paused)
     #playbackTimestampEnabled: boolean = true
@@ -177,6 +178,7 @@ export class EngineProcessor extends AudioWorkletProcessor implements EngineCont
                 prepareRecordingState: (countIn: boolean): void => this.#prepareRecordingState(countIn),
                 stopRecording: (): void => this.#stopRecording(),
                 setMetronomeEnabled: (value: boolean) => this.#timeInfo.metronomeEnabled = this.#metronomeEnabled = value,
+                setMetronomeVolume: (value: number) => this.#timeInfo.metronomeVolume = this.#metronomeVolume = value,
                 setPlaybackTimestampEnabled: (value: boolean) => this.#playbackTimestampEnabled = value,
                 setCountInBarsTotal: (value: int) => this.#countInBarsTotal = value,
                 queryLoadingComplete: (): Promise<boolean> =>
@@ -392,6 +394,7 @@ export class EngineProcessor extends AudioWorkletProcessor implements EngineCont
         const wasTransporting = this.#timeInfo.transporting
         this.#timeInfo.transporting = false
         this.#timeInfo.metronomeEnabled = this.#metronomeEnabled
+        this.#timeInfo.metronomeVolume = this.#metronomeVolume
         this.#ignoredRegions.clear()
         if (reset || !wasTransporting) {
             this.#reset()
@@ -435,6 +438,7 @@ export class EngineProcessor extends AudioWorkletProcessor implements EngineCont
         this.#timeInfo.isRecording = false
         this.#timeInfo.isCountingIn = false
         this.#timeInfo.metronomeEnabled = this.#metronomeEnabled
+        this.#timeInfo.metronomeVolume = this.#metronomeVolume
         this.#timeInfo.transporting = false
         this.#ignoredRegions.clear()
         this.#midiTransportClock.schedule(MidiData.Stop)
@@ -445,6 +449,7 @@ export class EngineProcessor extends AudioWorkletProcessor implements EngineCont
         this.#timeInfo.isRecording = false
         this.#timeInfo.isCountingIn = false
         this.#timeInfo.metronomeEnabled = this.#metronomeEnabled
+        this.#timeInfo.metronomeVolume = this.#metronomeVolume
         this.#timeInfo.position = 0.0
         this.#timeInfo.transporting = false
         this.#renderer.reset()

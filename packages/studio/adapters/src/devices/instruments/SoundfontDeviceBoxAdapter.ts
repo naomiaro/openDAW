@@ -7,9 +7,9 @@ import {
     Terminable,
     Terminator,
     UUID
-} from "@opendaw/lib-std"
-import {SoundfontDeviceBox} from "@opendaw/studio-boxes"
-import {Address, BooleanField, StringField} from "@opendaw/lib-box"
+} from "@naomiarotest/lib-std"
+import {SoundfontDeviceBox} from "@naomiarotest/studio-boxes"
+import {Address, BooleanField, StringField} from "@naomiarotest/lib-box"
 import {DeviceHost, Devices, InstrumentDeviceBoxAdapter} from "../../DeviceAdapter"
 import {BoxAdaptersContext} from "../../BoxAdaptersContext"
 import {ParameterAdapterSet} from "../../ParameterAdapterSet"

@@ -1,12 +1,12 @@
-import {AutomatableParameterFieldAdapter, DeviceBoxAdapter} from "@opendaw/studio-adapters"
+import {AutomatableParameterFieldAdapter, DeviceBoxAdapter} from "@naomiarotest/studio-adapters"
 import {Column} from "@/ui/devices/Column.tsx"
-import {createElement} from "@opendaw/lib-jsx"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {LKR} from "@/ui/devices/constants.ts"
 import {ParameterLabelKnob} from "@/ui/devices/ParameterLabelKnob.tsx"
-import {Color, TerminableOwner, ValueGuide} from "@opendaw/lib-std"
-import {BoxEditing, PrimitiveValues} from "@opendaw/lib-box"
-import {MIDILearning} from "@opendaw/studio-core"
-import {Colors} from "@opendaw/studio-enums"
+import {Color, TerminableOwner, ValueGuide} from "@naomiarotest/lib-std"
+import {BoxEditing, PrimitiveValues} from "@naomiarotest/lib-box"
+import {MIDILearning} from "@naomiarotest/studio-core"
+import {Colors} from "@naomiarotest/studio-enums"
 
 type Creation<T extends PrimitiveValues> = {
     lifecycle: TerminableOwner

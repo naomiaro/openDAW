@@ -1,5 +1,5 @@
-import {AssertType} from "@opendaw/lib-std"
-import {Groove} from "@opendaw/lib-dsp"
+import {AssertType} from "@naomiarotest/lib-std"
+import {Groove} from "@naomiarotest/lib-dsp"
 import {BoxAdapter} from "../BoxAdapter"
 
 export interface GrooveAdapter extends BoxAdapter, Groove {

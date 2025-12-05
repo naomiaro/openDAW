@@ -1,11 +1,11 @@
 import css from "./AutomationPage.sass?inline"
-import {createElement, PageContext, PageFactory} from "@opendaw/lib-jsx"
+import {createElement, PageContext, PageFactory} from "@naomiarotest/lib-jsx"
 import {StudioService} from "@/service/StudioService.ts"
-import {TAU, unitValue} from "@opendaw/lib-std"
-import {EventCollection, Interpolation, LoopableRegion, PPQN, ValueEvent} from "@opendaw/lib-dsp"
-import {TimelineRange} from "@opendaw/studio-core"
+import {TAU, unitValue} from "@naomiarotest/lib-std"
+import {EventCollection, Interpolation, LoopableRegion, PPQN, ValueEvent} from "@naomiarotest/lib-dsp"
+import {TimelineRange} from "@naomiarotest/studio-core"
 import {renderValueStream} from "@/ui/timeline/renderer/value.ts"
-import {Html} from "@opendaw/lib-dom"
+import {Html} from "@naomiarotest/lib-dom"
 
 const className = Html.adoptStyleSheet(css, "AutomationPage")
 

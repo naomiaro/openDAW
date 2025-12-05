@@ -1,4 +1,4 @@
-import {int} from "@opendaw/lib-std"
+import {int} from "@naomiarotest/lib-std"
 
 const ellipsis = "…"
 

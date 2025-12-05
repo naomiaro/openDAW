@@ -1,6 +1,6 @@
-import {AudioOfflineRenderer, AudioUtils, ProjectBundle, ProjectProfile, WavFile} from "@opendaw/studio-core"
-import {isDefined, Option, panic, Procedure, Progress} from "@opendaw/lib-std"
-import {Promises} from "@opendaw/lib-runtime"
+import {AudioOfflineRenderer, AudioUtils, ProjectBundle, ProjectProfile, WavFile} from "@naomiarotest/studio-core"
+import {isDefined, Option, panic, Procedure, Progress} from "@naomiarotest/lib-std"
+import {Promises} from "@naomiarotest/lib-runtime"
 
 export namespace PublishMusic {
     export const publishMusic = async (profile: ProjectProfile, progress: Progress.Handler, log: Procedure<string>): Promise<string> => {
@@ -17,7 +17,7 @@ export namespace PublishMusic {
         }
         log("Loading FFmpeg...")
         const {FFmpegWorker} = await Promises.guardedRetry(() =>
-            import("@opendaw/studio-core/FFmpegWorker"), (_, count) => count < 10)
+            import("@naomiarotest/studio-core/FFmpegWorker"), (_, count) => count < 10)
         const ffmpegResult = await Promises.tryCatch(FFmpegWorker.load(ffmpegProgress))
         if (ffmpegResult.status === "rejected") {
             return panic(ffmpegResult.error)

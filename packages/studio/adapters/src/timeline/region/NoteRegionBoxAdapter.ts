@@ -1,4 +1,4 @@
-import {LoopableRegion, NoteEvent, ppqn, PPQN, RegionCollection} from "@opendaw/lib-dsp"
+import {LoopableRegion, NoteEvent, ppqn, PPQN, RegionCollection} from "@naomiarotest/lib-dsp"
 import {
     Arrays,
     int,
@@ -11,10 +11,10 @@ import {
     Terminable,
     Terminator,
     UUID
-} from "@opendaw/lib-std"
-import {Address, Field, Propagation, Update} from "@opendaw/lib-box"
-import {Pointers} from "@opendaw/studio-enums"
-import {NoteEventCollectionBox, NoteRegionBox} from "@opendaw/studio-boxes"
+} from "@naomiarotest/lib-std"
+import {Address, Field, Propagation, Update} from "@naomiarotest/lib-box"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {NoteEventCollectionBox, NoteRegionBox} from "@naomiarotest/studio-boxes"
 import {TrackBoxAdapter} from "../TrackBoxAdapter"
 import {LoopableRegionBoxAdapter, RegionBoxAdapter, RegionBoxAdapterVisitor} from "../RegionBoxAdapter"
 import {NoteEventCollectionBoxAdapter} from "../collection/NoteEventCollectionBoxAdapter"

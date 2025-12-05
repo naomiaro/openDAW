@@ -10,11 +10,11 @@ import {
     Terminable,
     Terminator,
     UUID
-} from "@opendaw/lib-std"
-import {ppqn, TimeBase, TimeBaseConverter} from "@opendaw/lib-dsp"
-import {Address, Field, PointerField, Propagation, Update} from "@opendaw/lib-box"
-import {AudioPlayback, Pointers} from "@opendaw/studio-enums"
-import {AudioRegionBox} from "@opendaw/studio-boxes"
+} from "@naomiarotest/lib-std"
+import {ppqn, TimeBase, TimeBaseConverter} from "@naomiarotest/lib-dsp"
+import {Address, Field, PointerField, Propagation, Update} from "@naomiarotest/lib-box"
+import {AudioPlayback, Pointers} from "@naomiarotest/studio-enums"
+import {AudioRegionBox} from "@naomiarotest/studio-boxes"
 import {LoopableRegionBoxAdapter, RegionBoxAdapter, RegionBoxAdapterVisitor} from "../RegionBoxAdapter"
 import {TrackBoxAdapter} from "../TrackBoxAdapter"
 import {BoxAdaptersContext} from "../../BoxAdaptersContext"

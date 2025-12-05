@@ -11,14 +11,14 @@ import {
     SortedSet,
     Terminable,
     Terminator
-} from "@opendaw/lib-std"
-import {Address, AddressJSON, PrimitiveField, PrimitiveValues} from "@opendaw/lib-box"
-import {MidiData} from "@opendaw/lib-midi"
-import {Pointers} from "@opendaw/studio-enums"
-import {AutomatableParameterFieldAdapter} from "@opendaw/studio-adapters"
+} from "@naomiarotest/lib-std"
+import {Address, AddressJSON, PrimitiveField, PrimitiveValues} from "@naomiarotest/lib-box"
+import {MidiData} from "@naomiarotest/lib-midi"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {AutomatableParameterFieldAdapter} from "@naomiarotest/studio-adapters"
 import {Project} from "../project"
 import {MidiDevices} from "./MidiDevices"
-import {AnimationFrame} from "@opendaw/lib-dom"
+import {AnimationFrame} from "@naomiarotest/lib-dom"
 
 export type MIDIConnectionJSON = ({ type: "control", controlId: byte })
     & { address: AddressJSON, channel: byte }

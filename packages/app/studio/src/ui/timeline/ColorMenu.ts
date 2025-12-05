@@ -1,6 +1,6 @@
 import {MenuItem} from "@/ui/model/menu-item"
-import {ColorCodes, TrackType} from "@opendaw/studio-adapters"
-import {Procedure} from "@opendaw/lib-std"
+import {ColorCodes, TrackType} from "@naomiarotest/studio-adapters"
+import {Procedure} from "@naomiarotest/lib-std"
 
 export namespace ColorMenu {
     const Colors: ReadonlyArray<{ label: string, hue: number }> = [

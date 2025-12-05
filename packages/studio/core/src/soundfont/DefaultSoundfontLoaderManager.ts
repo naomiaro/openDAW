@@ -1,5 +1,5 @@
-import {Progress, SortedSet, UUID} from "@opendaw/lib-std"
-import {SoundfontLoader, SoundfontLoaderManager, SoundfontMetaData} from "@opendaw/studio-adapters"
+import {Progress, SortedSet, UUID} from "@naomiarotest/lib-std"
+import {SoundfontLoader, SoundfontLoaderManager, SoundfontMetaData} from "@naomiarotest/studio-adapters"
 import {DefaultSoundfontLoader} from "./DefaultSoundfontLoader"
 import {SoundfontProvider} from "./SoundfontProvider"
 

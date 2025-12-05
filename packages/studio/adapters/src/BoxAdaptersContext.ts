@@ -1,6 +1,6 @@
-import {Terminable} from "@opendaw/lib-std"
-import {BoxGraph} from "@opendaw/lib-box"
-import {LiveStreamBroadcaster, LiveStreamReceiver} from "@opendaw/lib-fusion"
+import {Terminable} from "@naomiarotest/lib-std"
+import {BoxGraph} from "@naomiarotest/lib-box"
+import {LiveStreamBroadcaster, LiveStreamReceiver} from "@naomiarotest/lib-fusion"
 import {RootBoxAdapter} from "./RootBoxAdapter"
 import {TimelineBoxAdapter} from "./timeline/TimelineBoxAdapter"
 import {ClipSequencing} from "./ClipSequencing"
@@ -8,7 +8,7 @@ import {ParameterFieldAdapters} from "./ParameterFieldAdapters"
 import {BoxAdapters} from "./BoxAdapters"
 import {SampleLoaderManager} from "./sample/SampleLoaderManager"
 import {SoundfontLoaderManager} from "./soundfont/SoundfontLoaderManager"
-import {ppqn, TempoMap} from "@opendaw/lib-dsp"
+import {ppqn, TempoMap} from "@naomiarotest/lib-dsp"
 
 export interface BoxAdaptersContext extends Terminable {
     get boxGraph(): BoxGraph

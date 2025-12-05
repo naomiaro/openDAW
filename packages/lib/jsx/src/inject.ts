@@ -1,4 +1,4 @@
-import {isDefined, Option, Stringifiable, Terminable} from "@opendaw/lib-std"
+import {isDefined, Option, Stringifiable, Terminable} from "@naomiarotest/lib-std"
 import {WeakRefSet} from "./weak"
 
 export namespace Inject {

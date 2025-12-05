@@ -1,10 +1,10 @@
-import {Lifecycle, unitValue} from "@opendaw/lib-std"
+import {Lifecycle, unitValue} from "@naomiarotest/lib-std"
 import {Knob} from "@/ui/components/Knob.tsx"
 import {ParameterLabel} from "@/ui/components/ParameterLabel.tsx"
-import {createElement} from "@opendaw/lib-jsx"
-import {AutomatableParameterFieldAdapter, DeviceBoxAdapter} from "@opendaw/studio-adapters"
-import {BoxEditing} from "@opendaw/lib-box"
-import {MIDILearning} from "@opendaw/studio-core"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {AutomatableParameterFieldAdapter, DeviceBoxAdapter} from "@naomiarotest/studio-adapters"
+import {BoxEditing} from "@naomiarotest/lib-box"
+import {MIDILearning} from "@naomiarotest/studio-core"
 
 type Construct = {
     lifecycle: Lifecycle

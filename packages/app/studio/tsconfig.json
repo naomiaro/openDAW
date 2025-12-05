@@ -1,5 +1,5 @@
 {
-  "extends": "@opendaw/typescript-config/vite.json",
+  "extends": "@naomiarotest/typescript-config/vite.json",
   "include": [
     "src"
   ],

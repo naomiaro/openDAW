@@ -1,14 +1,14 @@
 import css from "./OutputSelector.sass?inline"
-import {assert, DefaultObservableValue, Lifecycle, StringComparator, UUID} from "@opendaw/lib-std"
-import {AudioBusFactory, AudioUnitBoxAdapter} from "@opendaw/studio-adapters"
-import {AudioUnitType, Colors, IconSymbol} from "@opendaw/studio-enums"
-import {createElement, DomElement, Frag} from "@opendaw/lib-jsx"
+import {assert, DefaultObservableValue, Lifecycle, StringComparator, UUID} from "@naomiarotest/lib-std"
+import {AudioBusFactory, AudioUnitBoxAdapter} from "@naomiarotest/studio-adapters"
+import {AudioUnitType, Colors, IconSymbol} from "@naomiarotest/studio-enums"
+import {createElement, DomElement, Frag} from "@naomiarotest/lib-jsx"
 import {IconCartridge} from "@/ui/components/Icon.tsx"
-import {Html} from "@opendaw/lib-dom"
+import {Html} from "@naomiarotest/lib-dom"
 import {MenuItem} from "@/ui/model/menu-item"
 import {showNewAudioBusOrAuxDialog} from "@/ui/dialogs"
 import {MenuButton} from "@/ui/components/MenuButton"
-import {Project} from "@opendaw/studio-core"
+import {Project} from "@naomiarotest/studio-core"
 
 const className = Html.adoptStyleSheet(css, "OutputSelector")
 

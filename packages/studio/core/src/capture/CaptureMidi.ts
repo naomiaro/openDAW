@@ -9,12 +9,12 @@ import {
     Option,
     Subscription,
     Terminable
-} from "@opendaw/lib-std"
-import {Events} from "@opendaw/lib-dom"
-import {MidiData} from "@opendaw/lib-midi"
-import {Promises} from "@opendaw/lib-runtime"
-import {AudioUnitBox, CaptureMidiBox} from "@opendaw/studio-boxes"
-import {NoteSignal} from "@opendaw/studio-adapters"
+} from "@naomiarotest/lib-std"
+import {Events} from "@naomiarotest/lib-dom"
+import {MidiData} from "@naomiarotest/lib-midi"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {AudioUnitBox, CaptureMidiBox} from "@naomiarotest/studio-boxes"
+import {NoteSignal} from "@naomiarotest/studio-adapters"
 import {MidiDevices} from "../midi"
 import {Capture} from "./Capture"
 import {CaptureDevices} from "./CaptureDevices"

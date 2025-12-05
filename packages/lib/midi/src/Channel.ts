@@ -1,3 +1,3 @@
-import {byte} from "@opendaw/lib-std"
+import {byte} from "@naomiarotest/lib-std"
 
 export type Channel = byte

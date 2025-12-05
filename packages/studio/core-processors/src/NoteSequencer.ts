@@ -6,8 +6,8 @@ import {
     NoteRegionBoxAdapter,
     TrackBoxAdapter,
     TrackType
-} from "@opendaw/studio-adapters"
-import {EventSpanRetainer, LoopableRegion, NoteEvent, ppqn} from "@opendaw/lib-dsp"
+} from "@naomiarotest/studio-adapters"
+import {EventSpanRetainer, LoopableRegion, NoteEvent, ppqn} from "@naomiarotest/lib-dsp"
 import {
     Bits,
     byte,
@@ -22,7 +22,7 @@ import {
     Terminator,
     unitValue,
     UUID
-} from "@opendaw/lib-std"
+} from "@naomiarotest/lib-std"
 import {NoteCompleteEvent, NoteEventSource, NoteLifecycleEvent} from "./NoteEventSource"
 import {BlockFlag, ProcessPhase} from "./processing"
 

@@ -8,10 +8,10 @@ import {
     Subscription,
     Terminable,
     UUID
-} from "@opendaw/lib-std"
-import {Promises} from "@opendaw/lib-runtime"
-import {Peaks, SamplePeaks} from "@opendaw/lib-fusion"
-import {AudioData, SampleLoader, SampleLoaderState, SampleMetaData} from "@opendaw/studio-adapters"
+} from "@naomiarotest/lib-std"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {Peaks, SamplePeaks} from "@naomiarotest/lib-fusion"
+import {AudioData, SampleLoader, SampleLoaderState, SampleMetaData} from "@naomiarotest/studio-adapters"
 import {Workers} from "../Workers"
 import {DefaultSampleLoaderManager} from "./DefaultSampleLoaderManager"
 import {SampleStorage} from "./SampleStorage"

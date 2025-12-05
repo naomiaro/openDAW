@@ -1,12 +1,12 @@
-import {StringMapping, UUID, ValueMapping} from "@opendaw/lib-std"
-import {VaporisateurDeviceBox} from "@opendaw/studio-boxes"
-import {Address, BooleanField, StringField} from "@opendaw/lib-box"
+import {StringMapping, UUID, ValueMapping} from "@naomiarotest/lib-std"
+import {VaporisateurDeviceBox} from "@naomiarotest/studio-boxes"
+import {Address, BooleanField, StringField} from "@naomiarotest/lib-box"
 import {DeviceHost, Devices, InstrumentDeviceBoxAdapter} from "../../DeviceAdapter"
 import {BoxAdaptersContext} from "../../BoxAdaptersContext"
 import {ParameterAdapterSet} from "../../ParameterAdapterSet"
 import {TrackType} from "../../timeline/TrackType"
 import {AudioUnitBoxAdapter} from "../../audio-unit/AudioUnitBoxAdapter"
-import {VoicingMode} from "@opendaw/studio-enums"
+import {VoicingMode} from "@naomiarotest/studio-enums"
 import {VaporisateurSettings} from "./VaporisateurSettings"
 
 export class VaporisateurDeviceBoxAdapter implements InstrumentDeviceBoxAdapter {

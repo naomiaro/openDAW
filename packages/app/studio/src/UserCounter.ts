@@ -1,5 +1,5 @@
-import {int} from "@opendaw/lib-std"
-import {Browser} from "@opendaw/lib-dom"
+import {int} from "@naomiarotest/lib-std"
+import {Browser} from "@naomiarotest/lib-dom"
 
 export class UserCounter {
     readonly #sessionId: string

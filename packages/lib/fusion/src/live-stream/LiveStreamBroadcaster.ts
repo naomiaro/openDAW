@@ -10,9 +10,9 @@ import {
     Provider,
     safeExecute,
     Terminable
-} from "@opendaw/lib-std"
-import {Address} from "@opendaw/lib-box"
-import {Communicator, Messenger} from "@opendaw/lib-runtime"
+} from "@naomiarotest/lib-std"
+import {Address} from "@naomiarotest/lib-box"
+import {Communicator, Messenger} from "@naomiarotest/lib-runtime"
 import {Lock} from "./Lock"
 import {PackageType} from "./PackageType"
 import {Protocol} from "./Protocol"

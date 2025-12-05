@@ -9,13 +9,13 @@ import {
     Terminator,
     UUID,
     VitalSigns
-} from "@opendaw/lib-std"
-import {appendChildren, createElement} from "@opendaw/lib-jsx"
+} from "@naomiarotest/lib-std"
+import {appendChildren, createElement} from "@naomiarotest/lib-jsx"
 import {ConnectorViewAdapter, ModularEnvironment, WiringPreview} from "@/ui/modular/ModularEnvironment.ts"
-import {ModuleAdapter, ModuleConnectionAdapter, ModuleConnectorAdapter} from "@opendaw/studio-adapters"
+import {ModuleAdapter, ModuleConnectionAdapter, ModuleConnectorAdapter} from "@naomiarotest/studio-adapters"
 import {Camera} from "@/ui/modular/Camera.ts"
-import {AnimationFrame, deferNextFrame, Html} from "@opendaw/lib-dom"
-import {Colors} from "@opendaw/studio-enums"
+import {AnimationFrame, deferNextFrame, Html} from "@naomiarotest/lib-dom"
+import {Colors} from "@naomiarotest/studio-enums"
 
 const className = Html.adoptStyleSheet(css, "ModularWires")
 

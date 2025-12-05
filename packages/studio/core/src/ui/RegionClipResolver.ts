@@ -1,5 +1,5 @@
-import {asDefined, assert, Exec, int, mod, panic} from "@opendaw/lib-std"
-import {Event, EventCollection, ppqn, TimeBase} from "@opendaw/lib-dsp"
+import {asDefined, assert, Exec, int, mod, panic} from "@naomiarotest/lib-std"
+import {Event, EventCollection, ppqn, TimeBase} from "@naomiarotest/lib-dsp"
 import {
     AnyRegionBoxAdapter,
     AudioRegionBoxAdapter,
@@ -7,7 +7,7 @@ import {
     TrackBoxAdapter,
     TrackType,
     UnionAdapterTypes
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {RegionModifyStrategies} from "./RegionModifyStrategies"
 
 export type ClipTask = {

@@ -1,6 +1,6 @@
-import {Pointers} from "@opendaw/studio-enums"
-import {Address, Field} from "@opendaw/lib-box"
-import {Arrays} from "@opendaw/lib-std"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {Address, Field} from "@naomiarotest/lib-box"
+import {Arrays} from "@naomiarotest/lib-std"
 import {BoxAdapters} from "../BoxAdapters"
 import {ModuleConnectionAdapter} from "./connection"
 

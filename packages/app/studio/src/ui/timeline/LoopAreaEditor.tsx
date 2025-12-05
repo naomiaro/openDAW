@@ -1,14 +1,14 @@
 import css from "./LoopAreaEditor.sass?inline"
-import {asDefined, Lifecycle, Nullable, Option} from "@opendaw/lib-std"
-import {CssUtils, deferNextFrame, Dragging, Html} from "@opendaw/lib-dom"
-import {createElement} from "@opendaw/lib-jsx"
-import {BoxEditing, Propagation} from "@opendaw/lib-box"
+import {asDefined, Lifecycle, Nullable, Option} from "@naomiarotest/lib-std"
+import {CssUtils, deferNextFrame, Dragging, Html} from "@naomiarotest/lib-dom"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {BoxEditing, Propagation} from "@naomiarotest/lib-box"
 import {ElementCapturing} from "@/ui/canvas/capturing.ts"
 import {installCursor} from "@/ui/hooks/cursor.ts"
-import {TimelineRange} from "@opendaw/studio-core"
+import {TimelineRange} from "@naomiarotest/studio-core"
 import {Snapping} from "@/ui/timeline/Snapping.ts"
-import {LoopArea} from "@opendaw/studio-boxes"
-import {Colors} from "@opendaw/studio-enums"
+import {LoopArea} from "@naomiarotest/studio-boxes"
+import {Colors} from "@naomiarotest/studio-enums"
 
 const className = Html.adoptStyleSheet(css, "loop-area-editor")
 

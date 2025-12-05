@@ -1,7 +1,7 @@
 import css from "./Scroller.sass?inline"
-import {Lifecycle, Option} from "@opendaw/lib-std"
-import {Dragging, Html} from "@opendaw/lib-dom"
-import {createElement} from "@opendaw/lib-jsx"
+import {Lifecycle, Option} from "@naomiarotest/lib-std"
+import {Dragging, Html} from "@naomiarotest/lib-dom"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {ScrollModel} from "@/ui/components/ScrollModel.ts"
 
 export enum Orientation {vertical = "vertical", horizontal = "horizontal"}

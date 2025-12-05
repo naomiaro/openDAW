@@ -11,8 +11,8 @@ import {
     Terminator,
     unitValue,
     ValueMapping
-} from "@opendaw/lib-std"
-import {Address, PrimitiveField, PrimitiveType, PrimitiveValues} from "@opendaw/lib-box"
+} from "@naomiarotest/lib-std"
+import {Address, PrimitiveField, PrimitiveType, PrimitiveValues} from "@naomiarotest/lib-box"
 import {TrackBoxAdapter} from "./timeline/TrackBoxAdapter"
 
 export class FieldAdapter<T extends PrimitiveValues = any> implements MutableObservableValue<T>, Terminable {

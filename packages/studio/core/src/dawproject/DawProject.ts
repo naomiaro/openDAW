@@ -1,7 +1,7 @@
-import {asDefined, isDefined, panic, UUID} from "@opendaw/lib-std"
-import {Xml} from "@opendaw/lib-xml"
-import {FileReferenceSchema, MetaDataSchema, ProjectSchema} from "@opendaw/lib-dawproject"
-import {ProjectSkeleton, SampleLoaderManager} from "@opendaw/studio-adapters"
+import {asDefined, isDefined, panic, UUID} from "@naomiarotest/lib-std"
+import {Xml} from "@naomiarotest/lib-xml"
+import {FileReferenceSchema, MetaDataSchema, ProjectSchema} from "@naomiarotest/lib-dawproject"
+import {ProjectSkeleton, SampleLoaderManager} from "@naomiarotest/studio-adapters"
 import {DawProjectExporter} from "./DawProjectExporter"
 import {ExternalLib} from "../ExternalLib"
 

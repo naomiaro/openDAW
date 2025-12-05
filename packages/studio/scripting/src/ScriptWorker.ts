@@ -1,9 +1,9 @@
-import {Communicator, Messenger} from "@opendaw/lib-runtime"
+import {Communicator, Messenger} from "@naomiarotest/lib-runtime"
 
 import {ScriptExecutionContext, ScriptExecutionProtocol} from "./ScriptExecutionProtocol"
 import {ScriptRunner} from "./ScriptRunner"
 import {ScriptHostProtocol} from "./ScriptHostProtocol"
-import {AudioData, Sample} from "@opendaw/studio-adapters"
+import {AudioData, Sample} from "@naomiarotest/studio-adapters"
 
 const messenger: Messenger = Messenger.for(self)
 

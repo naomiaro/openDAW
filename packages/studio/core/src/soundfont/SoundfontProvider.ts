@@ -1,5 +1,5 @@
-import {Progress, UUID} from "@opendaw/lib-std"
-import {SoundfontMetaData} from "@opendaw/studio-adapters"
+import {Progress, UUID} from "@naomiarotest/lib-std"
+import {SoundfontMetaData} from "@naomiarotest/studio-adapters"
 
 export interface SoundfontProvider {
     fetch(uuid: UUID.Bytes, progress: Progress.Handler): Promise<[ArrayBuffer, SoundfontMetaData]>

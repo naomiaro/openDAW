@@ -1,11 +1,11 @@
 import css from "./Display.sass?inline"
-import {Html} from "@opendaw/lib-dom"
-import {Arrays, Lifecycle, TAU} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
-import {TidalDeviceBoxAdapter} from "@opendaw/studio-adapters"
+import {Html} from "@naomiarotest/lib-dom"
+import {Arrays, Lifecycle, TAU} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {TidalDeviceBoxAdapter} from "@naomiarotest/studio-adapters"
 import {CanvasPainter} from "@/ui/canvas/painter"
-import {TidalComputer} from "@opendaw/lib-dsp"
-import {LiveStreamReceiver} from "@opendaw/lib-fusion"
+import {TidalComputer} from "@naomiarotest/lib-dsp"
+import {LiveStreamReceiver} from "@naomiarotest/lib-fusion"
 import {DisplayPaint} from "@/ui/devices/DisplayPaint"
 
 const className = Html.adoptStyleSheet(css, "Display")

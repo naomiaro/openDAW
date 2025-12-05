@@ -1,5 +1,5 @@
-import {Arrays, EmptyExec, panic, Terminable, Terminator} from "@opendaw/lib-std"
-import {Communicator, Messenger} from "@opendaw/lib-runtime"
+import {Arrays, EmptyExec, panic, Terminable, Terminator} from "@naomiarotest/lib-std"
+import {Communicator, Messenger} from "@naomiarotest/lib-runtime"
 import {BoxGraph} from "./graph"
 import {Update} from "./updates"
 import {Synchronization, UpdateTask} from "./sync"

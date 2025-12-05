@@ -11,10 +11,10 @@ import {
     SortedSet,
     Subscription,
     Terminable
-} from "@opendaw/lib-std"
-import {Address} from "@opendaw/lib-box"
-import {AnimationFrame} from "@opendaw/lib-dom"
-import {Communicator, Messenger} from "@opendaw/lib-runtime"
+} from "@naomiarotest/lib-std"
+import {Address} from "@naomiarotest/lib-box"
+import {AnimationFrame} from "@naomiarotest/lib-dom"
+import {Communicator, Messenger} from "@naomiarotest/lib-runtime"
 import {PackageType} from "./PackageType"
 import {Subscribers} from "./Subscribers"
 import {Protocol} from "./Protocol"

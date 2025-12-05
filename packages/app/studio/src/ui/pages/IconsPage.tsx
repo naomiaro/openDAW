@@ -1,9 +1,9 @@
 import css from "./IconsPage.sass?inline"
-import {createElement, Frag, PageContext, PageFactory} from "@opendaw/lib-jsx"
+import {createElement, Frag, PageContext, PageFactory} from "@naomiarotest/lib-jsx"
 import {StudioService} from "@/service/StudioService.ts"
 import {Icon} from "@/ui/components/Icon.tsx"
-import {Html} from "@opendaw/lib-dom"
-import {IconSymbol} from "@opendaw/studio-enums"
+import {Html} from "@naomiarotest/lib-dom"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 
 const className = Html.adoptStyleSheet(css, "IconsPage")
 

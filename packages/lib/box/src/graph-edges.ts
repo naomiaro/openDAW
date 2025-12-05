@@ -1,4 +1,4 @@
-import {Arrays, Func, isDefined, isInstanceOf, panic, SortedSet, UUID} from "@opendaw/lib-std"
+import {Arrays, Func, isDefined, isInstanceOf, panic, SortedSet, UUID} from "@naomiarotest/lib-std"
 import {Address} from "./address"
 import {PointerField} from "./pointer"
 import {Vertex} from "./vertex"

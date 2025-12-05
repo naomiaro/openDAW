@@ -1,6 +1,6 @@
-import {LiveStreamBroadcaster} from "@opendaw/lib-fusion"
-import {Address} from "@opendaw/lib-box"
-import {Bits, EmptyExec, int, Terminable, Terminator} from "@opendaw/lib-std"
+import {LiveStreamBroadcaster} from "@naomiarotest/lib-fusion"
+import {Address} from "@naomiarotest/lib-box"
+import {Bits, EmptyExec, int, Terminable, Terminator} from "@naomiarotest/lib-std"
 
 export class NoteBroadcaster implements Terminable {
     readonly #terminator = new Terminator()

@@ -23,7 +23,7 @@ import {
     VaporisateurDeviceBox,
     VelocityDeviceBox,
     ZeitgeistDeviceBox
-} from "@opendaw/studio-boxes"
+} from "@naomiarotest/studio-boxes"
 import {DelayDeviceProcessor} from "./devices/audio-effects/DelayDeviceProcessor"
 import {
     ArpeggioDeviceBoxAdapter,
@@ -49,11 +49,11 @@ import {
     VaporisateurDeviceBoxAdapter,
     VelocityDeviceBoxAdapter,
     ZeitgeistDeviceBoxAdapter
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {NopDeviceProcessor} from "./devices/audio-effects/NopDeviceProcessor"
-import {asDefined, Maybe} from "@opendaw/lib-std"
+import {asDefined, Maybe} from "@naomiarotest/lib-std"
 import {EngineContext} from "./EngineContext"
-import {Box} from "@opendaw/lib-box"
+import {Box} from "@naomiarotest/lib-box"
 import {AudioBusProcessor} from "./AudioBusProcessor"
 import {VaporisateurDeviceProcessor} from "./devices/instruments/VaporisateurDeviceProcessor"
 import {TapeDeviceProcessor} from "./devices/instruments/TapeDeviceProcessor"

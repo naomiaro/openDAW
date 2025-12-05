@@ -1,6 +1,6 @@
-import {Arrays, Color, Option, Procedure, Terminable} from "@opendaw/lib-std"
+import {Arrays, Color, Option, Procedure, Terminable} from "@naomiarotest/lib-std"
 
-import {IconSymbol} from "@opendaw/studio-enums"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 
 export type MenuItemOptions = {
     hidden?: boolean

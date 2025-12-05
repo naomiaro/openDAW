@@ -1,5 +1,5 @@
 {
-    "name": "@opendaw/lib-dawproject",
+    "name": "@naomiarotest/lib-dawproject",
     "version": "0.0.36",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -22,14 +22,14 @@
         "test": "vitest run"
     },
     "dependencies": {
-        "@opendaw/lib-dsp": "^0.0.50",
-        "@opendaw/lib-runtime": "^0.0.50",
-        "@opendaw/lib-xml": "^0.0.36",
+        "@naomiarotest/lib-dsp": "^0.0.50",
+        "@naomiarotest/lib-runtime": "^0.0.50",
+        "@naomiarotest/lib-xml": "^0.0.36",
         "jszip": "^3.10.1"
     },
     "devDependencies": {
-        "@opendaw/eslint-config": "^0.0.20",
-        "@opendaw/typescript-config": "^0.0.20",
+        "@naomiarotest/eslint-config": "^0.0.20",
+        "@naomiarotest/typescript-config": "^0.0.20",
         "jsdom": "^26.1.0"
     },
     "gitHead": "b000505c56dbc68bce90bac93f722198deab0ecf"

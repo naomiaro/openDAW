@@ -1,10 +1,10 @@
 import {MenuItem} from "@/ui/model/menu-item"
-import {Arrays, int, isInstanceOf, Option} from "@opendaw/lib-std"
-import {CaptureAudioBox} from "@opendaw/studio-boxes"
-import {IconSymbol} from "@opendaw/studio-enums"
-import {AudioDevices, Capture, CaptureAudio, CaptureMidi, MidiDevices} from "@opendaw/studio-core"
-import {AudioUnitBoxAdapter, TrackBoxAdapter} from "@opendaw/studio-adapters"
-import {BoxEditing} from "@opendaw/lib-box"
+import {Arrays, int, isInstanceOf, Option} from "@naomiarotest/lib-std"
+import {CaptureAudioBox} from "@naomiarotest/studio-boxes"
+import {IconSymbol} from "@naomiarotest/studio-enums"
+import {AudioDevices, Capture, CaptureAudio, CaptureMidi, MidiDevices} from "@naomiarotest/studio-core"
+import {AudioUnitBoxAdapter, TrackBoxAdapter} from "@naomiarotest/studio-adapters"
+import {BoxEditing} from "@naomiarotest/lib-box"
 import {StudioService} from "@/service/StudioService"
 
 export namespace MenuCapture {

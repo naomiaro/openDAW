@@ -9,13 +9,13 @@ import {
     StringComparator,
     TimeSpan,
     UUID
-} from "@opendaw/lib-std"
+} from "@naomiarotest/lib-std"
 import {Icon} from "@/ui/components/Icon"
-import {IconSymbol} from "@opendaw/studio-enums"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 import {Dialogs} from "@/ui/components/dialogs"
-import {Await, createElement, DomElement, Frag, Group} from "@opendaw/lib-jsx"
-import {Html} from "@opendaw/lib-dom"
-import {ProjectMeta, ProjectSignals, ProjectStorage} from "@opendaw/studio-core"
+import {Await, createElement, DomElement, Frag, Group} from "@naomiarotest/lib-jsx"
+import {Html} from "@naomiarotest/lib-dom"
+import {ProjectMeta, ProjectSignals, ProjectStorage} from "@naomiarotest/studio-core"
 import {ContextMenu} from "@/ui/ContextMenu"
 import {MenuItem} from "@/ui/model/menu-item"
 import {SearchInput} from "@/ui/components/SearchInput"

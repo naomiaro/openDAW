@@ -1,8 +1,8 @@
 import {NoteEvent, NoteRegion, NoteRegionProps, NoteTrack} from "../Api"
-import {PPQN, ppqn} from "@opendaw/lib-dsp"
-import {int} from "@opendaw/lib-std"
+import {PPQN, ppqn} from "@naomiarotest/lib-dsp"
+import {int} from "@naomiarotest/lib-std"
 import {NoteEventImpl} from "./NoteEventImpl"
-import {ColorCodes, TrackType} from "@opendaw/studio-adapters"
+import {ColorCodes, TrackType} from "@naomiarotest/studio-adapters"
 
 export class NoteRegionImpl implements NoteRegion {
     readonly track: NoteTrack

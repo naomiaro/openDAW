@@ -1,12 +1,12 @@
 import css from "./ScaleSelector.sass?inline"
-import {Arrays, Lifecycle} from "@opendaw/lib-std"
+import {Arrays, Lifecycle} from "@naomiarotest/lib-std"
 import {MenuButton} from "@/ui/components/MenuButton.tsx"
-import {createElement, Inject} from "@opendaw/lib-jsx"
-import {MidiKeys} from "@opendaw/lib-dsp"
+import {createElement, Inject} from "@naomiarotest/lib-jsx"
+import {MidiKeys} from "@naomiarotest/lib-dsp"
 import {MenuItem} from "@/ui/model/menu-item.ts"
 import {ScaleConfig} from "@/ui/timeline/editors/notes/pitch/ScaleConfig.ts"
-import {Html} from "@opendaw/lib-dom"
-import {Colors} from "@opendaw/studio-enums"
+import {Html} from "@naomiarotest/lib-dom"
+import {Colors} from "@naomiarotest/studio-enums"
 
 const className = Html.adoptStyleSheet(css, "ScaleSelector")
 

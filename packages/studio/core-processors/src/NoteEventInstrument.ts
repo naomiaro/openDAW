@@ -1,10 +1,10 @@
 import {Block, Processor} from "./processing"
-import {Event} from "@opendaw/lib-dsp"
+import {Event} from "@naomiarotest/lib-dsp"
 import {NoteEventSource, NoteLifecycleEvent} from "./NoteEventSource"
-import {assert, Option, Terminable, Terminator} from "@opendaw/lib-std"
-import {NoteBroadcaster} from "@opendaw/studio-adapters"
-import {Address} from "@opendaw/lib-box"
-import {LiveStreamBroadcaster} from "@opendaw/lib-fusion"
+import {assert, Option, Terminable, Terminator} from "@naomiarotest/lib-std"
+import {NoteBroadcaster} from "@naomiarotest/studio-adapters"
+import {Address} from "@naomiarotest/lib-box"
+import {LiveStreamBroadcaster} from "@naomiarotest/lib-fusion"
 
 export class NoteEventInstrument implements Terminable {
     readonly #terminator = new Terminator()

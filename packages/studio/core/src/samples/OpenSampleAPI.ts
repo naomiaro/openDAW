@@ -9,10 +9,10 @@ import {
     tryCatch,
     unitValue,
     UUID
-} from "@opendaw/lib-std"
-import {network, Promises} from "@opendaw/lib-runtime"
-import {AudioData, Sample, SampleMetaData} from "@opendaw/studio-adapters"
-import {SampleAPI} from "@opendaw/studio-core"
+} from "@naomiarotest/lib-std"
+import {network, Promises} from "@naomiarotest/lib-runtime"
+import {AudioData, Sample, SampleMetaData} from "@naomiarotest/studio-adapters"
+import {SampleAPI} from "@naomiarotest/studio-core"
 import {base64Credentials, OpenDAWHeaders} from "../OpenDAWHeaders"
 import {z} from "zod"
 

@@ -11,8 +11,8 @@ import {
     SetMultimap,
     Strings,
     Unhandled
-} from "@opendaw/lib-std"
-import {Constraints, FieldKey, NoPointers, PointerRules, PointerTypes} from "@opendaw/lib-box"
+} from "@naomiarotest/lib-std"
+import {Constraints, FieldKey, NoPointers, PointerRules, PointerTypes} from "@naomiarotest/lib-box"
 import {ModuleDeclarationKind, Project, Scope, SourceFile, VariableDeclarationKind} from "ts-morph"
 import {AnyField, BoxSchema, ClassSchema, FieldName, Referencable, Schema} from "./schema"
 import {header} from "./header"
@@ -66,7 +66,7 @@ export class BoxForge<E extends PointerTypes> {
     #writeBoxVisitor(): void {
         const file: SourceFile = this.#project.createSourceFile(`${this.#path}/visitor.ts`, header)
         file.addImportDeclarations([
-            {moduleSpecifier: "@opendaw/lib-box", namedImports: ["VertexVisitor"]},
+            {moduleSpecifier: "@naomiarotest/lib-box", namedImports: ["VertexVisitor"]},
             {moduleSpecifier: ".", namedImports: this.#schema.boxes.map(({class: {name}}) => name)}
         ])
         file.addInterface({
@@ -146,8 +146,8 @@ export class BoxForge<E extends PointerTypes> {
     }
 }
 
-const STD_LIBRARY = "@opendaw/lib-std" as const
-const BOX_LIBRARY = "@opendaw/lib-box" as const
+const STD_LIBRARY = "@naomiarotest/lib-std" as const
+const BOX_LIBRARY = "@naomiarotest/lib-box" as const
 
 type ClassOptions = Readonly<{
     import_std_lib: string[]
@@ -279,7 +279,7 @@ class ClassWriter<E extends PointerTypes> {
                 : `${this.#option.extends}<${fieldsType}>`
         })
         if (noEdgeConstrains) {
-            this.#imports.add("@opendaw/lib-box", "UnreferenceableType")
+            this.#imports.add("@naomiarotest/lib-box", "UnreferenceableType")
         }
         if (this.#option.isBox) {
             let pointerRules

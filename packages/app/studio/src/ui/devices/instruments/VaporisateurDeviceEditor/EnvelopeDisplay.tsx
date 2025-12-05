@@ -1,11 +1,11 @@
 import css from "./Display.sass?inline"
-import {Html} from "@opendaw/lib-dom"
-import {Lifecycle, TAU} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+import {Html} from "@naomiarotest/lib-dom"
+import {Lifecycle, TAU} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {CanvasPainter} from "@/ui/canvas/painter"
-import {AutomatableParameterFieldAdapter} from "@opendaw/studio-adapters"
-import {LiveStreamReceiver} from "@opendaw/lib-fusion"
-import {Address} from "@opendaw/lib-box"
+import {AutomatableParameterFieldAdapter} from "@naomiarotest/studio-adapters"
+import {LiveStreamReceiver} from "@naomiarotest/lib-fusion"
+import {Address} from "@naomiarotest/lib-box"
 import {DisplayPaint} from "@/ui/devices/DisplayPaint"
 
 const className = Html.adoptStyleSheet(css, "Display")

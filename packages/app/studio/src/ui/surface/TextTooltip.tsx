@@ -1,9 +1,9 @@
 import css from "./TextTooltip.sass?inline"
 import {Surface} from "./Surface"
-import {createElement} from "@opendaw/lib-jsx"
-import {Provider, Terminable} from "@opendaw/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {Provider, Terminable} from "@naomiarotest/lib-std"
 import {AbstractTooltip} from "@/ui/surface/AbstractTooltip.ts"
-import {Events, Html} from "@opendaw/lib-dom"
+import {Events, Html} from "@naomiarotest/lib-dom"
 
 export interface Data {
     text: string

@@ -1,5 +1,5 @@
-import {EmptyExec, Errors, Option, Provider, Terminable, Terminator} from "@opendaw/lib-std"
-import {AnimationFrame, Browser, Events} from "@opendaw/lib-dom"
+import {EmptyExec, Errors, Option, Provider, Terminable, Terminator} from "@naomiarotest/lib-std"
+import {AnimationFrame, Browser, Events} from "@naomiarotest/lib-dom"
 import {LogBuffer} from "@/errors/LogBuffer.ts"
 import {ErrorLog} from "@/errors/ErrorLog.ts"
 import {ErrorInfo} from "@/errors/ErrorInfo.ts"

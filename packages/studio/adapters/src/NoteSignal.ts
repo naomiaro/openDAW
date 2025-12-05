@@ -1,5 +1,5 @@
-import {byte, panic, unitValue, UUID} from "@opendaw/lib-std"
-import {MidiData} from "@opendaw/lib-midi"
+import {byte, panic, unitValue, UUID} from "@naomiarotest/lib-std"
+import {MidiData} from "@naomiarotest/lib-midi"
 
 export type NoteSignalOn = { type: "note-on", uuid: UUID.Bytes, pitch: byte, velocity: unitValue }
 

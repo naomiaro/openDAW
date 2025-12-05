@@ -1,4 +1,4 @@
-import {ppqn} from "@opendaw/lib-dsp"
+import {ppqn} from "@naomiarotest/lib-dsp"
 import {
     Arrays,
     asInstanceOf,
@@ -11,7 +11,7 @@ import {
     SetMultimap,
     SortedSet,
     UUID
-} from "@opendaw/lib-std"
+} from "@naomiarotest/lib-std"
 import {
     AudioFileBox,
     AudioUnitBox,
@@ -22,8 +22,8 @@ import {
     SelectionBox,
     SoundfontFileBox,
     TrackBox
-} from "@opendaw/studio-boxes"
-import {Address, Box, BoxGraph, IndexedBox, PointerField} from "@opendaw/lib-box"
+} from "@naomiarotest/studio-boxes"
+import {Address, Box, BoxGraph, IndexedBox, PointerField} from "@naomiarotest/lib-box"
 import {ProjectSkeleton} from "./ProjectSkeleton"
 import {AnyRegionBox, UnionBoxTypes} from "../unions"
 import {AudioUnitOrdering} from "../factories/AudioUnitOrdering"

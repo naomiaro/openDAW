@@ -1,4 +1,4 @@
-import {BoxVisitor, ValueEventBox, ValueEventCollectionBox} from "@opendaw/studio-boxes"
+import {BoxVisitor, ValueEventBox, ValueEventCollectionBox} from "@naomiarotest/studio-boxes"
 import {
     asDefined,
     Curve,
@@ -13,10 +13,10 @@ import {
     Terminator,
     unitValue,
     UUID
-} from "@opendaw/lib-std"
-import {Address, Box} from "@opendaw/lib-box"
-import {EventCollection, Interpolation, ppqn, ValueEvent} from "@opendaw/lib-dsp"
-import {Pointers} from "@opendaw/studio-enums"
+} from "@naomiarotest/lib-std"
+import {Address, Box} from "@naomiarotest/lib-box"
+import {EventCollection, Interpolation, ppqn, ValueEvent} from "@naomiarotest/lib-dsp"
+import {Pointers} from "@naomiarotest/studio-enums"
 import {BoxAdapter} from "../../BoxAdapter"
 import {BoxAdaptersContext} from "../../BoxAdaptersContext"
 import {ValueEventBoxAdapter} from "../event/ValueEventBoxAdapter"

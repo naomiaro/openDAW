@@ -1,11 +1,11 @@
-import {int, Option, Terminable, UUID} from "@opendaw/lib-std"
-import {AudioEffectDeviceAdapter, CrusherDeviceBoxAdapter} from "@opendaw/studio-adapters"
+import {int, Option, Terminable, UUID} from "@naomiarotest/lib-std"
+import {AudioEffectDeviceAdapter, CrusherDeviceBoxAdapter} from "@naomiarotest/studio-adapters"
 import {EngineContext} from "../../EngineContext"
 import {Block, Processor} from "../../processing"
 import {PeakBroadcaster} from "../../PeakBroadcaster"
 import {AutomatableParameter} from "../../AutomatableParameter"
 import {AudioEffectDeviceProcessor} from "../../AudioEffectDeviceProcessor"
-import {AudioBuffer, Crusher, StereoMatrix} from "@opendaw/lib-dsp"
+import {AudioBuffer, Crusher, StereoMatrix} from "@naomiarotest/lib-dsp"
 import {AudioProcessor} from "../../AudioProcessor"
 
 export class CrusherDeviceProcessor extends AudioProcessor implements AudioEffectDeviceProcessor {

@@ -1,6 +1,6 @@
-import {Arrays, assert, Exec} from "@opendaw/lib-std"
+import {Arrays, assert, Exec} from "@naomiarotest/lib-std"
 
-import {IconSymbol} from "@opendaw/studio-enums"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 
 export type SpotlightResult = {
     name: string

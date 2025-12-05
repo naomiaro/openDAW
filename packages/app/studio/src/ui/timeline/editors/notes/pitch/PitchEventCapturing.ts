@@ -1,9 +1,9 @@
 import {ElementCapturing} from "@/ui/canvas/capturing.ts"
-import {isDefined, Nullable} from "@opendaw/lib-std"
+import {isDefined, Nullable} from "@naomiarotest/lib-std"
 import {PointerRadiusDistance} from "@/ui/timeline/constants.ts"
 import {PitchPositioner} from "@/ui/timeline/editors/notes/pitch/PitchPositioner.ts"
-import {TimelineRange} from "@opendaw/studio-core"
-import {NoteEventBoxAdapter} from "@opendaw/studio-adapters"
+import {TimelineRange} from "@naomiarotest/studio-core"
+import {NoteEventBoxAdapter} from "@naomiarotest/studio-adapters"
 
 import {NoteEventOwnerReader} from "@/ui/timeline/editors/EventOwnerReader.ts"
 

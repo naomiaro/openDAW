@@ -1,4 +1,4 @@
-import {int, Terminable} from "@opendaw/lib-std"
+import {int, Terminable} from "@naomiarotest/lib-std"
 
 type MIDIMessageCallback = (deviceId: string, data: Uint8Array, timeMs: int) => void
 

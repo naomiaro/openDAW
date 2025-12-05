@@ -1,5 +1,5 @@
-import type {int} from "@opendaw/lib-std"
-import {Xml} from "@opendaw/lib-xml"
+import type {int} from "@naomiarotest/lib-std"
+import {Xml} from "@naomiarotest/lib-xml"
 
 export interface Nameable {
     name?: string

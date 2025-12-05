@@ -1,5 +1,5 @@
 import {Promises} from "./promises"
-import {Errors, int, isAbsent, isInstanceOf, Progress} from "@opendaw/lib-std"
+import {Errors, int, isAbsent, isInstanceOf, Progress} from "@naomiarotest/lib-std"
 
 export namespace network {
     const limit = new Promises.Limit<Response>(4)

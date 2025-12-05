@@ -17,9 +17,9 @@ import {
     panic,
     UUID,
     ValueMapping
-} from "@opendaw/lib-std"
-import {BoxGraph, Field, PointerField} from "@opendaw/lib-box"
-import {gainToDb, PPQN} from "@opendaw/lib-dsp"
+} from "@naomiarotest/lib-std"
+import {BoxGraph, Field, PointerField} from "@naomiarotest/lib-box"
+import {gainToDb, PPQN} from "@naomiarotest/lib-dsp"
 import {
     ArrangementSchema,
     AudioSchema,
@@ -41,8 +41,8 @@ import {
     TrackSchema,
     TransportSchema,
     WarpsSchema
-} from "@opendaw/lib-dawproject"
-import {AudioSendRouting, AudioUnitType, IconSymbol, Pointers} from "@opendaw/studio-enums"
+} from "@naomiarotest/lib-dawproject"
+import {AudioSendRouting, AudioUnitType, IconSymbol, Pointers} from "@naomiarotest/studio-enums"
 import {
     AudioBusBox,
     AudioFileBox,
@@ -64,7 +64,7 @@ import {
     UnknownMidiEffectDeviceBox,
     UserInterfaceBox,
     ValueEventCollectionBox
-} from "@opendaw/studio-boxes"
+} from "@naomiarotest/studio-boxes"
 import {
     AudioUnitOrdering,
     CaptureBox,
@@ -74,7 +74,7 @@ import {
     InstrumentFactories,
     ProjectSkeleton,
     TrackType
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {DawProject} from "./DawProject"
 import {DeviceIO} from "./DeviceIO"
 import {BuiltinDevices} from "./BuiltinDevices"

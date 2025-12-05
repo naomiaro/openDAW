@@ -1,4 +1,4 @@
-import {IconSymbol} from "@opendaw/studio-enums"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 
 export enum TrackType {Undefined, Notes, Audio, Value}
 

@@ -1,9 +1,9 @@
 import css from "./PropertyEditor.sass?inline"
-import {Lifecycle, Nullable, ObservableValue, Option, Selection, unitValue, ValueAxis} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
-import {NoteEventBoxAdapter} from "@opendaw/studio-adapters"
+import {Lifecycle, Nullable, ObservableValue, Option, Selection, unitValue, ValueAxis} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {NoteEventBoxAdapter} from "@naomiarotest/studio-adapters"
 import {SelectionRectangle} from "@/ui/timeline/SelectionRectangle.tsx"
-import {BoxEditing} from "@opendaw/lib-box"
+import {BoxEditing} from "@naomiarotest/lib-box"
 import {createPropertySelectionLocator} from "@/ui/timeline/editors/notes/property/PropertySelectionLocator.ts"
 import {createPropertyCapturing} from "@/ui/timeline/editors/notes/property/PropertyEventCapturing.ts"
 import {ElementCapturing} from "@/ui/canvas/capturing.ts"
@@ -25,8 +25,8 @@ import {Cursor} from "@/ui/Cursors.ts"
 import {installValueInput} from "@/ui/timeline/editors/ValueInput.ts"
 
 import {NoteEventOwnerReader} from "@/ui/timeline/editors/EventOwnerReader.ts"
-import {Dragging, Html, Keyboard} from "@opendaw/lib-dom"
-import {TimelineRange} from "@opendaw/studio-core"
+import {Dragging, Html, Keyboard} from "@naomiarotest/lib-dom"
+import {TimelineRange} from "@naomiarotest/studio-core"
 
 const className = Html.adoptStyleSheet(css, "PropertyEditor")
 

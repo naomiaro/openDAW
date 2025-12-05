@@ -1,4 +1,4 @@
-import {isDefined, Lazy, Notifier, Observer, Option, Subscription} from "@opendaw/lib-std"
+import {isDefined, Lazy, Notifier, Observer, Option, Subscription} from "@naomiarotest/lib-std"
 
 export class RouteLocation {
     @Lazy

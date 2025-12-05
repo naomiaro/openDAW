@@ -1,8 +1,8 @@
-import {BoxGraph} from "@opendaw/lib-box"
-import {AudioRegionBox, BoxVisitor, TrackBox} from "@opendaw/studio-boxes"
-import {Arrays, Attempt, Attempts, clamp, int} from "@opendaw/lib-std"
+import {BoxGraph} from "@naomiarotest/lib-box"
+import {AudioRegionBox, BoxVisitor, TrackBox} from "@naomiarotest/studio-boxes"
+import {Arrays, Attempt, Attempts, clamp, int} from "@naomiarotest/lib-std"
 import {UnionBoxTypes} from "./unions"
-import {TimeBase} from "@opendaw/lib-dsp"
+import {TimeBase} from "@naomiarotest/lib-dsp"
 
 export namespace Validator {
     export const isTimeSignatureValid = (numerator: int, denominator: int): Attempt<[int, int], string> => {

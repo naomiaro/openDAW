@@ -1,6 +1,6 @@
-import {byte, int} from "@opendaw/lib-std"
-import {InstrumentFactories, Sample, Soundfont} from "@opendaw/studio-adapters"
-import {EffectFactories} from "@opendaw/studio-core"
+import {byte, int} from "@naomiarotest/lib-std"
+import {InstrumentFactories, Sample, Soundfont} from "@naomiarotest/studio-adapters"
+import {EffectFactories} from "@naomiarotest/studio-core"
 
 export type DragCopyHint = { copy?: boolean }
 export type DragSample = { type: "sample", sample: Sample } & DragCopyHint

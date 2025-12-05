@@ -1,4 +1,4 @@
-import {ppqn, PPQN} from "@opendaw/lib-dsp"
+import {ppqn, PPQN} from "@naomiarotest/lib-dsp"
 import {
     DefaultObservableValue,
     int,
@@ -11,11 +11,11 @@ import {
     Subscription,
     Terminator,
     UUID
-} from "@opendaw/lib-std"
-import {AudioClipBox} from "@opendaw/studio-boxes"
-import {Address, Int32Field, PointerField, Propagation, Update} from "@opendaw/lib-box"
+} from "@naomiarotest/lib-std"
+import {AudioClipBox} from "@naomiarotest/studio-boxes"
+import {Address, Int32Field, PointerField, Propagation, Update} from "@naomiarotest/lib-box"
 import {ClipBoxAdapter, ClipBoxAdapterVisitor} from "../ClipBoxAdapter"
-import {Pointers} from "@opendaw/studio-enums"
+import {Pointers} from "@naomiarotest/studio-enums"
 import {TrackBoxAdapter} from "../TrackBoxAdapter"
 import {BoxAdaptersContext} from "../../BoxAdaptersContext"
 import {AudioFileBoxAdapter} from "../../audio/AudioFileBoxAdapter"

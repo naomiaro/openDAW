@@ -9,11 +9,11 @@ import {
     Terminator,
     unitValue,
     UUID
-} from "@opendaw/lib-std"
-import {Interpolation, ppqn, ValueEvent} from "@opendaw/lib-dsp"
-import {Address, Field, Propagation, Update} from "@opendaw/lib-box"
-import {Pointers} from "@opendaw/studio-enums"
-import {ValueEventBox} from "@opendaw/studio-boxes"
+} from "@naomiarotest/lib-std"
+import {Interpolation, ppqn, ValueEvent} from "@naomiarotest/lib-dsp"
+import {Address, Field, Propagation, Update} from "@naomiarotest/lib-box"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {ValueEventBox} from "@naomiarotest/studio-boxes"
 import {ValueEventCollectionBoxAdapter} from "../collection/ValueEventCollectionBoxAdapter"
 import {BoxAdapter} from "../../BoxAdapter"
 import {BoxAdaptersContext} from "../../BoxAdaptersContext"

@@ -12,10 +12,10 @@ import {
     Subscription,
     Terminator,
     UUID
-} from "@opendaw/lib-std"
-import {Address, Addressable, BoxGraph, BoxEditing, Field, PointerField} from "@opendaw/lib-box"
-import {Pointers} from "@opendaw/studio-enums"
-import {SelectionBox} from "@opendaw/studio-boxes"
+} from "@naomiarotest/lib-std"
+import {Address, Addressable, BoxGraph, BoxEditing, Field, PointerField} from "@naomiarotest/lib-box"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {SelectionBox} from "@naomiarotest/studio-boxes"
 import {SelectableVertex} from "./SelectableVertex"
 import {SelectionEntry} from "./SelectionEntry"
 import {FilteredSelection} from "./FilteredSelection"

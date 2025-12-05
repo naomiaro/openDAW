@@ -1,5 +1,5 @@
-import {MidiKeys} from "@opendaw/lib-dsp"
-import {byte, int, JSONValue, Notifier, Observer, Subscription, Terminable} from "@opendaw/lib-std"
+import {MidiKeys} from "@naomiarotest/lib-dsp"
+import {byte, int, JSONValue, Notifier, Observer, Subscription, Terminable} from "@naomiarotest/lib-std"
 
 export class ScaleConfig implements MidiKeys.Scale, Terminable {
     static readonly EMPTY = 0b111111111111

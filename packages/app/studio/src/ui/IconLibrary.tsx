@@ -1,5 +1,5 @@
-import {createElement} from "@opendaw/lib-jsx"
-import {IconSymbol} from "@opendaw/studio-enums"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 
 export const IconLibrary = () => (
     <svg width="0" height="0" display="none">

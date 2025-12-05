@@ -1,5 +1,5 @@
-import {Id, int} from "@opendaw/lib-std"
-import {AudioBuffer, NoteEvent} from "@opendaw/lib-dsp"
+import {Id, int} from "@naomiarotest/lib-std"
+import {AudioBuffer, NoteEvent} from "@naomiarotest/lib-dsp"
 import {Block} from "../processing"
 import {VoicingStrategy} from "./VoicingStrategy"
 

@@ -1,13 +1,13 @@
 import css from "./NotePadPanel.sass?inline"
 import template from "./NotePadTemplate.md?raw"
-import {createElement} from "@opendaw/lib-jsx"
-import {DefaultObservableValue, EmptyExec, Lifecycle} from "@opendaw/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {DefaultObservableValue, EmptyExec, Lifecycle} from "@naomiarotest/lib-std"
 import {StudioService} from "@/service/StudioService"
 import {Icon} from "@/ui/components/Icon"
-import {IconSymbol} from "@opendaw/studio-enums"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 import {Checkbox} from "@/ui/components/Checkbox"
 import {renderMarkdown} from "@/ui/Markdown"
-import {Events, Html, Keyboard} from "@opendaw/lib-dom"
+import {Events, Html, Keyboard} from "@naomiarotest/lib-dom"
 
 const className = Html.adoptStyleSheet(css, "NotePadPanel")
 

@@ -1,4 +1,4 @@
-import {asDefined, panic, Terminable, UUID} from "@opendaw/lib-std"
+import {asDefined, panic, Terminable, UUID} from "@naomiarotest/lib-std"
 import {DragAndDrop} from "@/ui/DragAndDrop"
 import {AnyDragData} from "@/ui/AnyDragData"
 import {
@@ -8,11 +8,11 @@ import {
     InstrumentBox,
     InstrumentFactories,
     InstrumentFactory
-} from "@opendaw/studio-adapters"
+} from "@naomiarotest/studio-adapters"
 import {InsertMarker} from "@/ui/components/InsertMarker"
-import {EffectFactories, Project} from "@opendaw/studio-core"
-import {IndexedBox} from "@opendaw/lib-box"
-import {AudioBusBox, BoxVisitor, CaptureAudioBox, CaptureMidiBox, TapeDeviceBox} from "@opendaw/studio-boxes"
+import {EffectFactories, Project} from "@naomiarotest/studio-core"
+import {IndexedBox} from "@naomiarotest/lib-box"
+import {AudioBusBox, BoxVisitor, CaptureAudioBox, CaptureMidiBox, TapeDeviceBox} from "@naomiarotest/studio-boxes"
 
 export namespace DevicePanelDragAndDrop {
     export const install = (project: Project,

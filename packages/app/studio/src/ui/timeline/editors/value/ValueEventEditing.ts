@@ -1,7 +1,7 @@
-import {ValueEventBoxAdapter, ValueEventCollectionBoxAdapter} from "@opendaw/studio-adapters"
-import {Interpolation, ppqn, ValueEvent} from "@opendaw/lib-dsp"
+import {ValueEventBoxAdapter, ValueEventCollectionBoxAdapter} from "@naomiarotest/studio-adapters"
+import {Interpolation, ppqn, ValueEvent} from "@naomiarotest/lib-dsp"
 import {Snapping} from "@/ui/timeline/Snapping.ts"
-import {assert, panic, unitValue} from "@opendaw/lib-std"
+import {assert, panic, unitValue} from "@naomiarotest/lib-std"
 
 export namespace ValueEventEditing {
     export const deleteEvent = (collection: ValueEventCollectionBoxAdapter, event: ValueEventBoxAdapter) => {

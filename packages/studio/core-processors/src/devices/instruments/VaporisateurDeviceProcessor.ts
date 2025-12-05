@@ -1,4 +1,4 @@
-import {asEnumValue, asInstanceOf, int, Option, panic, Terminable, UUID} from "@opendaw/lib-std"
+import {asEnumValue, asInstanceOf, int, Option, panic, Terminable, UUID} from "@naomiarotest/lib-std"
 import {
     AudioBuffer,
     ClassicWaveform,
@@ -9,8 +9,8 @@ import {
     PPQN,
     ppqn,
     SimpleLimiter
-} from "@opendaw/lib-dsp"
-import {VaporisateurDeviceBoxAdapter} from "@opendaw/studio-adapters"
+} from "@naomiarotest/lib-dsp"
+import {VaporisateurDeviceBoxAdapter} from "@naomiarotest/studio-adapters"
 import {EngineContext} from "../../EngineContext"
 import {AudioProcessor} from "../../AudioProcessor"
 import {Block, Processor} from "../../processing"
@@ -23,7 +23,7 @@ import {InstrumentDeviceProcessor} from "../../InstrumentDeviceProcessor"
 import {Voicing} from "../../voicing/Voicing"
 import {PolyphonicStrategy} from "../../voicing/PolyphonicStrategy"
 import {VoicingHost} from "../../voicing/VoicingHost"
-import {VoicingMode} from "@opendaw/studio-enums"
+import {VoicingMode} from "@naomiarotest/studio-enums"
 import {MonophonicStrategy} from "../../voicing/MonophonicStrategy"
 import {VoiceUnison} from "../../voicing/VoiceUnison"
 import {VaporisateurVoice} from "./VaporisateurVoice"

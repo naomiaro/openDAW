@@ -1,5 +1,5 @@
-import {BoxSchema, FieldRecord, mergeFields, reserveMany} from "@opendaw/lib-box-forge"
-import {Pointers} from "@opendaw/studio-enums"
+import {BoxSchema, FieldRecord, mergeFields, reserveMany} from "@naomiarotest/lib-box-forge"
+import {Pointers} from "@naomiarotest/studio-enums"
 import {DeviceFactory} from "../std/DeviceFactory"
 import {UnipolarConstraints} from "../std/Defaults"
 

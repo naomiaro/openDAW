@@ -10,7 +10,7 @@ import {
     Terminable,
     Terminator,
     UUID
-} from "@opendaw/lib-std"
+} from "@naomiarotest/lib-std"
 import {
     Direction,
     ModularAdapter,
@@ -18,15 +18,15 @@ import {
     ModuleConnectionAdapter,
     ModuleConnectorAdapter,
     Modules
-} from "@opendaw/studio-adapters"
-import {Address, Vertex} from "@opendaw/lib-box"
-import {Pointers} from "@opendaw/studio-enums"
-import {ModuleConnectionBox} from "@opendaw/studio-boxes"
+} from "@naomiarotest/studio-adapters"
+import {Address, Vertex} from "@naomiarotest/lib-box"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {ModuleConnectionBox} from "@naomiarotest/studio-boxes"
 import {Camera} from "@/ui/modular/Camera.ts"
 import {Surface} from "@/ui/surface/Surface.tsx"
-import {Events} from "@opendaw/lib-dom"
+import {Events} from "@naomiarotest/lib-dom"
 import {StudioService} from "@/service/StudioService"
-import {Project} from "@opendaw/studio-core"
+import {Project} from "@naomiarotest/studio-core"
 
 export type ModuleViewAdapter = {
     moduleView: Element

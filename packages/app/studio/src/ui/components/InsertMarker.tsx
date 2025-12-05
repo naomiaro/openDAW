@@ -1,8 +1,8 @@
 import css from "./InsertMarker.sass?inline"
-import {Html} from "@opendaw/lib-dom"
-import {IconSymbol} from "@opendaw/studio-enums"
+import {Html} from "@naomiarotest/lib-dom"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 import {Icon} from "@/ui/components/Icon"
-import {createElement} from "@opendaw/lib-jsx"
+import {createElement} from "@naomiarotest/lib-jsx"
 
 const className = Html.adoptStyleSheet(css, "InsertMarker")
 

@@ -1,11 +1,11 @@
 import css from "./Cover.sass?inline"
-import {Errors, isDefined, Lifecycle, MutableObservableOption, panic} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+import {Errors, isDefined, Lifecycle, MutableObservableOption, panic} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {Icon} from "../components/Icon"
-import {IconSymbol} from "@opendaw/studio-enums"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 import {Dialogs} from "@/ui/components/dialogs"
-import {Events, Files, Html} from "@opendaw/lib-dom"
-import {Promises} from "@opendaw/lib-runtime"
+import {Events, Files, Html} from "@naomiarotest/lib-dom"
+import {Promises} from "@naomiarotest/lib-runtime"
 
 const className = Html.adoptStyleSheet(css, "Cover")
 

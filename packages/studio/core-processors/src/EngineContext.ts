@@ -1,11 +1,11 @@
-import {Observer, Subscription, Terminable, UUID} from "@opendaw/lib-std"
+import {Observer, Subscription, Terminable, UUID} from "@naomiarotest/lib-std"
 import {Processor, ProcessPhase} from "./processing"
-import {LiveStreamBroadcaster} from "@opendaw/lib-fusion"
+import {LiveStreamBroadcaster} from "@naomiarotest/lib-fusion"
 import {UpdateClock} from "./UpdateClock"
 import {TimeInfo} from "./TimeInfo"
 import {AudioUnit} from "./AudioUnit"
 import {Mixer} from "./Mixer"
-import {BoxAdaptersContext, EngineToClient} from "@opendaw/studio-adapters"
+import {BoxAdaptersContext, EngineToClient} from "@naomiarotest/studio-adapters"
 
 export interface EngineContext extends BoxAdaptersContext, Terminable {
     get broadcaster(): LiveStreamBroadcaster

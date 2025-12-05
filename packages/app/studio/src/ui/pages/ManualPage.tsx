@@ -1,13 +1,13 @@
 import css from "./ManualPage.sass?inline"
-import {Await, createElement, LocalLink, PageContext, PageFactory} from "@opendaw/lib-jsx"
+import {Await, createElement, LocalLink, PageContext, PageFactory} from "@naomiarotest/lib-jsx"
 import {StudioService} from "@/service/StudioService.ts"
 import {ThreeDots} from "@/ui/spinner/ThreeDots"
 import {BackButton} from "@/ui/pages/BackButton"
 import {Markdown} from "@/ui/Markdown"
 import {Manual, Manuals} from "@/ui/pages/Manuals"
-import {Html} from "@opendaw/lib-dom"
+import {Html} from "@naomiarotest/lib-dom"
 import {MenuItem} from "@/ui/model/menu-item"
-import {panic} from "@opendaw/lib-std"
+import {panic} from "@naomiarotest/lib-std"
 
 const className = Html.adoptStyleSheet(css, "ManualPage")
 

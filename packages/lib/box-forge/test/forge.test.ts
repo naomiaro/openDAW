@@ -1,7 +1,7 @@
 import {beforeEach, describe, expect, it, vi} from "vitest"
-import {ByteArrayInput, ByteArrayOutput, Float, Option, UUID} from "@opendaw/lib-std"
-import {Compression} from "@opendaw/lib-dom"
-import {BoxGraph, BoxEditing, PointerField} from "@opendaw/lib-box"
+import {ByteArrayInput, ByteArrayOutput, Float, Option, UUID} from "@naomiarotest/lib-std"
+import {Compression} from "@naomiarotest/lib-dom"
+import {BoxGraph, BoxEditing, PointerField} from "@naomiarotest/lib-box"
 import {PointerType} from "./Pointers"
 import {AudioConnectionBox, BoxIO, DelayBox, DrumBox, NetworkBox} from "./gen"
 

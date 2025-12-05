@@ -1,8 +1,8 @@
-import {Pointers} from "@opendaw/studio-enums"
+import {Pointers} from "@naomiarotest/studio-enums"
 import {ParameterPointerRules, UnipolarConstraints} from "./Defaults"
-import {BoxSchema, FieldRecord, mergeFields, reserveMany} from "@opendaw/lib-box-forge"
-import {PPQN} from "@opendaw/lib-dsp"
-import {Objects} from "@opendaw/lib-std"
+import {BoxSchema, FieldRecord, mergeFields, reserveMany} from "@naomiarotest/lib-box-forge"
+import {PPQN} from "@naomiarotest/lib-dsp"
+import {Objects} from "@naomiarotest/lib-std"
 
 const GrooveBoxAttributes = {
     1: {type: "string", name: "label"},

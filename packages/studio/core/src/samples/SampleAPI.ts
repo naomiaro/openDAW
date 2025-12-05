@@ -1,5 +1,5 @@
-import {AudioData, Sample, SampleMetaData} from "@opendaw/studio-adapters"
-import {Procedure, unitValue, UUID} from "@opendaw/lib-std"
+import {AudioData, Sample, SampleMetaData} from "@naomiarotest/studio-adapters"
+import {Procedure, unitValue, UUID} from "@naomiarotest/lib-std"
 
 export interface SampleAPI {
     all(): Promise<ReadonlyArray<Sample>>

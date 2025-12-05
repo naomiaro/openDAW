@@ -7,11 +7,11 @@ import {
     TrackBoxAdapter,
     ValueClipBoxAdapter,
     ValueEventCollectionBoxAdapter
-} from "@opendaw/studio-adapters"
-import {ppqn} from "@opendaw/lib-dsp"
-import {mod, Observer, Option, Subscription} from "@opendaw/lib-std"
-import {TimelineRange} from "@opendaw/studio-core"
-import {Propagation} from "@opendaw/lib-box"
+} from "@naomiarotest/studio-adapters"
+import {ppqn} from "@naomiarotest/lib-dsp"
+import {mod, Observer, Option, Subscription} from "@naomiarotest/lib-std"
+import {TimelineRange} from "@naomiarotest/studio-core"
+import {Propagation} from "@naomiarotest/lib-box"
 import {
     AudioEventOwnerReader,
     EventOwnerReader,

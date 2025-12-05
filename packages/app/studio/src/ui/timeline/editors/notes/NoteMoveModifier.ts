@@ -1,15 +1,15 @@
-import {clamp, int, Notifier, Observer, Option, Selection, Terminable, unitValue} from "@opendaw/lib-std"
+import {clamp, int, Notifier, Observer, Option, Selection, Terminable, unitValue} from "@naomiarotest/lib-std"
 import {Snapping} from "@/ui/timeline/Snapping.ts"
-import {BoxEditing} from "@opendaw/lib-box"
+import {BoxEditing} from "@naomiarotest/lib-box"
 import {Line, NoteModifyStrategy} from "./NoteModifyStrategies"
-import {NoteEventBoxAdapter} from "@opendaw/studio-adapters"
-import {EventCollection, NoteEvent, ppqn} from "@opendaw/lib-dsp"
+import {NoteEventBoxAdapter} from "@naomiarotest/studio-adapters"
+import {EventCollection, NoteEvent, ppqn} from "@naomiarotest/lib-dsp"
 import {NoteModifier} from "@/ui/timeline/editors/notes/NoteModifier.ts"
 import {PitchPositioner} from "@/ui/timeline/editors/notes/pitch/PitchPositioner.ts"
 
 import {NoteEventOwnerReader} from "@/ui/timeline/editors/EventOwnerReader.ts"
 import {UINoteEvent} from "@/ui/timeline/editors/notes/UINoteEvent.ts"
-import {Dragging} from "@opendaw/lib-dom"
+import {Dragging} from "@naomiarotest/lib-dom"
 
 class SelectedModifyStrategy implements NoteModifyStrategy {
     readonly #tool: NoteMoveModifier

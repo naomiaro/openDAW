@@ -1,8 +1,8 @@
-import {Chord, dbToGain, FFT, gainToDb, Interpolation, midiToHz, PPQN, ppqn} from "@opendaw/lib-dsp"
-import {bipolar, float, int, Nullable, unitValue} from "@opendaw/lib-std"
-import type {AudioData} from "@opendaw/studio-adapters"
-import {Sample} from "@opendaw/studio-adapters"
-import {AudioPlayback} from "@opendaw/studio-enums"
+import {Chord, dbToGain, FFT, gainToDb, Interpolation, midiToHz, PPQN, ppqn} from "@naomiarotest/lib-dsp"
+import {bipolar, float, int, Nullable, unitValue} from "@naomiarotest/lib-std"
+import type {AudioData} from "@naomiarotest/studio-adapters"
+import {Sample} from "@naomiarotest/studio-adapters"
+import {AudioPlayback} from "@naomiarotest/studio-enums"
 
 export {AudioPlayback, PPQN, FFT, Chord, Sample, dbToGain, gainToDb, midiToHz}
 

@@ -1,4 +1,4 @@
-import {int, isUndefined} from "@opendaw/lib-std"
+import {int, isUndefined} from "@naomiarotest/lib-std"
 
 export class MIDISender {
     readonly #port: MessagePort

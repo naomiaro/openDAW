@@ -1,11 +1,11 @@
 import css from "./CompressionCurve.sass?inline"
-import {AnimationFrame, Html} from "@opendaw/lib-dom"
-import {Lifecycle, TAU} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
-import {CompressorDeviceBoxAdapter} from "@opendaw/studio-adapters"
+import {AnimationFrame, Html} from "@naomiarotest/lib-dom"
+import {Lifecycle, TAU} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {CompressorDeviceBoxAdapter} from "@naomiarotest/studio-adapters"
 import {CanvasPainter} from "@/ui/canvas/painter"
 import {Vertical} from "@/ui/devices/audio-effects/Compressor/Vertical"
-import {GainComputer} from "@opendaw/lib-dsp/ctagdrc"
+import {GainComputer} from "@naomiarotest/lib-dsp/ctagdrc"
 import {DisplayPaint} from "@/ui/devices/DisplayPaint"
 
 const className = Html.adoptStyleSheet(css, "CompressionCurve")

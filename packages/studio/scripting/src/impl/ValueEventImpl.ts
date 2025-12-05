@@ -1,6 +1,6 @@
 import {ValueEvent} from "../Api"
-import {Interpolation, ppqn} from "@opendaw/lib-dsp"
-import {unitValue} from "@opendaw/lib-std"
+import {Interpolation, ppqn} from "@naomiarotest/lib-dsp"
+import {unitValue} from "@naomiarotest/lib-std"
 
 export class ValueEventImpl implements ValueEvent {
     position: ppqn

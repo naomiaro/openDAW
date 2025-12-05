@@ -1,7 +1,7 @@
 import {describe, expect, it} from "vitest"
 import {Xml} from "./index"
 import {ComicSchema, LibrarySchema, NovelSchema, TextbookSchema} from "./test.schema"
-import {assertInstanceOf} from "@opendaw/lib-std"
+import {assertInstanceOf} from "@naomiarotest/lib-std"
 
 const xml = `
 ${Xml.Declaration}

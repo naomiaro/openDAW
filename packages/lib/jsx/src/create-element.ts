@@ -1,5 +1,5 @@
-import {canWrite, isDefined, panic, Procedure, safeWrite} from "@opendaw/lib-std"
-import {Html} from "@opendaw/lib-dom"
+import {canWrite, isDefined, panic, Procedure, safeWrite} from "@naomiarotest/lib-std"
+import {Html} from "@naomiarotest/lib-dom"
 import {SupportedSvgTags} from "./supported-svg-tags"
 import {Inject} from "./inject"
 import {DomElement, JsxValue} from "./types"

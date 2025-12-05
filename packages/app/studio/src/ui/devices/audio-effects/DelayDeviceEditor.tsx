@@ -1,15 +1,15 @@
 import css from "./DelayDeviceEditor.sass?inline"
-import {DelayDeviceBoxAdapter, DeviceHost} from "@opendaw/studio-adapters"
-import {Lifecycle} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+import {DelayDeviceBoxAdapter, DeviceHost} from "@naomiarotest/studio-adapters"
+import {Lifecycle} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {DeviceEditor} from "@/ui/devices/DeviceEditor.tsx"
 import {MenuItems} from "@/ui/devices/menu-items.ts"
 import {ControlBuilder} from "@/ui/devices/ControlBuilder.tsx"
 import {SnapCommonDecibel} from "@/ui/configs.ts"
 import {DevicePeakMeter} from "@/ui/devices/panel/DevicePeakMeter.tsx"
-import {Html} from "@opendaw/lib-dom"
+import {Html} from "@naomiarotest/lib-dom"
 import {StudioService} from "@/service/StudioService"
-import {EffectFactories} from "@opendaw/studio-core"
+import {EffectFactories} from "@naomiarotest/studio-core"
 
 const className = Html.adoptStyleSheet(css, "DelayDeviceEditor")
 

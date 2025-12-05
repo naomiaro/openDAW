@@ -10,13 +10,13 @@ import {
     Terminable,
     unitValue,
     ValueGuide
-} from "@opendaw/lib-std"
-import {createElement, Group, JsxValue} from "@opendaw/lib-jsx"
+} from "@naomiarotest/lib-std"
+import {createElement, Group, JsxValue} from "@naomiarotest/lib-jsx"
 import {ValueDragging} from "@/ui/hooks/dragging"
 import {FloatingTextInput} from "@/ui/components/FloatingTextInput.tsx"
 import {ValueTooltip} from "@/ui/surface/ValueTooltip.tsx"
 import {Surface} from "../surface/Surface"
-import {Events} from "@opendaw/lib-dom"
+import {Events} from "@naomiarotest/lib-dom"
 
 type Construct = {
     lifecycle: Lifecycle

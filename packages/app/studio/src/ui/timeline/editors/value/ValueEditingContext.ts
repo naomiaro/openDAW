@@ -10,12 +10,12 @@ import {
     Terminator,
     unitValue,
     ValueMapping
-} from "@opendaw/lib-std"
+} from "@naomiarotest/lib-std"
 import {ValueAssignment} from "@/ui/timeline/editors/value/ValueAssignment.tsx"
-import {PointerField, PrimitiveValues} from "@opendaw/lib-box"
-import {TrackBoxAdapter, TrackType} from "@opendaw/studio-adapters"
-import {Pointers} from "@opendaw/studio-enums"
-import {Project} from "@opendaw/studio-core"
+import {PointerField, PrimitiveValues} from "@naomiarotest/lib-box"
+import {TrackBoxAdapter, TrackType} from "@naomiarotest/studio-adapters"
+import {Pointers} from "@naomiarotest/studio-enums"
+import {Project} from "@naomiarotest/studio-core"
 
 export class ValueEditingContext implements Terminable {
     static readonly FallbackStringMapping = StringMapping.percent()

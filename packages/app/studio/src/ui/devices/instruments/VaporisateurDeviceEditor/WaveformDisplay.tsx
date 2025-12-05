@@ -1,7 +1,7 @@
 import css from "./Display.sass?inline"
-import {Html} from "@opendaw/lib-dom"
-import {Func, Lifecycle, ObservableValue} from "@opendaw/lib-std"
-import {createElement} from "@opendaw/lib-jsx"
+import {Html} from "@naomiarotest/lib-dom"
+import {Func, Lifecycle, ObservableValue} from "@naomiarotest/lib-std"
+import {createElement} from "@naomiarotest/lib-jsx"
 import {CanvasPainter} from "@/ui/canvas/painter"
 import {DisplayPaint} from "@/ui/devices/DisplayPaint"
 

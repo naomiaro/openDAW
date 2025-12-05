@@ -1,4 +1,4 @@
-import {AudioUnitBox, TrackBox} from "@opendaw/studio-boxes"
+import {AudioUnitBox, TrackBox} from "@naomiarotest/studio-boxes"
 import {InstrumentBox} from "./InstrumentBox"
 
 export type InstrumentProduct<INST_BOX extends InstrumentBox> = {

@@ -1,9 +1,9 @@
 import {Dialog} from "@/ui/components/Dialog"
-import {IconSymbol} from "@opendaw/studio-enums"
+import {IconSymbol} from "@naomiarotest/studio-enums"
 import {Surface} from "@/ui/surface/Surface"
-import {Promises} from "@opendaw/lib-runtime"
-import {createElement} from "@opendaw/lib-jsx"
-import {Colors} from "@opendaw/studio-enums"
+import {Promises} from "@naomiarotest/lib-runtime"
+import {createElement} from "@naomiarotest/lib-jsx"
+import {Colors} from "@naomiarotest/studio-enums"
 
 export const showStoragePersistDialog = (): Promise<void> => {
     const {resolve, promise} = Promise.withResolvers<void>()

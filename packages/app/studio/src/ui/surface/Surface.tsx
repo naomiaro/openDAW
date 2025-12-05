@@ -16,15 +16,15 @@ import {
     TerminableOwner,
     Terminator,
     tryCatch
-} from "@opendaw/lib-std"
-import {createElement, DomElement} from "@opendaw/lib-jsx"
+} from "@naomiarotest/lib-std"
+import {createElement, DomElement} from "@naomiarotest/lib-jsx"
 import {IconLibrary} from "@/ui/IconLibrary.tsx"
 import {ErrorHandler} from "@/errors/ErrorHandler.ts"
 import {ValueTooltip} from "@/ui/surface/ValueTooltip.tsx"
 import {TextTooltip} from "./TextTooltip"
 import {FloatingTextInput} from "@/ui/components/FloatingTextInput.tsx"
-import {AnimationFrame, CssUtils, Events, Html, Keyboard} from "@opendaw/lib-dom"
-import {initializeColors} from "@opendaw/studio-enums"
+import {AnimationFrame, CssUtils, Events, Html, Keyboard} from "@naomiarotest/lib-dom"
+import {initializeColors} from "@naomiarotest/studio-enums"
 
 const className = Html.adoptStyleSheet(css, "Surface")
 

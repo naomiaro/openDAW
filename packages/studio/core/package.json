@@ -1,6 +1,6 @@
 {
-    "name": "@opendaw/studio-core",
-    "version": "0.0.59",
+    "name": "@naomiarotest/studio-core",
+    "version": "0.0.60",
     "license": "LGPL-3.0-or-later",
     "publishConfig": {
         "access": "public"
@@ -31,16 +31,16 @@
         "test": "vitest run --config vitest.config.ts"
     },
     "dependencies": {
-        "@opendaw/lib-box": "^0.0.50",
-        "@opendaw/lib-dawproject": "^0.0.36",
-        "@opendaw/lib-dom": "^0.0.50",
-        "@opendaw/lib-dsp": "^0.0.50",
-        "@opendaw/lib-fusion": "^0.0.50",
-        "@opendaw/lib-runtime": "^0.0.50",
-        "@opendaw/lib-std": "^0.0.50",
-        "@opendaw/studio-adapters": "^0.0.51",
-        "@opendaw/studio-boxes": "^0.0.50",
-        "@opendaw/studio-enums": "^0.0.41",
+        "@naomiarotest/lib-box": "^0.0.50",
+        "@naomiarotest/lib-dawproject": "^0.0.36",
+        "@naomiarotest/lib-dom": "^0.0.50",
+        "@naomiarotest/lib-dsp": "^0.0.50",
+        "@naomiarotest/lib-fusion": "^0.0.50",
+        "@naomiarotest/lib-runtime": "^0.0.50",
+        "@naomiarotest/lib-std": "^0.0.50",
+        "@naomiarotest/studio-adapters": "^0.0.51",
+        "@naomiarotest/studio-boxes": "^0.0.50",
+        "@naomiarotest/studio-enums": "^0.0.41",
         "dropbox": "^10.34.0",
         "y-websocket": "^1.4.5",
         "yjs": "^13.6.27",
@@ -53,11 +53,11 @@
     "devDependencies": {
         "@ffmpeg/ffmpeg": "^0.12.15",
         "@ffmpeg/util": "^0.12.2",
-        "@opendaw/eslint-config": "^0.0.20",
-        "@opendaw/studio-core-processors": "^0.0.51",
-        "@opendaw/studio-core-workers": "^0.0.46",
-        "@opendaw/studio-forge-boxes": "^0.0.50",
-        "@opendaw/typescript-config": "^0.0.20"
+        "@naomiarotest/eslint-config": "^0.0.20",
+        "@naomiarotest/studio-core-processors": "^0.0.51",
+        "@naomiarotest/studio-core-workers": "^0.0.46",
+        "@naomiarotest/studio-forge-boxes": "^0.0.50",
+        "@naomiarotest/typescript-config": "^0.0.20"
     },
     "gitHead": "b000505c56dbc68bce90bac93f722198deab0ecf"
 }

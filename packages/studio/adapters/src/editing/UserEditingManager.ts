@@ -1,6 +1,6 @@
-import {Terminable, Terminator} from "@opendaw/lib-std"
-import {BoxEditing} from "@opendaw/lib-box"
-import {UserInterfaceBox} from "@opendaw/studio-boxes"
+import {Terminable, Terminator} from "@naomiarotest/lib-std"
+import {BoxEditing} from "@naomiarotest/lib-box"
+import {UserInterfaceBox} from "@naomiarotest/studio-boxes"
 import {UserEditing} from "./UserEditing"
 
 export class UserEditingManager implements Terminable {

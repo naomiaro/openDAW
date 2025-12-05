@@ -1,5 +1,5 @@
-import {RenderQuantum} from "@opendaw/lib-dsp"
-import {Communicator, Messenger} from "@opendaw/lib-runtime"
+import {RenderQuantum} from "@naomiarotest/lib-dsp"
+import {Communicator, Messenger} from "@naomiarotest/lib-runtime"
 import {Protocol} from "./protocol"
 import {Waveform} from "./waveform"
 import {Oscillator} from "./oscillator"
