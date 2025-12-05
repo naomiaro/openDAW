@@ -13,7 +13,7 @@
         "dist/**"
       ]
     },
-    "@opendaw/studio-forge-boxes#build": {
+    "@naomiarotest/studio-forge-boxes#build": {
       "dependsOn": [
         "^build"
       ],
