@@ -54,7 +54,7 @@
         "@ffmpeg/ffmpeg": "^0.12.15",
         "@ffmpeg/util": "^0.12.2",
         "@naomiarotest/eslint-config": "^0.0.21",
-        "@naomiarotest/studio-core-processors": "^0.0.51",
+        "@naomiarotest/studio-core-processors": "^0.0.53",
         "@naomiarotest/studio-core-workers": "^0.0.47",
         "@naomiarotest/studio-forge-boxes": "^0.0.51",
         "@naomiarotest/typescript-config": "^0.0.21"
