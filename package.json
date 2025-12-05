@@ -41,5 +41,17 @@
   "packageManager": "npm@11.4.2",
   "workspaces": [
     "packages/**/*"
-  ]
+  ],
+  "overrides": {
+    "@naomiarotest/lib-box": "*",
+    "@naomiarotest/lib-dsp": "*",
+    "@naomiarotest/lib-runtime": "*",
+    "@naomiarotest/lib-std": "*",
+    "@naomiarotest/lib-dom": "*",
+    "@naomiarotest/lib-fusion": "*",
+    "@naomiarotest/studio-enums": "*",
+    "@naomiarotest/studio-boxes": "*",
+    "@naomiarotest/studio-adapters": "*",
+    "@naomiarotest/studio-core": "*"
+  }
 }
