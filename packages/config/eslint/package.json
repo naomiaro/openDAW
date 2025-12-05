@@ -1,7 +1,7 @@
 {
     "name": "@naomiarotest/eslint-config",
     "version": "0.0.21",
-    "private": true,
+    "private": false,
     "main": "index.js",
     "publishConfig": {
         "access": "public"

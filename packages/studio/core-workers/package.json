@@ -2,7 +2,7 @@
     "name": "@naomiarotest/studio-core-workers",
     "version": "0.0.47",
     "license": "LGPL-3.0-or-later",
-    "private": true,
+    "private": false,
     "exports": {
         ".": "./src/index.ts"
     },
