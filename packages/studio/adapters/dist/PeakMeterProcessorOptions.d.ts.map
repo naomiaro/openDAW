@@ -1,1 +1,0 @@
-{"version":3,"file":"PeakMeterProcessorOptions.d.ts","sourceRoot":"","sources":["../src/PeakMeterProcessorOptions.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,GAAG,EAAC,MAAM,uBAAuB,CAAA;AAEzC,MAAM,WAAW,yBAAyB;IACtC,GAAG,EAAE,iBAAiB,CAAA;IACtB,gBAAgB,EAAE,GAAG,CAAA;IACrB,kBAAkB,EAAE,MAAM,CAAA;IAC1B,UAAU,EAAE,MAAM,CAAA;CACrB"}

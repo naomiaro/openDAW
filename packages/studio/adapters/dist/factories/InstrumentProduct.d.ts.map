@@ -1,1 +1,0 @@
-{"version":3,"file":"InstrumentProduct.d.ts","sourceRoot":"","sources":["../../src/factories/InstrumentProduct.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,YAAY,EAAE,QAAQ,EAAC,MAAM,4BAA4B,CAAA;AACjE,OAAO,EAAC,aAAa,EAAC,MAAM,iBAAiB,CAAA;AAE7C,MAAM,MAAM,iBAAiB,CAAC,QAAQ,SAAS,aAAa,IAAI;IAC5D,YAAY,EAAE,YAAY,CAAA;IAC1B,aAAa,EAAE,QAAQ,CAAA;IACvB,QAAQ,EAAE,QAAQ,CAAA;CACrB,CAAA"}

@@ -1,1 +1,0 @@
-{"version":3,"file":"RecordTrack.d.ts","sourceRoot":"","sources":["../../src/capture/RecordTrack.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,YAAY,EAAE,QAAQ,EAAC,MAAM,4BAA4B,CAAA;AAEjE,OAAO,EAAC,SAAS,EAAC,MAAM,+BAA+B,CAAA;AACvD,OAAO,EAAC,UAAU,EAAC,MAAM,uBAAuB,CAAA;AAEhD,yBAAiB,WAAW,CAAC;IAClB,MAAM,YAAY,GAAI,SAAS,UAAU,EAAE,cAAc,YAAY,EAAE,MAAM,SAAS,KAAG,QAe/F,CAAA;CACJ"}

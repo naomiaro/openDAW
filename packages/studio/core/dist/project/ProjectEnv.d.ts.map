@@ -1,1 +1,0 @@
-{"version":3,"file":"ProjectEnv.d.ts","sourceRoot":"","sources":["../../src/project/ProjectEnv.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,mBAAmB,EAAE,sBAAsB,EAAC,MAAM,+BAA+B,CAAA;AACzF,OAAO,EAAC,aAAa,EAAC,MAAM,kBAAkB,CAAA;AAE9C,MAAM,WAAW,UAAU;IACvB,YAAY,EAAE,YAAY,CAAA;IAC1B,aAAa,EAAE,aAAa,CAAA;IAC5B,aAAa,EAAE,mBAAmB,CAAA;IAClC,gBAAgB,EAAE,sBAAsB,CAAA;CAC3C"}

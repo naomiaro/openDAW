@@ -1,6 +1,0 @@
-export * from "./Capture";
-export * from "./CaptureAudio";
-export * from "./CaptureMidi";
-export * from "./CaptureDevices";
-export * from "./Recording";
-export * from "./RecordAudio";

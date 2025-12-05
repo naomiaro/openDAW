@@ -1,1 +1,0 @@
-{"version":3,"file":"SelectionEntry.d.ts","sourceRoot":"","sources":["../../src/selection/SelectionEntry.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,YAAY,EAAC,MAAM,4BAA4B,CAAA;AACvD,OAAO,EAAC,gBAAgB,EAAC,MAAM,oBAAoB,CAAA;AAEnD,MAAM,MAAM,cAAc,GAAG;IAAE,GAAG,EAAE,YAAY,CAAC;IAAC,UAAU,EAAE,gBAAgB,CAAA;CAAE,CAAA"}

@@ -1,1 +1,0 @@
-{"version":3,"file":"predicates.d.ts","sourceRoot":"","sources":["../src/predicates.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,SAAS,EAAC,MAAM,QAAQ,CAAA;AAEhC,yBAAiB,UAAU,CAAC;IACjB,MAAM,UAAU,EAAE,SAAS,CAAC,OAAO,CAAc,CAAA;IACjD,MAAM,WAAW,EAAE,SAAS,CAAC,OAAO,CAAe,CAAA;IACnD,MAAM,gBAAgB,EAAE,SAAS,CAAC,OAAO,CAA6D,CAAA;CAChH"}

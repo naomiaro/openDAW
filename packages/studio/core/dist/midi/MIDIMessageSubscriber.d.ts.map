@@ -1,1 +1,0 @@
-{"version":3,"file":"MIDIMessageSubscriber.d.ts","sourceRoot":"","sources":["../../src/midi/MIDIMessageSubscriber.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,IAAI,EAAqC,QAAQ,EAAE,YAAY,EAAC,MAAM,uBAAuB,CAAA;AAIrG,qBAAa,qBAAqB;IAC9B,MAAM,CAAC,sBAAsB,CAAC,MAAM,EAAE,UAAU,EAAE,QAAQ,EAAE,QAAQ,CAAC,gBAAgB,CAAC,EAAE,OAAO,CAAC,EAAE,IAAI,GAAG,YAAY;CA+BxH"}
