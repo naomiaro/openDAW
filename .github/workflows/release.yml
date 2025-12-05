@@ -26,8 +26,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@naomiarotest'
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Configure Git
         run: |
@@ -43,5 +42,5 @@ jobs:
       - name: Publish changed packages
         run: npx lerna publish --yes
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
