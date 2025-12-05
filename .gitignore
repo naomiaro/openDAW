@@ -1,6 +1,7 @@
 .DS_Store
 .turbo
 .idea
+.npmrc
 packages/app/studio/.env
 .cache
 *.log
